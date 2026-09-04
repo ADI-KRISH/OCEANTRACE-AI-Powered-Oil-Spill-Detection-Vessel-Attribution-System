@@ -99,6 +99,36 @@ The `FAY_K` constant absorbs discharge volume, oil type and sea state — none o
 which one SAR scene reveals. **Module 2 should treat age as a loose prior on its
 search window, never as a constraint.**
 
+## Architecture benchmark
+
+All three trained on identical data, identical loss, identical metrics —
+25 epochs, 600 train / 150 val at 256×256, RTX 4050.
+
+| arch | params | **oil IoU** | mIoU | look-alike | ship | land | false alarm | s/epoch |
+|---|---|---|---|---|---|---|---|---|
+| **U-Net** | **7.8M** | **0.939** | 0.763 | 0.852 | 0.275 | 0.775 | 5.6% | 37 |
+| DeepLabv3+ (R50) | 42.0M | 0.929 | **0.774** | **0.858** | **0.279** | **0.824** | **2.3%** | 29 |
+| DeepLab-MobileNetV3 | 11.0M | 0.847 | 0.705 | 0.753 | 0.116 | 0.841 | 3.8% | 28 |
+
+**U-Net wins on the metric that matters** — oil IoU, the class the whole system
+exists to find — at **one fifth** the parameters of DeepLabv3+. It stays the
+default.
+
+DeepLabv3+ is the better *all-rounder*: higher mIoU, better look-alike
+separation, and less than half the false-alarm rate. Its atrous pyramid sees more
+context, which is exactly what large diffuse look-alikes need. If false alarms
+turn out to matter more than raw slick recall on real data, it is the one to
+switch to — hence keeping both.
+
+**MobileNet is clearly the weakest here**: oil IoU 0.847 against U-Net's 0.939,
+and ship IoU less than half. It is not meaningfully faster than DeepLabv3+ per
+epoch at this input size either, so its usual advantage — speed — does not
+materialise. Worth knowing before committing a demo to a MobileNet-class model.
+
+> Synthetic data, so these compare the architectures *on this generator*. The
+> ordering is informative; the absolute values are not transferable to
+> Sentinel-1. Re-run on the Zenodo dataset before choosing finally.
+
 ## Results (synthetic data — see the warning below)
 
 U-Net, 7.8M params, 30 epochs, 600 train / 150 val patches at 256×256, ~21 s per
@@ -168,4 +198,4 @@ production land should come from a coastline mask (GSHHG/OSM), not the segmenter
 - [ ] Replace learned land with a GSHHG/OSM coastline mask
 - [ ] Georeferencing from real GeoTIFF metadata (`transform` is wired, untested on real scenes)
 - [ ] Polygon (not just centroid) export for particle seeding
-- [ ] Compare against DeepLabv3+ (implemented, not yet benchmarked)
+- [x] Benchmarked U-Net vs DeepLabv3+ vs MobileNetV3 (see above)

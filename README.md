@@ -3,84 +3,107 @@
 NTRO / Disaster Management. Detect oil spills in Sentinel-1 SAR, hindcast their
 origin, attribute them to a vessel via AIS, and show it all on a map.
 
-See [`.claude/claude.md`](.claude/claude.md) for the full spec and
-[`plan.md`](plan.md) for the attribution-stage design notes.
+See [`.claude/claude.md`](.claude/claude.md) for the spec.
 
 ## Run it
 
-Two processes. Backend first:
-
 ```bash
-python -m uvicorn api.main:app --reload --port 8000
+python -m uvicorn api.main:app --reload --port 8000    # terminal 1
+cd frontend && npm install && npm run dev              # terminal 2
 ```
 
-Then the frontend:
+Open <http://localhost:5173> and press **Run full pipeline**.
+Deep links work: `?seed=4&region=arabian_sea` runs a specific case on load.
+
+No trained checkpoint yet?
 
 ```bash
-cd frontend
-npm install          # first time only
-npm run dev          # -> http://localhost:5173
+python -m detection.train --synthetic --epochs 30      # ~11 min on an RTX 4050
 ```
 
-Open <http://localhost:5173>, pick a scene seed, hit **Detect slicks**.
+Tests: `python -m pytest detection/tests drift/tests attribution/tests -q` (64)
 
-If you have no trained checkpoint yet:
+## All five modules are built
 
-```bash
-python -m detection.train --synthetic --epochs 25    # ~11 min on an RTX 4050
-```
-
-Tests: `python -m pytest detection/tests -q`
-
-## Module status
-
-| # | Module | Path | Status |
+| # | Module | Path | What it does |
 |---|---|---|---|
-| 1 | Detection & characterization | `/detection` | **Built** — 31 tests |
-| 2 | Drift hindcast/forecast | `/drift` | Not built — **OpenDrift 1.14.11 installed**, needs CMEMS login |
-| 3 | AIS vessel attribution | `/attribution` | Not built — needs an origin estimate from Module 2 |
-| 4 | API | `/api` | **Built** — serves Module 1; returns 501 for 2 and 3 |
-| 5 | Frontend | `/frontend` | **Built** — React + Leaflet |
+| 1 | Detection & characterization | `/detection` | U-Net / DeepLabv3+ / MobileNet, 5-class SAR segmentation → slick polygons, orientation, area, age |
+| 2 | Drift hindcast / forecast | `/drift` | Backward ensemble → origin heatmap, discharge **track**, time window; forward forecast |
+| 3 | AIS vessel attribution | `/attribution` | Traffic filtering, 14 features + track matching, transparent scoring with evidence |
+| 4 | API | `/api` | FastAPI; `/api/pipeline/run` does the whole chain in one call |
+| 5 | Frontend | `/frontend` | React + Leaflet; all layers, timeline scrubber, suspect table |
 
-The UI reads `/api/modules` and **disables the layers whose module does not
-exist**, saying why on each one. Nothing in the interface is mocked: an unbuilt
-module shows as unbuilt rather than as an empty result, so a demo never implies
-capability that is not there.
+## The end-to-end story
 
-## What works end to end today
+1. **Detect** — segment a SAR scene into sea / oil / look-alike / ship / land,
+   trace slick polygons and measure each one.
+2. **Characterise** — area, long-axis orientation, aspect, contrast, solidity,
+   and a rough age *interval*.
+3. **Hindcast** — run a backward ensemble across a **range** of ages, producing an
+   origin probability heatmap, a discharge track and a time window.
+4. **Attribute** — filter AIS traffic, score every candidate vessel on proximity,
+   behaviour, trajectory shape and track match, and rank them with evidence.
+5. **Show** — every stage on one map, with a timeline for the forward forecast.
 
-SAR scene → segmentation → slick polygons + characterization → map, with:
+## Three design decisions worth defending
 
-- SAR scene and predicted class mask as georeferenced overlays
-- Slick polygons, clickable, with per-slick measurements
-- Ground-truth overlay for synthetic scenes (so you can see the model's errors)
-- Long-axis orientation, area, aspect, contrast, solidity per slick
-- Age shown as an **interval with low confidence**, never a bare number
+**The origin is a heatmap and a track, never a point.** Backward advection
+reverses cleanly; diffusion does not — you cannot un-mix — so a backward run
+legitimately produces a spreading cloud. And because a slick laid by a moving
+vessel back-tracks to a **line**, `/drift` returns a discharge *track*. That is
+what makes attribution strong: matching a vessel's AIS against a curve is far
+more discriminating than proximity to a point.
 
-Disabled, because their modules do not exist: origin heatmap, drift particles,
-timeline scrubber, AIS tracks, suspect table.
+**Age is swept, not assumed.** Age-from-area inverts as `t ~ r⁴`, so a 20% error
+in extent is a factor-of-two error in age — it is the dominant error term, ahead
+of currents. The ensemble therefore samples a *range* of ages log-uniformly and
+reports the window as a distribution.
+
+**The transparent score is always the primary answer.** Every suspect carries
+plain-language evidence. A learned re-ranker can run alongside it and is shown
+side by side when it disagrees, but it never replaces the explanation and never
+appears without it. The spec rules out an opaque guilt classifier; this keeps the
+accuracy without losing the audit trail.
 
 ## Honest state of the numbers
 
-**Everything is trained on synthetic SAR.** The Krestenitis Zenodo dataset needs
-a manual request (see [`data/README.md`](data/README.md)). Current results
-(oil IoU 0.941, mIoU 0.791, ship F1 0.59) describe the generator, not Sentinel-1 — they show
-the pipeline converges and the metrics are wired correctly, nothing more.
+**Everything is trained and driven by synthetic data.**
 
-Demo scenes can be placed **anywhere on the world ocean** — 12 preset regions
-(Arabian Sea, Gulf of Kutch, Malacca, Hormuz, Suez, Gulf of Mexico, North Sea,
-Mediterranean, Gulf of Guinea, Singapore, Black Sea, Bay of Bengal) or any
-lat/lon you type.
-The API labels this `georeferencing: "demo_placement"` and the UI shows a banner.
-They are not real Sentinel-1 coordinates.
+- **SAR**: the Krestenitis Zenodo dataset needs a manual request (see
+  [`data/README.md`](data/README.md)). Current detection numbers describe the
+  generator, not Sentinel-1.
+- **Drift**: forcing is an **analytic field, not a met-ocean model**. Run
+  `copernicusmarine login` and `/drift` switches to real CMEMS currents
+  automatically. The UI says which is in use, and the API returns
+  `forcing.realistic: false` for the analytic one.
+- **AIS**: synthetic, generated for whatever location the scene is placed at.
+  The problem statement permits this where real AIS is unavailable, and
+  MarineCadastre covers US waters only, so a global demo cannot use it.
+- **Placement**: demo scenes can be put anywhere on the world ocean (12 presets
+  or any lat/lon). They are labelled `georeferencing: "demo_placement"` and are
+  not real Sentinel-1 coordinates.
 
-Two known model failures, documented in [`detection/README.md`](detection/README.md):
-ship detection is mediocre (F1 0.59 at instance level — a supporting cue, not
-evidence), and land is unreliable and should come from a coastline mask rather
-than the segmenter.
+### Measured
+
+Detection (synthetic, U-Net, 30 epochs): oil IoU **0.941**, mIoU **0.791**,
+look-alike **0.855**; false-alarm rate 5.3%. Ships at instance level:
+precision 0.56 / recall 0.62 / **F1 0.59** — a supporting cue, not evidence.
+
+Attribution over the full chain (8 scenarios, real drift ensemble in the loop):
+**Top-1 38%, Recall@3 88%, median rank 2**.
+
+### Known weaknesses
+
+- Ship detection is mediocre; needs a small-object head to improve further.
+- Land is unreliable and should come from a GSHHG/OSM coastline mask, not the
+  segmenter.
+- `track_match` is weak under analytic forcing, because the back-tracked path is
+  displaced from the truth. Real currents should improve it materially.
+- Attribution is **correlation, not proof**. It ranks who *could* have done it
+  and says why.
 
 ## Next
 
-1. Get the Zenodo dataset, retrain, replace every number above.
-2. Module 2 (drift) with OpenDrift — unblocks the origin heatmap and timeline.
-3. Module 3 (attribution) — unblocks AIS tracks and the suspect table.
+1. Zenodo dataset → retrain → replace every detection number.
+2. `copernicusmarine login` → real currents → re-measure attribution.
+3. Ship small-object head; coastline mask for land.
