@@ -113,13 +113,49 @@ class DeepLabV3Plus(nn.Module):
         return out["out"] if isinstance(out, dict) else out
 
 
+class DeepLabMobileNet(nn.Module):
+    """DeepLabv3 on a MobileNetV3-Large backbone -- the light-weight comparator.
+
+    Included so the U-Net can be benchmarked against a MobileNet-class model on
+    identical data and metrics, rather than the choice being argued. Roughly a
+    third the parameters of the ResNet50 variant and markedly faster per epoch.
+    """
+
+    def __init__(self, n_classes: int = NUM_CLASSES, pretrained: bool = True):
+        super().__init__()
+        from torchvision.models.segmentation import deeplabv3_mobilenet_v3_large
+
+        self.net = deeplabv3_mobilenet_v3_large(
+            weights="DEFAULT" if pretrained else None, aux_loss=True)
+
+        # Same 1-channel adaptation as the ResNet variant: sum the pretrained
+        # RGB stem across input channels rather than reinitialising it.
+        stem = self.net.backbone["0"][0]
+        new = nn.Conv2d(1, stem.out_channels, stem.kernel_size,
+                        stem.stride, stem.padding, bias=False)
+        with torch.no_grad():
+            new.weight.copy_(stem.weight.sum(dim=1, keepdim=True))
+        self.net.backbone["0"][0] = new
+
+        self.net.classifier[-1] = nn.Conv2d(256, n_classes, 1)
+        if self.net.aux_classifier is not None:
+            self.net.aux_classifier[-1] = nn.Conv2d(10, n_classes, 1)
+
+    def forward(self, x):
+        out = self.net(x)
+        return out["out"] if isinstance(out, dict) else out
+
+
 def build_model(arch: str = "unet", n_classes: int = NUM_CLASSES, **kw) -> nn.Module:
     arch = arch.lower()
     if arch == "unet":
         return UNet(n_classes=n_classes, **kw)
     if arch in ("deeplabv3+", "deeplabv3plus", "deeplab"):
         return DeepLabV3Plus(n_classes=n_classes, **kw)
-    raise ValueError(f"unknown arch {arch!r}; use 'unet' or 'deeplabv3+'")
+    if arch in ("mobilenet", "deeplab_mobilenet", "deeplabv3_mobilenet"):
+        return DeepLabMobileNet(n_classes=n_classes, **kw)
+    raise ValueError(
+        f"unknown arch {arch!r}; use 'unet', 'deeplabv3+' or 'mobilenet'")
 
 
 def count_parameters(model: nn.Module) -> int:

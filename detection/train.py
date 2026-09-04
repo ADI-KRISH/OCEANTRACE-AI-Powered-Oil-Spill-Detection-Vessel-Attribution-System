@@ -68,7 +68,8 @@ def run_epoch(model, loader, criterion, optimiser, device, scaler=None, train=Tr
 def main():
     ap = argparse.ArgumentParser(description=__doc__,
                                  formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("--arch", default="unet", choices=["unet", "deeplabv3+"])
+    ap.add_argument("--arch", default="unet",
+                    choices=["unet", "deeplabv3+", "mobilenet"])
     ap.add_argument("--epochs", type=int, default=30)
     ap.add_argument("--batch-size", type=int, default=8)
     ap.add_argument("--lr", type=float, default=3e-4)

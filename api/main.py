@@ -114,14 +114,24 @@ def modules():
                      "No checkpoint. Run: python -m detection.train --synthetic"),
         },
         "drift": {
-            "available": False, "name": "Drift hindcast / forecast",
-            "note": "Not built. Planned: OpenDrift (OpenOil) + CMEMS/ERA5 forcing.",
+            "available": True, "name": "Drift hindcast / forecast",
+            "note": _drift_note(),
         },
         "attribution": {
-            "available": False, "name": "AIS vessel attribution",
-            "note": "Not built. Planned: AIS correlation + explainable scoring.",
+            "available": True, "name": "AIS vessel attribution",
+            "note": ("Transparent weighted scoring with plain-language evidence. "
+                     "AIS is SYNTHETIC for the region, as the problem statement "
+                     "permits where real AIS is unavailable."),
         },
     }
+
+
+def _drift_note():
+    from drift.forcing import CMEMSForcing
+    if CMEMSForcing.logged_in():
+        return "Backward ensemble with Copernicus Marine currents."
+    return ("Backward ensemble with ANALYTIC forcing — not a met-ocean model. "
+            "Run `copernicusmarine login` for real CMEMS currents.")
 
 
 @app.get("/api/health")
@@ -256,16 +266,106 @@ def scene_truth(scene_id: str):
 # Not yet built -- explicit 501s rather than fabricated data
 # ---------------------------------------------------------------------------
 
+class PipelineRequest(BaseModel):
+    """One click: detect -> hindcast -> attribute."""
+    demo_seed: Optional[int] = None
+    size: int = 512
+    region: Optional[str] = None
+    lat: Optional[float] = None
+    lon: Optional[float] = None
+    pixel_size_m: float = DEMO_PIXEL_SIZE_M
+    slick_id: int = 1
+    forcing: str = "auto"          # auto | analytic | cmems
+    n_particles: int = 600
+    forecast_hours: float = 24.0
+    n_vessels: int = 220
+    radius_km: float = 25.0
+    top_n: int = 10
+
+
+@app.post("/api/pipeline/run")
+def pipeline_run(req: PipelineRequest):
+    """Run the whole chain and return every layer the map needs.
+
+    Detection is real. Drift is a real backward ensemble. Attribution is real
+    scoring over SYNTHETIC AIS generated for the scene's own location -- the
+    problem statement allows synthetic AIS where real data is unavailable, and
+    MarineCadastre covers US waters only, so a global demo cannot use it.
+    """
+    import numpy as np
+
+    from attribution.pipeline import attribute
+    from attribution.simulate import synth_ais_day
+    from drift.forcing import get_forcing
+    from drift.hindcast import forecast, hindcast_origin
+
+    # --- 1. detection ---------------------------------------------------
+    det = detect_endpoint(DetectRequest(
+        demo_seed=req.demo_seed, size=req.size, region=req.region,
+        lat=req.lat, lon=req.lon, pixel_size_m=req.pixel_size_m))
+    if not det["slicks"]:
+        return {"detection": det, "drift": None, "attribution": None,
+                "note": "No oil slick detected, so drift and attribution did not run."}
+
+    slick = next((s for s in det["slicks"] if s["id"] == req.slick_id),
+                 det["slicks"][0])
+    poly = slick.get("polygon_lonlat") or []
+    if len(poly) < 3:
+        raise HTTPException(422, "detected slick has no usable polygon")
+    slick_lat = np.array([p[1] for p in poly], dtype=float)
+    slick_lon = np.array([p[0] for p in poly], dtype=float)
+
+    # --- 2. drift hindcast ----------------------------------------------
+    # Detection time is synthetic; anchor it to "now" so the demo reads sensibly.
+    t_detect = float(time.time())
+    age_h = slick.get("age_estimate_h") or 6.0
+    rng_lo, rng_hi = (slick.get("age_range_h") or [age_h / 4, age_h * 4])[:2]
+
+    forcing = get_forcing(req.forcing, seed=abs(hash(det["scene_id"])) % 1000)
+    est = hindcast_origin(
+        slick_lat, slick_lon, t_detect, age_h=age_h,
+        age_range_h=(rng_lo, rng_hi), n_particles=req.n_particles,
+        forcing=forcing, slick_bearing_deg=slick.get("orientation_deg"))
+    fc = forecast(slick_lat, slick_lon, t_detect, hours=req.forecast_hours,
+                  forcing=forcing)
+
+    # --- 3. attribution --------------------------------------------------
+    cla, clo = est.centroid
+    ais = synth_ais_day(n_vessels=req.n_vessels, lat0=cla, lon0=clo,
+                        day_start=est.time_window[0] - 6 * 3600,
+                        seed=abs(hash(det["scene_id"])) % 1000)
+    result = attribute(ais, origin=est, radius_km=req.radius_km)
+
+    return {
+        "detection": det,
+        "slick_used": slick["id"],
+        "drift": {**est.to_dict(), "forecast": fc},
+        "attribution": {
+            **result.to_dict(req.top_n),
+            "ais_source": "synthetic (generated for this location)",
+        },
+    }
+
+
 @app.post("/api/drift/hindcast")
-def drift_hindcast():
-    raise HTTPException(501, "Module 2 (drift) is not built. Planned: OpenDrift "
-                             "OpenOil with CMEMS currents and ERA5 wind.")
+def drift_hindcast(payload: dict):
+    """Backward ensemble for an explicit slick polygon."""
+    import numpy as np
+    from drift.forcing import get_forcing
+    from drift.hindcast import hindcast_origin
 
-
-@app.post("/api/attribution/rank")
-def attribution_rank():
-    raise HTTPException(501, "Module 3 (attribution) is not built. It needs a "
-                             "drift origin estimate from Module 2 first.")
+    poly = payload.get("polygon_lonlat") or []
+    if len(poly) < 3:
+        raise HTTPException(422, "polygon_lonlat with >=3 points is required")
+    lat = np.array([p[1] for p in poly], float)
+    lon = np.array([p[0] for p in poly], float)
+    est = hindcast_origin(
+        lat, lon, float(payload.get("t_detect", time.time())),
+        age_h=float(payload.get("age_h", 6.0)),
+        age_range_h=tuple(payload["age_range_h"]) if payload.get("age_range_h") else None,
+        forcing=get_forcing(payload.get("forcing", "auto")),
+        slick_bearing_deg=payload.get("slick_bearing_deg"))
+    return est.to_dict()
 
 
 @app.get("/api/regions")
