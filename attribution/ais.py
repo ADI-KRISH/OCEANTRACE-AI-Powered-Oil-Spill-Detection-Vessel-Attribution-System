@@ -41,6 +41,19 @@ TELEPORT_KN = 60.0
 GAP_S = 900.0
 
 
+def _to_unix_seconds(ts: pd.Series) -> np.ndarray:
+    """tz-aware datetime Series -> float unix seconds.
+
+    Not ``ts.astype("int64") / 1e9``: pandas >= 2.2 stores datetimes at
+    whatever resolution it parsed (often ``datetime64[us]`` since pandas 3.0),
+    and ``astype("int64")`` returns a count in *that* unit, not nanoseconds --
+    dividing by 1e9 then silently understates every timestamp by 1000x (a
+    "one day" AIS file collapses to about 90 seconds of track). Normalising to
+    ``datetime64[ns]`` first fixes the unit regardless of what pandas chose.
+    """
+    return ts.dt.tz_convert(None).to_numpy("datetime64[ns]").astype("int64") / 1e9
+
+
 def _resolve_columns(df: pd.DataFrame) -> dict[str, str]:
     lower = {str(c).lower().replace("_", "").replace(" ", ""): c for c in df.columns}
     out = {}
@@ -69,14 +82,14 @@ def normalise(df: pd.DataFrame) -> pd.DataFrame:
     if pd.api.types.is_datetime64_any_dtype(raw_t):
         # Already datetimes -- localise naive values to UTC rather than assume.
         ts = raw_t if raw_t.dt.tz is not None else raw_t.dt.tz_localize("UTC")
-        out["t"] = ts.astype("int64").to_numpy() / 1e9
+        out["t"] = _to_unix_seconds(ts)
     elif pd.api.types.is_numeric_dtype(raw_t):
         # Already epoch -- guess the unit from magnitude (ms exports are common).
         vals = pd.to_numeric(raw_t, errors="coerce").to_numpy(dtype=float)
         out["t"] = np.where(vals > 1e11, vals / 1000.0, vals)
     else:
         ts = pd.to_datetime(raw_t, errors="coerce", utc=True, format="mixed")
-        out["t"] = ts.astype("int64").to_numpy() / 1e9
+        out["t"] = _to_unix_seconds(ts)
 
     for c in ("lat", "lon", "sog", "cog", "heading", "length", "width", "draft"):
         out[c] = pd.to_numeric(df[cols[c]], errors="coerce") if c in cols else np.nan
@@ -261,8 +274,12 @@ def build_tracks(df: pd.DataFrame) -> dict[int, Track]:
         g = g.sort_values("t")
         name = ""
         if "name" in g:
+            # pandas' native "str" dtype (default since 3.0) represents a missing
+            # value as a bare float NaN even after `.astype(str)` -- it does not
+            # become the string "nan" the way object-dtype columns used to, so
+            # `.lower()` on it raises. Filter those out with isinstance first.
             names = [n for n in g.name.astype(str).unique()
-                     if n and n.lower() not in ("nan", "none", "")]
+                     if isinstance(n, str) and n and n.lower() not in ("nan", "none", "")]
             if names:
                 name = names[0]
         tracks[int(mmsi)] = Track(

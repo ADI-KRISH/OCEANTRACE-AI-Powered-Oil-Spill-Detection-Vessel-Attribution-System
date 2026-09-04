@@ -128,8 +128,15 @@ def curate(
     out["date"] = (pd.to_datetime(df[c_date], errors="coerce")
                    if c_date else pd.NaT)
     out["year"] = out.date.dt.year
-    haystack = (out.name.str.lower() + " " +
-                (df[c_type].astype(str).str.lower() if c_type else ""))
+    # `.fillna("")` before concatenation, not after: pandas' native "str" dtype
+    # (default since 3.0) represents a missing `astype(str)` value as a bare
+    # float NaN rather than the string "nan", so `Series + Series` silently
+    # propagates NaN through the whole row instead of raising -- and the
+    # subsequent `.apply(lambda s: ... in s)` then crashes on a float, not a
+    # missing string, for every incident whose commodity/threat column was
+    # blank (the common case: 1,093 of 4,929 rows here have no `commodity`).
+    type_txt = df[c_type].astype(str).str.lower().fillna("") if c_type else ""
+    haystack = out.name.str.lower().fillna("") + " " + type_txt
 
     out["is_oil"] = haystack.apply(lambda s: any(h in s for h in OIL_HINTS))
     out["is_vessel"] = haystack.apply(lambda s: any(h in s for h in VESSEL_HINTS))

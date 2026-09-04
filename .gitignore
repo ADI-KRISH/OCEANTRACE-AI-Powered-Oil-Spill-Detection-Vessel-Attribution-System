@@ -3,6 +3,15 @@ __pycache__/
 .pytest_cache/
 data/**
 !data/README.md
+# Small validation artifacts (not the multi-GB raw AIS days) -- keep these as
+# evidence of what was actually run.
+!data/validation/
+!data/validation/*.md
+!data/validation/cerulean_cases.csv
+!data/validation/cerulean_results.csv
+!data/validation/demo_candidates.csv
+# Raw NOAA IncidentNews export -- large, and downloaded fresh (see data/README.md)
+incidents.csv
 detection/checkpoints/
 detection/outputs/
 *.pt

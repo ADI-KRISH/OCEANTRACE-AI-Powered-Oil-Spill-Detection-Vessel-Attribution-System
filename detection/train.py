@@ -58,7 +58,7 @@ def run_epoch(model, loader, criterion, optimiser, device, scaler=None, train=Tr
                     loss.backward()
                     optimiser.step()
 
-        total += float(loss) * imgs.size(0)
+        total += loss.item() * imgs.size(0)
         n += imgs.size(0)
         cm.update(logits.argmax(1), masks)
 

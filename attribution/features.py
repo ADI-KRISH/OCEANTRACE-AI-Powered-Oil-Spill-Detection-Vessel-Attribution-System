@@ -40,6 +40,17 @@ FEATURE_NAMES = [
     # priors
     "vtype_prior",
     "size_score",
+    # infrastructure discriminator -- appended, never inserted (see the note
+    # above: models are trained and served against this exact list)
+    "platform_score",
+    # drift-coupled: how closely the vessel followed the hindcast's
+    # back-tracked discharge path. Defaults to 0.0 (no signal) here; the
+    # pipeline overwrites it with the real match once a drift origin_track is
+    # available (see `pipeline.track_match_score`). It lives in FEATURE_NAMES,
+    # not bolted on after scoring, precisely so the scorer and the learned
+    # ranker actually see it -- it previously was computed and shown to the
+    # UI but never reached either scorer's weights.
+    "track_match",
 ]
 
 #: Proximity e-folding length (km). A vessel 5 km from the origin cloud scores
@@ -178,6 +189,48 @@ def size_score(length_m: float) -> float:
     return float(np.clip(np.log10(length_m / 10.0) / np.log10(40.0), 0.0, 1.0))
 
 
+#: Below this RMS spread (km) over the vessel's *entire* observed track, a
+#: broadcaster is considered geographically fixed rather than under way.
+PLATFORM_SPREAD_KM = 3.0
+
+
+def platform_score(track: Track) -> float:
+    """How much a broadcaster looks like a fixed installation, not a ship.
+
+    A real-data validation against SkyTruth Cerulean found offshore platforms
+    (spar/TLP production units, which broadcast AIS like any vessel) were a
+    recurring false suspect in the Gulf of Mexico: sitting exactly at a slick's
+    origin for the entire window, with an "elevated" vessel-type prior, they beat
+    every transiting ship on proximity and dwell alone. A vessel genuinely
+    responsible for a discharge was under way at some point in its track; a
+    platform never was.
+
+    Computed over the vessel's **whole observed track**, not just the origin
+    window -- a platform is stationary all the time, whereas a ship that
+    happened to loiter near the origin during the window (a real anomaly the
+    scorer should still reward) may have been under way earlier or later in the
+    same file. Conflating the two would blunt `loiter_score` for exactly the
+    boundary case it exists to catch.
+
+    Returns 1.0 for a broadcaster that neither moved nor made way, decaying to 0
+    as either its footprint or its speed grows.
+    """
+    if len(track) < 5:
+        return 0.0
+    clat, clon = float(np.mean(track.lat)), float(np.mean(track.lon))
+    spread_km = float(np.sqrt(np.mean(
+        haversine_km(track.lat, track.lon, clat, clon) ** 2)))
+    spatial = float(np.clip(1.0 - spread_km / PLATFORM_SPREAD_KM, 0.0, 1.0))
+
+    sog_all = track.sog[np.isfinite(track.sog)]
+    med_sog = float(np.median(sog_all)) if sog_all.size else np.nan
+    # No SOG reported at all is treated as consistent with stationary (many
+    # platform AIS units omit it), not as exculpatory by omission.
+    speed_gate = 1.0 if np.isnan(med_sog) else float(np.clip(1.0 - med_sog / 2.0, 0.0, 1.0))
+
+    return spatial * speed_gate
+
+
 # ---------------------------------------------------------------------------
 # Candidate filtering
 # ---------------------------------------------------------------------------
@@ -311,6 +364,9 @@ def extract_features(
         "cpa_sog_kn": float(sog_cpa) if np.isfinite(sog_cpa) else 6.0,
         "vtype_prior": vtype_prior(track.vtype),
         "size_score": size_score(track.length),
+        "platform_score": platform_score(track),
+        # Overwritten by the pipeline when a drift origin_track is supplied.
+        "track_match": 0.0,
     }
 
 

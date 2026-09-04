@@ -51,9 +51,23 @@ pipeline runs without live API access.
 
 ## 4. Validation incidents
 
-- NOAA IncidentNews: https://incidentnews.noaa.gov/raw/index
+- NOAA IncidentNews: https://incidentnews.noaa.gov/raw/index — save the export
+  as `incidents.csv` at the repo root, then:
+  ```bash
+  python -m validation.incidents --input incidents.csv \
+      --output data/validation/demo_candidates.csv
+  ```
+  Produces `data/validation/demo_candidates.csv` (committed: 1,320 oil+vessel
+  incidents with coordinates, 337 "priority" — named vessel, AIS era).
 - SkyTruth Cerulean (slicks with AIS-correlated sources):
   https://api.cerulean.skytruth.org
+  ```bash
+  python -m validation.cerulean_benchmark --build --n-cases 25 --max-days 12
+  python -m validation.cerulean_benchmark --run
+  ```
+  Produces `data/validation/cerulean_cases.csv`, `cerulean_results.csv` and
+  `CERULEAN_VALIDATION.md` (all committed — small; the multi-GB daily AIS files
+  it downloads into `data/validation/ais-*.csv` along the way are not).
 
 > Cerulean's ranker also consumes AIS, so agreement with it measures whether two
 > AIS-based methods concur — **not** whether either is correct. Report agreement,

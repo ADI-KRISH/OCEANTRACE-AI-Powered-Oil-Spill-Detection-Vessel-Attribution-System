@@ -31,7 +31,7 @@ Tests: `python -m pytest detection/tests drift/tests attribution/tests -q` (64)
 |---|---|---|---|
 | 1 | Detection & characterization | `/detection` | U-Net / DeepLabv3+ / MobileNet, 5-class SAR segmentation → slick polygons, orientation, area, age |
 | 2 | Drift hindcast / forecast | `/drift` | Backward ensemble → origin heatmap, discharge **track**, time window; forward forecast |
-| 3 | AIS vessel attribution | `/attribution` | Traffic filtering, 14 features + track matching, transparent scoring with evidence |
+| 3 | AIS vessel attribution | `/attribution` | Traffic filtering, 16 features (incl. track matching + a fixed-platform discriminator), transparent scoring with evidence |
 | 4 | API | `/api` | FastAPI; `/api/pipeline/run` does the whole chain in one call |
 | 5 | Frontend | `/frontend` | React + Leaflet; all layers, timeline scrubber, suspect table |
 
@@ -93,8 +93,9 @@ Detection (synthetic, U-Net, 30 epochs): oil IoU **0.941**, mIoU **0.791**,
 look-alike **0.855**; false-alarm rate 5.3%. Ships at instance level:
 precision 0.56 / recall 0.62 / **F1 0.59** — a supporting cue, not evidence.
 
-Attribution over the full chain (8 scenarios, real drift ensemble in the loop):
-**Top-1 38%, Recall@3 88%, median rank 2**.
+Attribution over the full chain (`python notebooks/eval_attribution.py --n 20`,
+real drift ensemble in the loop): **Top-1 45%, Recall@3 75%, MRR 0.63, median
+rank 2** (vs. 13.1 by chance), 20/20 scenarios usable.
 
 ### Validated on a real incident
 
@@ -121,8 +122,38 @@ case is an **easy** one: the vessel caught fire and stayed on scene, so it sits 
 the search radius throughout. An operational discharge from a transiting ship is
 substantially harder. One case is a demonstration, not a benchmark.
 
-`data/validation/demo_candidates.csv` holds **201 more** real US incidents with a
-named vessel in the Sentinel-1 era, ready to run the same way.
+`data/validation/demo_candidates.csv` holds **337 more** real US incidents with a
+named vessel in the AIS era (NOAA IncidentNews, curated by
+`validation/incidents.py`), ready to run the same way -- each needs its vessel
+name resolved to an MMSI (Equasis/MarineTraffic) before it can be added as a
+`validation.real_cases` case.
+
+### Broader real-data check: SkyTruth Cerulean
+
+A single documented incident is a demonstration, not a benchmark. Complementing
+it, `validation/cerulean_benchmark.py` compares this module's ranking to
+SkyTruth Cerulean's -- an independent system that also detects slicks from
+Sentinel-1 and correlates them against AIS -- across 25 real slicks over 10 days
+on the US shelf:
+
+```bash
+python -m validation.cerulean_benchmark --build --n-cases 25 --max-days 12
+python -m validation.cerulean_benchmark --run
+```
+
+| metric | value |
+|---|---|
+| Cerulean's #1 vessel present in our AIS feed | 62% |
+| agree@1 (given it's present) | 27% |
+| Cerulean's #1 in our top-3 | 27% |
+| our #1 within Cerulean's top-5 | 33% |
+
+Full numbers and reading notes in `data/validation/CERULEAN_VALIDATION.md`.
+Cerulean's ranker also consumes AIS, so this is agreement between two
+independent methods, not ground truth -- but AIS-feed coverage (whether the
+vessel Cerulean names is even in MarineCadastre) turning out to be the largest
+single limiter, ahead of scoring, is itself the useful finding: it says the next
+lever to pull is a global AIS feed, not more feature engineering.
 
 ### Known weaknesses
 
@@ -133,6 +164,49 @@ named vessel in the Sentinel-1 era, ready to run the same way.
   displaced from the truth. Real currents should improve it materially.
 - Attribution is **correlation, not proof**. It ranks who *could* have done it
   and says why.
+- Real candidate pools near busy coastlines run into the hundreds (see the
+  Cerulean benchmark above), and `cerulean_benchmark.py` currently hands
+  attribution a Gaussian cloud rather than a real `hindcast_origin()` track --
+  coupling the two is the next lever, ahead of more feature engineering.
+
+### Fixed this session
+
+- **`attribution/ais.py`** converted timestamps with `ts.astype("int64") / 1e9`,
+  which silently assumes nanosecond resolution. Since pandas 3.0, parsed
+  datetimes commonly come back as `datetime64[us]`, and `.astype("int64")` then
+  returns a *microsecond* count -- understating every timestamp 1000x and
+  collapsing a full day of AIS into ~90 seconds of track. This broke every
+  real-schema ingest, including the synthetic simulator's own output (it
+  round-trips through ISO strings): `make_scenario` returned `None` for every
+  seed, and 7/64 tests failed. A second pandas-3.0 issue in the same function --
+  `.astype(str)` on a missing value in pandas' native string dtype returns a
+  bare `float`, not `"nan"` -- crashed vessel-name dedup on any real AIS file
+  with a blank name. Both fixed; 64/64 tests pass; `validation/real_cases.py`
+  re-verified (still #1 of 19).
+- **`track_match`** was computed and shown to the UI but never reached either
+  scorer's weights -- it lived outside `FEATURE_NAMES`. Now part of the 16
+  features both scorers see.
+- **`platform_score`** (new) -- an exculpatory feature down-weighting
+  broadcasters whose entire track looks stationary, added after the Cerulean
+  benchmark below showed fixed offshore platforms winning on proximity alone.
+- **`validation/ais_download.py`** hit MarineCadastre's own server directly,
+  which reliably dropped connections partway through downloads this large; it
+  now defaults to the faster, reliable NOAA OCM Azure mirror and falls back to
+  MarineCadastre only if that fails.
+- **`validation/fetch_cerulean.py`** took the *first vertex* of a slick's
+  polygon as its location -- which can sit tens of km from the slick's actual
+  extent -- and crashed outright on the API's flat (`f=json`) response shape.
+  Now computes a real coordinate-mean centroid and handles both response shapes.
+- **`validation/incidents.py`** crashed building the vessel/oil keyword filter
+  whenever the `commodity` column was blank (1,093 of 4,929 rows) -- same
+  missing-value-as-`float` pandas 3.0 issue as above. Fixed; regenerated
+  `data/validation/demo_candidates.csv` (1,320 oil+vessel incidents, 337
+  priority) from the NOAA IncidentNews export.
+- Removed two stale, byte-for-byte duplicate `plan.md` / `PLAN (1).md` files
+  describing an unrelated earlier repo layout (a single `oilspill_attribution/`
+  package, not this repo's `/detection` `/drift` `/attribution` split) --
+  `README.md` plus `.claude/claude.md` and `.claude/build_phases.md` are the
+  current spec and plan.
 
 ## Next
 

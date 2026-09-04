@@ -284,6 +284,7 @@ def scene_truth(scene_id: str):
 class PipelineRequest(BaseModel):
     """One click: detect -> hindcast -> attribute."""
     demo_seed: Optional[int] = None
+    image_path: Optional[str] = None
     size: int = 512
     region: Optional[str] = None
     lat: Optional[float] = None
@@ -327,19 +328,24 @@ def pipeline_run(req: PipelineRequest):
         if scr is not None:
             from detection.data import synth_scene
             from detection.preprocess import preprocess_scene
-            if req.demo_seed is not None or not req.image_path:
-                _raw, _ = synth_scene(req.size, seed=4 if req.demo_seed is None
-                                      else req.demo_seed)
-            else:
+            # Same precedence as detect_endpoint below (image_path wins whenever
+            # it's set): the two used to disagree when both image_path and
+            # demo_seed were supplied together, screening a synthetic scene
+            # while detection segmented the real image passed alongside it.
+            if req.image_path:
                 from PIL import Image
                 _raw = np.array(Image.open(req.image_path).convert("L"),
                                 np.float32) / 255.0
+            else:
+                _raw, _ = synth_scene(req.size, seed=4 if req.demo_seed is None
+                                      else req.demo_seed)
             screen_out = scr.screen(preprocess_scene(_raw)).to_dict()
 
     # --- 1. detection ---------------------------------------------------
     det = detect_endpoint(DetectRequest(
-        demo_seed=req.demo_seed, size=req.size, region=req.region,
-        lat=req.lat, lon=req.lon, pixel_size_m=req.pixel_size_m))
+        demo_seed=req.demo_seed, image_path=req.image_path, size=req.size,
+        region=req.region, lat=req.lat, lon=req.lon,
+        pixel_size_m=req.pixel_size_m))
     if not det["slicks"]:
         return {"screening": screen_out, "detection": det,
                 "drift": None, "attribution": None,

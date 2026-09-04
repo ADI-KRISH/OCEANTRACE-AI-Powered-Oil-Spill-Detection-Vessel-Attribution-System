@@ -16,6 +16,7 @@ from __future__ import annotations
 
 import argparse
 import os
+import re
 import sys
 import time
 
@@ -44,10 +45,19 @@ def _get(url: str, params: dict, timeout: int = 60, retries: int = 3):
 
 
 def fetch_items(collection: str, bbox=None, datetime_range=None,
-                limit: int = 1000, max_items: int = 20000) -> pd.DataFrame:
-    """Page through an OGC Features collection into a flat DataFrame."""
+                limit: int = 1000, max_items: int = 20000,
+                extra_params: dict | None = None) -> pd.DataFrame:
+    """Page through an OGC Features collection into a flat DataFrame.
+
+    The API answers `f=json` with a **flat list** of already-merged property
+    dicts (geometry as a WKT string under `geometry`), not a GeoJSON
+    FeatureCollection -- despite `f=json` looking like it should behave like the
+    unparametrised endpoint, which does return `{"type": "FeatureCollection",
+    ...}`. `_extract_rows` accepts either shape so a change on either side does
+    not silently start dropping every row.
+    """
     url = f"{BASE}/{collection}/items"
-    params = {"limit": limit, "f": "json"}
+    params = {"limit": limit, "f": "json", **(extra_params or {})}
     if bbox:
         params["bbox"] = ",".join(str(b) for b in bbox)
     if datetime_range:
@@ -57,34 +67,88 @@ def fetch_items(collection: str, bbox=None, datetime_range=None,
     while len(rows) < max_items:
         params["offset"] = offset
         data = _get(url, params)
-        feats = data.get("features", [])
-        if not feats:
+        page = _extract_rows(data)
+        if not page:
             break
-        for f in feats:
-            rec = dict(f.get("properties", {}))
-            rec["id"] = f.get("id")
-            geom = f.get("geometry") or {}
-            rec["geometry_type"] = geom.get("type")
-            # Keep a representative point; the full polygon stays in the API.
-            coords = geom.get("coordinates")
-            pt = _first_point(coords)
-            if pt:
-                rec["lon"], rec["lat"] = pt
-            rows.append(rec)
+        rows.extend(page)
         print(f"  {collection}: {len(rows)} items", file=sys.stderr)
-        if len(feats) < limit:
+        if len(page) < limit:
             break
         offset += limit
     return pd.DataFrame(rows)
 
 
-def _first_point(coords):
-    """Descend a GeoJSON coordinate nest to its first (lon, lat) pair."""
-    while isinstance(coords, (list, tuple)) and coords:
-        if len(coords) >= 2 and all(isinstance(c, (int, float)) for c in coords[:2]):
-            return float(coords[0]), float(coords[1])
-        coords = coords[0]
-    return None
+def _extract_rows(data) -> list[dict]:
+    """Normalise either API response shape into a list of flat property dicts
+    with `lon`/`lat` added as the geometry's vertex centroid."""
+    if isinstance(data, list):
+        items = data
+        get_props = lambda item: item                     # noqa: E731
+        get_geom = lambda item: item.get("geometry")       # noqa: E731
+    else:
+        items = data.get("features", [])
+        get_props = lambda item: dict(item.get("properties", {}))  # noqa: E731
+        get_geom = lambda item: item.get("geometry")               # noqa: E731
+
+    out = []
+    for item in items:
+        rec = dict(get_props(item))
+        rec.setdefault("id", item.get("id") if isinstance(item, dict) else None)
+        geom = get_geom(item)
+        pt = _centroid_wkt(geom) if isinstance(geom, str) else _centroid_geojson(geom)
+        if pt:
+            rec["lon"], rec["lat"] = pt
+        out.append(rec)
+    return out
+
+
+def _centroid_geojson(geom):
+    """Mean (lon, lat) over every vertex in a nested GeoJSON coordinate array."""
+    if not isinstance(geom, dict):
+        return None
+    pts = []
+
+    def walk(node):
+        if (isinstance(node, (list, tuple)) and len(node) >= 2
+                and all(isinstance(c, (int, float)) for c in node[:2])):
+            pts.append((float(node[0]), float(node[1])))
+            return
+        if isinstance(node, (list, tuple)):
+            for child in node:
+                walk(child)
+
+    walk(geom.get("coordinates"))
+    if not pts:
+        return None
+    lons, lats = zip(*pts)
+    return sum(lons) / len(lons), sum(lats) / len(lats)
+
+
+_WKT_PAIR_RE = re.compile(r"(-?\d+\.?\d*)\s+(-?\d+\.?\d*)")
+
+
+def _centroid_wkt(wkt: str):
+    """Mean (lon, lat) over every coordinate pair in a WKT (MULTI)POLYGON/POINT
+    string, e.g. ``"SRID=4326;MULTIPOLYGON(((-88.85 30.33,...)))"``."""
+    if not wkt:
+        return None
+    body = wkt.split(";", 1)[-1]
+    pairs = _WKT_PAIR_RE.findall(body)
+    if not pairs:
+        return None
+    lons = [float(a) for a, _ in pairs]
+    lats = [float(b) for _, b in pairs]
+    return sum(lons) / len(lons), sum(lats) / len(lats)
+
+
+def fetch_sources_for_slick(slick_id: int, limit: int = 50) -> pd.DataFrame:
+    """Ranked sources for one slick -- the per-case call the benchmark needs."""
+    data = _get(f"{BASE}/{SOURCE_COLLECTION}/items", {"slick_id": int(slick_id),
+                                                       "limit": limit, "f": "json"})
+    df = pd.DataFrame(_extract_rows(data))
+    if not df.empty and "source_rank" in df:
+        df = df.sort_values("source_rank")
+    return df
 
 
 def main():

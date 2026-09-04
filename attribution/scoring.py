@@ -36,6 +36,8 @@ BASELINE_WEIGHTS = {
     "axis": 1.0,           # course parallel to the slick's long axis
     "vtype": 1.0,          # tanker/cargo prior
     "size": 0.4,           # slop capacity proxy
+    "platform": -2.2,      # exculpatory: reads as a fixed installation, not a ship
+    "track_match": 1.6,    # followed the hindcast's back-tracked discharge path
 }
 BASELINE_BIAS = -3.2
 
@@ -64,6 +66,8 @@ def _transform(f: pd.DataFrame) -> pd.DataFrame:
     t["axis"] = 2.0 * (f.course_align - 0.5)
     t["vtype"] = f.vtype_prior
     t["size"] = f.size_score
+    t["platform"] = f.platform_score
+    t["track_match"] = f.track_match
     return t
 
 
@@ -79,6 +83,10 @@ _EVIDENCE_TEXT = {
     "axis": "Course aligns with the slick's long axis",
     "vtype": "{vtype_label} -- elevated prior for oil discharge",
     "size": "Large vessel ({length:.0f} m)",
+    "platform": ("Near-stationary for the whole observed track (platform score "
+                "{platform_score:.2f}) -- reads as a moored vessel or fixed "
+                "installation, not a transiting discharger"),
+    "track_match": "Followed the hindcast's back-tracked discharge path ({track_match:.2f} match)",
 }
 
 
@@ -115,8 +123,17 @@ def _evidence_for(row, terms, contribs, top_k: int = 4) -> list[str]:
         "dark_pct": row.dark_frac * 100,
         "vtype_label": _vtype_label(row.vtype),
         "length": row.length if np.isfinite(row.length) else 0.0,
+        "platform_score": row.get("platform_score", 0.0),
+        "track_match": row.get("track_match", 0.0),
     }
     out = []
+    # The platform caveat is exculpatory, so its weighted contribution is
+    # negative and it would never surface via the "strongest positive
+    # contribution" loop below -- but it is exactly the note an analyst most
+    # needs before chasing a fixed installation as if it were a ship, so it is
+    # surfaced unconditionally on the underlying signal, not on its sign.
+    if ctx["platform_score"] >= 0.5:
+        out.append(_EVIDENCE_TEXT["platform"].format(**ctx))
     for name, contrib in order:
         if contrib < _EVIDENCE_MIN or len(out) >= top_k:
             continue
@@ -125,6 +142,8 @@ def _evidence_for(row, terms, contribs, top_k: int = 4) -> list[str]:
             continue
         if name == "size" and not np.isfinite(row.length):
             continue
+        if name == "platform":
+            continue          # already handled unconditionally, above
         try:
             out.append(_EVIDENCE_TEXT[name].format(**ctx))
         except (KeyError, ValueError):

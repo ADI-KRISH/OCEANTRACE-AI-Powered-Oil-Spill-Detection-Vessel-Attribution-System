@@ -1,0 +1,1321 @@
+name,lat,lon,date,year,is_oil,is_vessel,vessel_guess,ais_era,priority
+"F/V Resolution; Inverness, California",38.07105999999999,-122.97933,2026-08-21,2026,True,True,Resolution,True,True
+"Grounding of R/V Texas Lady; Port Orford, Oregon",42.75638888999998,-124.51666667,2026-01-14,2026,True,True,Texas Lady,True,True
+"F/V ARCTIC SEA Grounding; St. George Island, Alaska",56.60611111,-169.675,2026-01-05,2026,True,True,ARCTIC SEA Grounding,True,True
+"Tug MOLLUSK Sinking; Kingston Ferry Dock, Kingston, Washington",47.79390000000001,-122.4969,2025-11-06,2025,True,True,MOLLUSK,True,True
+"Grounded Fishing Vessel NORA; Indianola, Washington",47.74660499999999,-122.54500799999998,2025-10-30,2025,True,True,NORA,True,True
+"Fuel Oil Spill: M/V MSC VANCOUVER and Fuel Barge; Morgan's Point, Texas",29.681988999999987,-94.997546,2025-09-05,2025,True,True,MSC VANCOUVER,True,True
+"F/V SEA ERN Grounding; Kodiak Island, Alaska",58.15033333,-152.30516666999998,2025-09-02,2025,True,True,SEA ERN Grounding,True,True
+"Explosion aboard M/V W-SAPPHIRE; Baltimore, Maryland",39.22,-76.53,2025-08-19,2025,True,True,W-SAPPHIRE,True,True
+Tug SEA RANGER Sinking; Gulf of Alaska,58.41999999999999,-143.22,2025-08-02,2025,True,True,SEA RANGER,True,True
+"Grounding of F/V Happy Hooker; Pilot Point, Alaska",57.655,-157.71472222,2025-06-30,2025,True,True,Happy Hooker,True,True
+"Sinking FV CAPTAIN RALEIGH Discharging Diesel; Grays Harbor, Washington",46.9124612,-124.163208,2025-05-09,2025,True,True,CAPTAIN RALEIGH Discharging Diesel,True,True
+"M/V Maunalei Leaking Lubricant; Port of Alaska, Anchorage, Alaska",61.2344,-149.9004,2025-04-24,2025,True,True,Maunalei Leaking Lubricant,True,True
+"Diesel Leaking from F/V Eileen Rita outside Boston Harbor; Hull, Massachusetts",42.35306,-70.89196,2025-04-11,2025,True,True,Eileen Rita,True,True
+"Fuel Leak from Containership MSC Anisha R; Virginia Beach, Virginia",36.3281088490958,-74.21484321355818,2025-03-08,2025,True,True,MSC,True,True
+"Oily Water Leak from M/V Lady Angela; Boat Harbor, Seward, Alaska",60.119,-149.434,2025-02-27,2025,True,True,Lady Angela,True,True
+"FV JANE CAROLYNN Aground in Ocracoke Inlet, North Carolina",35.06769675501977,-76.02648915722966,2025-02-12,2025,True,True,JANE CAROLYNN Aground,True,True
+"M/V Dalma Marine Gas Oil Discharge; Beaumont, TX",30.071110000000004,-94.05691299999998,2024-12-18,2024,True,True,Dalma Marine Gas Oil,True,True
+"F/V Wind Walker Sinking; Hoonah, AK",58.17816667,-135.07022222,2024-12-05,2024,True,True,Wind Walker Sinking,True,True
+"M/V Dubai Green/Puerto Rico Energy; San Juan Harbor, Puerto Rico",18.46137337544144,-66.09731197357178,2024-11-30,2024,True,True,Dubai Green,True,True
+"Bulk Freighter M/V Tim S. Dool Aground; St Lawrence River, NY",44.92372222,-75.09555556,2024-11-26,2024,True,True,Tim S,True,True
+"Diesel Discharge from M/V Defiant; Baltimore Harbor, MD",39.14,-76.33,2024-09-27,2024,True,True,Defiant,True,True
+"F/V Pacific Bay; Willapa Bay, WA",46.71166667,-124.07333332999998,2024-09-25,2024,True,True,Pacific Bay,True,True
+"F/V Tarka II Fire; Neah Bay, WA",48.35516667000002,-124.792,2024-09-10,2024,True,True,Tarka II Fire,True,True
+"F/V THE JIG STRIKE Sunk; 100+ miles off San Diego, CA",32.466666669999995,-119.2,2024-08-31,2024,True,True,THE JIG STRIKE Sunk,True,True
+Tanker SOUNION Fire; Red Sea,14.275695888737545,42.308349609374986,2024-08-23,2024,True,True,SOUNION,True,True
+"BNSF Train and Tanker Truck Collision; Tacoma, WA",47.25999999999999,-122.435,2024-08-13,2024,True,True,BNSF,True,True
+"M/T TERRA NOVA Sinking and Oil Spill; Manila Bay, Philippines",14.601898900000007,120.64434799999998,2024-07-29,2024,True,True,TERRA NOVA Sinking,True,True
+"Sunken F/V TWO SS THREE LS; offshore Corpus Christi, TX",27.159333329999967,-97.13833333,2024-07-28,2024,True,True,TWO SS THREE LS,True,True
+"F/V All Star Grounding; St. Matthew Island, AK",60.55565,-173.08104,2024-07-25,2024,True,True,All Star Grounding,True,True
+"F/V Vicki Rae Sinking; Sand Point, AK",55.19800000000001,-160.409,2024-07-25,2024,True,True,Vicki Rae Sinking,True,True
+"Sunken F/V MISS COURTNEY KIM; SE of Sand Point, AK",55.26722222000001,-160.40444443999996,2024-06-18,2024,True,True,MISS COURTNEY KIM,True,True
+M/V Michipicoten Hull Fracture in Lake Superior,47.72999999999999,-89.54666667,2024-06-08,2024,True,True,Michipicoten Hull Fracture,True,True
+"M/V Norseman II Stuck in Ice; Bering Strait, Alaska",66.16666666999998,-167.71833333,2024-06-05,2024,True,True,Norseman II Stuck,True,True
+"Sheening M/V AURORA; Little Potato Slough, Stockton, CA",38.057333330000006,-121.501,2024-05-22,2024,True,True,AURORA,True,True
+"F/V Lil' Monster Sunk; Makah Bay, WA",48.26966666999999,-124.90669444,2024-04-19,2024,True,True,Lil' Monster Sunk,True,True
+"Disabled USCG Vessel; Dungeness Spit, WA",48.18358405025885,-123.09120177291337,2024-04-15,2024,True,True,USCG,True,True
+"Grounded F/V WESTERLY; Point Reyes, CA",37.99216667,-122.98088889,2024-03-28,2024,True,True,WESTERLY,True,True
+"NOAA Ship Thomas Jefferson; Norfolk, VA",36.85332799999999,-76.29874699999999,2024-03-22,2024,True,True,NOAA,True,True
+"M/V Oz Aground, Spieden Island, San Juan Islands, WA",48.64749999999998,-123.12944444,2024-01-17,2024,True,True,Oz Aground,True,True
+"Jet Fuel Spill from Tanker Truck at JFK Airport; New York, NY",40.640316981045146,-73.77950547728688,2023-12-08,2023,True,True,JFK,True,True
+"Cargo Vessel MV Bonnie G aground; St. Thomas, USVI",18.324833329999976,-64.97366667,2023-10-04,2023,True,True,Bonnie G,True,True
+"Tug MAZAPETA sunk; Little Potato Slough, Stockton, CA",38.05735469029853,-121.50097846984866,2023-09-26,2023,True,True,MAZAPETA,True,True
+"MV EDEN STAR Grounding; Bar Harbor, ME, USA",44.39762135321661,-68.22040558210573,2023-09-16,2023,True,True,EDEN STAR Grounding,True,True
+"UTV Candace Allision; Bolivar Peninsula, TX",29.58001,-94.25117,2022-12-15,2022,True,True,UTV,True,True
+"F/V Irene Alton Sinking; Saint George, ME, USA",43.88999999999999,-69.23583333,2022-11-02,2022,True,True,Irene Alton Sinking,True,True
+"Container Ship Leaking SHC Lubricating Oil En Route to Anchorage, AK",53.872330000000005,-137.6801,2022-08-05,2022,True,True,SHC,True,True
+"M/V LA7240FW Sinking; Buras, LA, USA",29.38639571377213,-89.59816861126454,2022-06-16,2022,True,True,LA7240FW Sinking,True,True
+"USCG Vessel Strikes Buoy, Resulting in Release of Marine Diesel, Saginaw Bay, MI",43.7569,-83.7621,2022-05-06,2022,True,True,USCG,True,True
+"FV Laura Aground; Chiniak Bay, Kodiak, AK",56.99582,-153.28493,2021-11-01,2021,True,True,Laura Aground,True,True
+"F/V Caressa Mae Ocracoke Inlet, NC; 3XFH+5M Ocracoke, NC, USA",35.07297221999998,-76.02086111,2021-10-21,2021,True,True,Caressa Mae Ocracoke Inlet,True,True
+"F/V BARBARA MARIA spill; Spud Point Marina, Bodega Bay, CA",38.32928523317341,-123.05727124214172,2021-09-15,2021,True,True,BARBARA MARIA,True,True
+"FV Northern Light Sinking; Hobart Bay, AK",57.42183,-133.390167,2021-08-26,2021,True,True,Northern Light Sinking,True,True
+"PC GODFATHER sinking; off Seal Beach, CA",33.724999999999994,-118.13877778,2021-07-15,2021,True,True,GODFATHER,True,True
+"SS CEDARVILLE, historical sunken vessel potentially sheening; Cheboygan County, MI, USA",45.78716667000003,-84.67066667,2021-07-15,2021,True,True,CEDARVILLE,True,True
+"M/V NYK DELPHINUS fire; Offshore Monterey Bay, CA",36.37666666999998,-122.9,2021-05-14,2021,True,True,NYK DELPHINUS,True,True
+M/V Toya Adrift; Offshore Texas,27.148333329999986,-94.57,2021-05-14,2021,True,True,Toya Adrift,True,True
+"MV TIRRANNA Vessel Grounding, Cape Charles, Virginia; Northampton County, VA, USA",37.13842453422676,-76.05010986328124,2021-04-27,2021,True,True,TIRRANNA Vessel Grounding,True,True
+"F/V Captain 72 Aground; Offshore Cameron Parish, LA",29.68052777999999,-92.88705556,2021-03-27,2021,True,True,Captain,True,True
+"F/V Aleutian Falcon; Tacoma, WA",47.28471999999999,-122.41151,2021-02-18,2021,True,True,Aleutian Falcon,True,True
+"F/V Terry F; Near Ocean Park, WA",46.58,-124.13,2021-02-13,2021,True,True,Terry F,True,True
+"F/V SUNUP grounded/sunk; Eureka, CA",40.75733333,-124.23083333,2021-01-25,2021,True,True,SUNUP,True,True
+"M/V MS. DEBBIE   MM 830 MS River; Caruthersville, MO 63830, USA",36.177447,-89.614592,2020-12-26,2020,True,True,DEBBIE 830,True,True
+"F/V Miss Lena, Sunk Offshore Texas; Gulf of Mexico",27.0299,-93.7709,2020-11-25,2020,True,True,Miss Lena,True,True
+"F/V Jimmy and Charlie Jr.; McIntosh County, GA, USA",31.32166666999997,-81.255,2020-11-10,2020,True,True,Jimmy,True,True
+"M/V WILD WAVE aground; Avalon, CA",33.35,-118.326667,2020-10-26,2020,True,True,WILD WAVE,True,True
+"F/V RELUCTANT aground; Port Frederick, AK",58.00299999999999,-135.62766667,2020-09-22,2020,True,True,RELUCTANT,True,True
+"MY NO FILTER Fire and Sinking; offshore Ocean City, MD, USA",38.05566088242077,-75.15678405761719,2020-08-21,2020,True,True,FILTER,True,True
+"Ferry Vessel ISLAND DUCHESS aground; Wellesley Island, NY, USA",44.37122221999999,-75.90627778,2020-08-20,2020,True,True,DUCHESS,True,True
+"HANTA YO Sinking; Uyak Bay, Kodiak Island, AK",57.66833,-154.21833,2020-08-08,2020,True,True,HANTA,True,True
+"SHADUBE II Aground; Heather Island, Columbia Bay, AK",60.95588000000001,-147.06275,2020-08-07,2020,True,True,SHADUBE II,True,True
+"M/V WAKASHIO; 1.5 NM off Pointe d’Esny, Mauritius",-20.43812,57.74463000000001,2020-08-06,2020,True,True,WAKASHIO,True,True
+"T/V Aquila Vegetable Oil Spill; Mississippi River, MM 98, LA",29.910166669999995,-90.09711111,2020-06-22,2020,True,True,Aquila Vegetable Oil Spill,True,True
+"M/V Old Hat; Little Irish Bayou, LA",30.17733333,-89.37116666999998,2020-06-01,2020,True,True,Old Hat,True,True
+"P/C GOING COASTAL sinking; off Carmel, CA",36.4367,-121.997,2020-04-30,2020,True,True,GOING COASTAL,True,True
+"Tug ALBERT/Barge MARGARET Grounding; Grosse Pointe Park, MI",42.35927000000004,-82.9061,2020-04-13,2020,True,True,ALBERT MARGARET,True,True
+"M/V HON JAMES L OBERSTAR Fueling Spill; 425 Banks Ave, Superior, WI 54880, USA",46.740200000000016,-92.0955,2020-03-16,2020,True,True,HON JAMES L OBERSTAR,True,True
+"F/V SCOMAS grounded; Bonita Cove, Marin County, CA",37.82412518586224,-122.50870134938336,2020-03-13,2020,True,True,SCOMAS,True,True
+"F/V KATHY Oil Discharge Lake Superior; Chassell, MI",46.98861111000002,-88.43638889,2020-03-02,2020,True,True,KATHY Oil Discharge Lake,True,True
+"MV MAYESEA  Sinking, Sandy Hook, NJ; Area F Rd, Highlands, NJ 07732, USA",40.444444439999984,-73.96583333,2020-02-22,2020,True,True,MAYESEA  Sinking,True,True
+"FV Scandies Rose sinking; Sutwik Island, Alaska",56.49171999999999,-157.0178,2020-01-01,2020,True,True,Scandies Rose,True,True
+"F/V MANDY JANE sunk; off San Francisco, CA",37.74000000000001,-122.72,2019-12-18,2019,True,True,MANDY JANE,True,True
+"M/V TECUMSEH Engine Room Fire; Windsor, ON, Canada",42.27719999999999,-83.1011,2019-12-15,2019,True,True,TECUMSEH Engine Room Fire,True,True
+F/V SEA ANGELS Grounding; Browns Inlet NC,34.59349937002793,-77.23123168805614,2019-12-09,2019,True,True,SEA ANGELS Grounding,True,True
+"Pleasure Craft MARCHELLE aground; West side of Catalina Island, CA",33.41900000000001,-118.488,2019-12-02,2019,True,True,MARCHELLE,True,True
+"Recreational vessel TUSSLER sunk; off La Jolla, CA",32.866699999999994,-117.62080000000002,2019-11-13,2019,True,True,TUSSLER,True,True
+F/V Miss Haley sunk; off Northern CA,38.44999999999999,-123.59999999999998,2019-11-10,2019,True,True,Miss Haley,True,True
+"FMT 3114 Barge MM 480 Mississippi River; Transylvania, LA , USA",32.73293000000001,-91.1009,2019-10-21,2019,True,True,FMT 3114,True,True
+"Sunken Fishing Vessel AMAK; Garibaldi, OR",45.5558909394839,-123.91240882978308,2019-10-14,2019,True,True,AMAK,True,True
+"M/V RT. HON. PAUL J. MARTIN Aground; Edwardsburgh/Cardinal, Canada",44.7721,-75.39904,2019-10-07,2019,True,True,HON PAUL MARTIN,True,True
+"Sunken Towing Vessel ITV ROY H.; Morris, IL",41.38499999999999,-88.3243,2019-10-01,2019,True,True,ITV ROY,True,True
+"Sunken F/V Chocolate Bayou; Chocolate Bayou TX 77577, USA",29.253055560000007,-95.23494444,2019-09-23,2019,True,True,Chocolate Bayou,True,True
+"Aground/Sunken Vessel T/V Rawhide; Northport, MI",45.12866,-85.60978,2019-08-27,2019,True,True,Rawhide,True,True
+"Grounded F/V Koko; Cape Disappointment, Ilwaco, Washington",46.28835917437081,-124.04817581176758,2019-08-02,2019,True,True,Koko,True,True
+"Sunken Vessel Crane Barge at ARTCO; Waggaman, LA",29.944666670000004,-90.22472222,2019-07-30,2019,True,True,ARTCO,True,True
+"MV Catalyst Grounding; Admiralty Island, Alaska",57.83616000000004,-134.29653,2019-07-25,2019,True,True,Catalyst Grounding,True,True
+"FV Alaganik Sinking; Whittier, AK",60.77832999999998,-148.66722,2019-07-08,2019,True,True,Alaganik Sinking,True,True
+"M/V Mary R, M/V Mary Fern, M/V Chattie Sue Smith; Mile Marker 21 IL River, Hardin, IL 62047, USA",39.153910999999965,-90.615505,2019-07-05,2019,True,True,Mary R,True,True
+"M/V OKALOOSA Allison with two barges; Gretna, LA 70053, USA",29.934133000000003,-90.058158,2019-07-01,2019,True,True,OKALOOSA Allison,True,True
+Towing Vessel KAYTLIN MARIE / M/V CENTURY QUEEN Collision; Lower Mississippi River,29.991698000000014,-90.411223,2019-06-08,2019,True,True,CENTURY QUEEN Collision,True,True
+"F/V Alina; Offshore Cameron Parish, LA,",29.44,-93.58849999999998,2019-06-06,2019,True,True,Alina,True,True
+"M/V SUN OF MAN 30 gallon diesel fuel discharge; Venice Marina, Pier 9",29.24030556000001,-89.36361110999998,2019-06-04,2019,True,True,SUN OF MAN,True,True
+"FV Masonic Grounding; Spanish Islands, Alaska",55.97027800000001,-134.123056,2019-05-07,2019,True,True,Masonic Grounding,True,True
+"M/V Never Say Never sunk; Off Ano Nuevo, CA",37.06999999999999,-122.37,2019-04-19,2019,True,True,Never Say Never,True,True
+"T/V Dejeanne Maria; Venice, LA 70091, USA",29.152500000000003,-89.245,2019-04-15,2019,True,True,Dejeanne Maria,True,True
+"Partially Submerged Recreational Vessel at JSBB Marina; Mandeville, LA",30.352999999999994,-90.051,2019-04-03,2019,True,True,JSBB,True,True
+"M/V St Clair Vessel Fire Maumee River; Toledo, OH",41.699087,-83.451108,2019-02-17,2019,True,True,St Clair Vessel Fire,True,True
+"T/V Ed McLaughlin Sinking Ohio River; Cheshire, OH",38.916055,-82.124537,2019-02-09,2019,True,True,Ed McLaughlin Sinking Ohio,True,True
+"FV Big John Vessel Grounding; Frisco, NC, USA",35.22469077857275,-75.63915252685547,2019-02-06,2019,True,True,Big John Vessel Grounding,True,True
+F/V JEANETTE; American Samoa,-14.566333330000006,-170.57516667,2018-12-06,2018,True,True,JEANETTE,True,True
+"F/V Aaron and Melissa II; 50 miles east of Rockland, ME",43.1,-68.36,2018-11-13,2018,True,True,Aaron,True,True
+"F/V San Diego Grounding; Approximately 7 miles NW of Key West, FL",24.38000000000001,-81.52999999999999,2018-10-02,2018,True,True,San Diego Grounding,True,True
+"F/V Captain M&M; Cameron, LA  USA",29.656389,-93.824167,2018-09-18,2018,True,True,Captain M,True,True
+"F/V Master D; 40 miles east of Port Isabel, Texas",26.131,-96.41333333,2018-08-31,2018,True,True,Master D,True,True
+"YP207 Vessel Sinking; Pautuxent River, Maryland, USA",38.30110000000002,-76.46108333,2018-08-31,2018,True,True,YP207,True,True
+"Barge CBR 2017; Port Arthur, TX USA",29.858333330000008,-93.94111111,2018-08-29,2018,True,True,CBR 2017,True,True
+"F/V HIT LIST Fire; 2 Ferry Wharf, Newburyport, MA, USA",42.81328473468014,-70.86919784545897,2018-08-24,2018,True,True,HIT LIST Fire,True,True
+"Grounded F/V Pacific Quest; Santa Cruz, CA",36.94824701579124,-122.06654575386602,2018-08-12,2018,True,True,Pacific Quest,True,True
+F/V BEACH RUNNER Sinking; United States,38.868055560000045,-74.71888889,2018-08-04,2018,True,True,BEACH RUNNER Sinking,True,True
+"Vessel MAKALII, Niihau, HI; North Shore of Niihau Island, HI",22.003619,-160.078663,2018-07-27,2018,True,True,MAKALII,True,True
+"F/V LEONA Sinking; Sitka, AK",56.968549999999965,-135.42411,2018-07-03,2018,True,True,LEONA Sinking,True,True
+"M/V American Spirit Grounding; Duluth, MN",46.779491237267,-92.09680080413816,2018-06-17,2018,True,True,American Spirit Grounding,True,True
+"M/V Seavoyager; Galveston, TX",29.07027778,-94.29277778,2018-06-09,2018,True,True,Seavoyager,True,True
+"M/V MAERSK WOLFSBURG Diesel Spill; 3301 columbus blvd philadelphia, PA",39.96,-75.06,2018-04-30,2018,True,True,MAERSK WOLFSBURG Diesel Spill,True,True
+"M/V Iver Exporter; Mississippi River MM 126, LA, USA",29.991866670000007,-90.41411389,2018-04-23,2018,True,True,Iver Exporter,True,True
+"Tug ROBIN LYNN; Ridgeway St, St Clair Shores, MI 48080, USA",42.465133330000015,-82.87519999999999,2018-01-29,2018,True,True,ROBIN LYNN,True,True
+F/V Amvina II; Offshore Cameron Parish,29.358499999999964,-92.63783333000002,2018-01-19,2018,True,True,Amvina II,True,True
+"M/V Pacific Huron Grounding Saint Lawrence Seaway; 42176 Twin Islands, Clayton, NY 13624, USA",44.27593611,-76.03008333,2017-12-28,2017,True,True,Pacific Huron Grounding Saint,True,True
+"F/V Crystal Star sunk; Santa Catalina Island, CA, USA",33.3066269573,-118.449341211,2017-11-29,2017,True,True,Crystal Star,True,True
+F/V Ben & Casey Sunken Vessel; South Padre Island,26.115222219999996,-97.07727778,2017-10-31,2017,True,True,Ben,True,True
+"F/V Saint Paul Grounding; Moses Lake, Texas City, TX 77590, USA",29.45719167,-94.93031389,2017-10-25,2017,True,True,Saint Paul Grounding,True,True
+"Tug CALEB; Half Moon Bay, CA 94019, USA",37.4976844234,-122.478184289,2017-10-25,2017,True,True,CALEB,True,True
+"Crane Barge TOPS DB1 T.O.W. Allision; West Cameron Block 198A, LA",29.24251667,-93.24115,2017-10-22,2017,True,True,TOPS DB1,True,True
+"F/V Pacific Paradise, Honolulu, HI; 1001 Kalakaua Ave, Honolulu, HI 96815, USA",21.2615,-157.82483333,2017-10-11,2017,True,True,Pacific Paradise,True,True
+"T/V Savage Intensity; GIWW MM 245, Sulphur, LA 70665, USA",30.05933333,-93.36866667,2017-09-05,2017,True,True,Savage Intensity,True,True
+"Sunken Vessel POINT HARRIS; 30 nm east of Kaneohe Bay, Oahu, HI 96770, USA",21.370000000000005,-157.19,2017-08-25,2017,True,True,POINT HARRIS,True,True
+"M/V Gracie Claire; Cypress Cove Area, Venice, LA 70091, USA",29.25111111,-89.35805556,2017-08-23,2017,True,True,Gracie Claire,True,True
+"M/V Calumet Aground St. Marys River, MI; Ferry Dock, Sault Ste. Marie, MI 49783, USA",46.48888889,-84.30166667,2017-08-10,2017,True,True,Calumet Aground St,True,True
+"FV Whimsea Fire and Sinking; Juneau, AK",58.383116,-134.647766,2017-06-28,2017,True,True,Whimsea Fire,True,True
+"F/V Lady Demaries Sinking, Offshore of Galveston; Gulf of Mexico",28.878333329999972,-94.4525,2017-06-22,2017,True,True,Lady Demaries Sinking,True,True
+"FV Taku Sinking; Sutwik Island, AK",56.51666666999998,-157.155,2017-06-10,2017,True,True,Taku Sinking,True,True
+"Crowley Barge DBL 165-1 Grounding; Quinhagak, AK",59.750133000000034,-161.929302,2017-05-15,2017,True,True,DBL 165,True,True
+"F/V Heidi II; Breton Sound LA, USA",29.6455,-89.33933333000002,2017-05-04,2017,True,True,Heidi II,True,True
+"F/V David Boy, Atchafalaya Basin LA; Point Au Fer Island,  LA",29.33933333,-91.41,2017-05-02,2017,True,True,David Boy,True,True
+M/V Maersk Garonne; 11 miles south Mobile Bay Gulf of Mexico,30.06055556,-88.16833333,2017-04-27,2017,True,True,Maersk Garonne,True,True
+"M/V Todd Brown; MM 940 Mississippi River (near Columbus, KY)",36.8,-89.13,2017-04-17,2017,True,True,Todd Brown,True,True
+"F/V Bendora Aground; near Grand Terre, LA",29.28666667,-89.90955556,2017-04-10,2017,True,True,Bendora Aground,True,True
+"OSV Miss Lynda Aground, Calcasieu West Jetty; Cameron, LA",29.76,-93.35,2017-03-08,2017,True,True,OSV,True,True
+"F/V Destination; St. George Island, Alaska",56.69,-169.70416,2017-02-11,2017,True,True,Destination,True,True
+"F/V Karrissa Jo; 24 Water St, Lubec, ME 04652, USA",44.8617095296,-66.9807243347,2017-01-10,2017,True,True,Karrissa Jo,True,True
+"M/V Desert Hope Fuel Discharge; 13201 Patterson Rd, New Orleans, LA 70131, USA",29.8925,-89.90861111,2017-01-06,2017,True,True,Desert Hope Fuel Discharge,True,True
+M/V Olympic; Apple Tree Cove,47.79,-122.48999999999998,2016-12-10,2016,True,True,Olympic,True,True
+"F/V Exito; Unalaska, Alaska",54.07833332999999,-166.33983333,2016-12-07,2016,True,True,Exito,True,True
+"Barge DBL 185; Off Port Orford, OR",43.105666670000005,-125.66816667000002,2016-11-22,2016,True,True,DBL 185,True,True
+"F/V CAPT Jeff; 12 Saltmarsh Rd, Fairhaven, MA 02719, USA",41.5599767726,-70.8769226074,2016-11-20,2016,True,True,CAPT Jeff,True,True
+"M/V Nenita, Columbia River, WA; Columbia River Mile 30, WA",46.26733332999999,-123.51566667,2016-11-19,2016,True,True,Nenita,True,True
+"F/V Blue Ocean; 75 Eastern Point Blvd, Gloucester, MA 01930, USA",42.592521637,-70.662689209,2016-11-15,2016,True,True,Blue Ocean,True,True
+"T/V Newlead Granadino; Monkton, MD 21111, USA",39.22666,-76.5459,2016-11-07,2016,True,True,Newlead Granadino,True,True
+"F/V Pacific Rim; Westport, WA 98595, USA",46.90183332999999,-124.09066667,2016-10-24,2016,True,True,Pacific Rim,True,True
+"T/V Challenger Pegasus; Annapolis, Md",38.94083333,-76.4085,2016-09-23,2016,True,True,Challenger Pegasus,True,True
+"F/V Trinity; Copalis Beach, WA",47.12,-124.19,2016-09-08,2016,True,True,Trinity,True,True
+"T/V Aframax River; Harris County, TX, USA",29.75,-95.096667,2016-09-06,2016,True,True,Aframax River,True,True
+"F/V Lady Lillian, Westport, WA; Westport, WA",46.90235,-124.1019056,2016-09-05,2016,True,True,Lady Lillian,True,True
+"UTV Zeus and anhydrous ammonia barge Upper MS River; Hampton Township, IL, USA",41.55057,-90.42941,2016-09-04,2016,True,True,UTV,True,True
+"M/V Fog Cutter; Grand Gosier, LA",29.6271667,-89.109,2016-08-29,2016,True,True,Fog Cutter,True,True
+"Grounded F/V Ila; Grays Harbor, WA",46.88999999999999,-124.12366667,2016-08-20,2016,True,True,Ila,True,True
+F/V Lydia & Maya; Downeast Maine,43.583333330000016,-68.0,2016-08-17,2016,True,True,Lydia,True,True
+"F/V Mickey Sue; Tillamook Bay, OR",45.55,-123.928166667,2016-07-12,2016,True,True,Mickey Sue,True,True
+"F/V Captain Kevin; Sabine Pass, TX",29.6480555556,-93.8277777778,2016-07-11,2016,True,True,Captain Kevin,True,True
+"F/V Michelle Dawn; 1.5 miles SSW Mexico Beach, FL",29.92929,-85.43607,2016-06-14,2016,True,True,Michelle Dawn,True,True
+"F/V WU WU; Cape May, NJ",38.93,-74.99,2016-06-01,2016,True,True,WU WU,True,True
+"M/V Roger Blough; Lake Superior, Michigan",46.5116666667,-84.6166666667,2016-05-27,2016,True,True,Roger Blough,True,True
+"F/V JAMIE MARIE; Ocean Shores, WA",46.9361166667,-124.1753,2016-05-23,2016,True,True,JAMIE MARIE,True,True
+"M/V ULTRA LASCAR; Outside San Francisco Bay, CA",37.6695,-122.5745,2016-05-20,2016,True,True,ULTRA LASCAR,True,True
+"M/V Shelf Venture; Baptiste Collette, LA",29.3476166667,-89.3036333333,2016-04-27,2016,True,True,Shelf Venture,True,True
+"Sunken Barge EMS 319; MM 92.5, Mississippi River, New Orleans",29.9530555556,-90.0280555556,2016-04-20,2016,True,True,EMS 319,True,True
+"F/V No. 1 JI HYUN; Aunuu Island, American Samoa",-14.29,-170.56,2016-04-15,2016,True,True,HYUN,True,True
+"F/V PRIVATEER; Ocean Shores, WA",46.933895,-124.17639,2016-04-15,2016,True,True,PRIVATEER,True,True
+"F/V Volga; Resurrection Bay, Alaska",59.9304444444,-149.322833333,2016-04-04,2016,True,True,Volga,True,True
+F/V LONGSHOT; Long Island Sound,41.155,-71.9535,2016-03-20,2016,True,True,LONGSHOT,True,True
+"F/V BERGEN; Bellingham, WA",48.760348,-122.513541,2016-03-10,2016,True,True,BERGEN,True,True
+F/V Ruby D; Ft Meyers. FL (offshore),26.45,-83.04,2016-03-07,2016,True,True,Ruby D,True,True
+"M/V West Cameron; 238 miles south of Pensacola, FL GOM",26.395,-87.3483333333,2016-02-20,2016,True,True,West Cameron,True,True
+"M/V Serena III; Fort Lauderdale, FL",26.1666666667,-79.8583333333,2016-01-25,2016,True,True,Serena III,True,True
+"F/V Yankee; Neva Strait, Sitka, Alaska",57.2925,-135.614166667,2016-01-13,2016,True,True,Yankee,True,True
+"M/V William Strait; MM 727 Mississippi River near Memphis, TN ",35.09723,-90.17928,2015-12-14,2015,True,True,William Strait,True,True
+"M/V Teal;   3 MN east of Cape Hatteras, NC",35.21,-75.45,2015-11-05,2015,True,True,Teal,True,True
+"M/V Endeavour; St Lucie Inlet, Stuart, FL",27.2116666667,-80.2166666667,2015-10-27,2015,True,True,Endeavour,True,True
+"M/V Global Gold; Astoria, OR",46.18956,-123.36013,2015-10-02,2015,True,True,Global Gold,True,True
+"Dredge Vessel ILLINOIS; Sea Isle, NJ",39.1594444444,-74.6325,2015-08-31,2015,True,True,ILLINOIS,True,True
+"F/V Richie Rich; Offshore Point Au Fer Island, LA",29.25,-91.5333333333,2015-08-31,2015,True,True,Richie Rich,True,True
+"MV Challenger/Barge; Nushagak River, Alaska",59.2616666667,-157.652166667,2015-08-10,2015,True,True,Challenger,True,True
+"M/V Sharon; Dauphin Island, AL",30.2248333333,-88.3153333333,2015-06-30,2015,True,True,Sharon,True,True
+"F/V Robert C; Martha's Vineyard, MA",41.3681666667,-70.798,2015-06-15,2015,True,True,Robert C,True,True
+"M/V Gorham; Bromley, Kentucky",39.07956,-84.57061,2015-06-04,2015,True,True,Gorham,True,True
+M/V ALGOMA SPIRIT; St. Lawrence River,44.99861,-74.72159,2015-05-17,2015,True,True,ALGOMA SPIRIT,True,True
+"M/V Aubi; Punta Tuna, Arecibo, Puerto Rico",18.4913888889,-67.9788888889,2015-05-15,2015,True,True,Aubi,True,True
+"M/V Rio de Janiero Express; Oakland, CA",37.815,-122.316666667,2015-05-08,2015,True,True,Rio,True,True
+"F/V Sea Beast; Off Olympic Coast, WA",47.775,-124.92,2015-05-03,2015,True,True,Sea Beast,True,True
+"M/V Mississagi; St. Mary's River, MI",46.0546666667,-83.835,2015-04-22,2015,True,True,Mississagi,True,True
+"F/V Northern Pride; Swikshak Bay, Alaska",58.77585,-151.277416667,2015-04-21,2015,True,True,Northern Pride,True,True
+"F/V COSAIR; Off Grays Harbor, WA",47.0701666667,-124.8475,2015-04-18,2015,True,True,COSAIR,True,True
+"Allision at MM 160 LMR; Lower Mississippi River, LA",30.0422333333,-90.8412472222,2015-04-06,2015,True,True,LMR,True,True
+"RADARSAT  2 Anomaly; 300 miles off Galveston, Tx",25.4333333333,-90.8833333333,2015-03-31,2015,True,True,RADARSAT 2,True,True
+"F/V NELLIE M.; La Push, WA",47.9065,-124.637333333,2015-03-26,2015,True,True,NELLIE M,True,True
+M/V Grey Shark; NY Harbor,40.02,-72.05,2015-03-17,2015,True,True,Grey Shark,True,True
+"F/V Tonto III aground; Wadleigh Island, AK",55.5707833333,-133.131016667,2015-03-16,2015,True,True,Tonto III,True,True
+"FV Savannah Ray Grounding; Kodiak, Alaska",57.7574444444,-152.283661111,2015-02-16,2015,True,True,Savannah Ray Grounding,True,True
+"F/V AC3 ; ~4 miles SW of Indian Pass, FL",29.6344,-85.300083,2015-02-04,2015,True,True,AC3,True,True
+"TUG NALANI; Off Barbers Point, HI",21.3083333333,-158.156666667,2015-01-22,2015,True,True,NALANI,True,True
+"M/V Bella; Lake Pontchartrain, LA",30.1523055556,-89.7732777778,2014-12-30,2014,True,True,Bella,True,True
+"MV GB Corrado; Matagorda Shipping Channel, TX",28.3818166667,-96.30965,2014-12-28,2014,True,True,GB Corrado,True,True
+"Sunken ""LADY A""; Off Dungeness Spit, WA",48.2023166667,-123.080233333,2014-10-17,2014,True,True,LADY,True,True
+"Vessel AVALON; Hood Canal, WA",47.66,-122.91,2014-09-14,2014,True,True,AVALON,True,True
+"M/V PAUL RUSS; Tanapag Harbor, Saipan",15.2266666667,145.706666667,2014-09-08,2014,True,True,PAUL RUSS,True,True
+"M/V Simple; Watch Hill, CT",41.2896333333,-71.8598833333,2014-08-29,2014,True,True,Simple,True,True
+"F/V Captain LE; 9 nm Offshore, Petit Bois Island, AL",30.0483333333,-88.5183333333,2014-08-24,2014,True,True,Captain LE,True,True
+F/V LADY GERTRUDE Sinking; New Jersey,40.06977778000001,-73.28061111,2014-08-16,2014,True,True,LADY GERTRUDE Sinking,True,True
+"F/V TAKE MARU grounded; Cocos Island, Guam",13.0,144.16,2014-07-30,2014,True,True,TAKE MARU,True,True
+"NOAA Ship Oscar Elton Sette; Maug Island, CNMI",20.0166666667,-145.216666667,2014-06-28,2014,True,True,NOAA,True,True
+"F/V Terry Lee; Jones Beach SP, NY",40.5791666667,-73.5611111111,2014-06-27,2014,True,True,Terry Lee,True,True
+"Sunken barge NASH; Off Point Conception, CA",34.46,-120.533333333,2014-06-08,2014,True,True,NASH,True,True
+"F/V Devon; Dillingham, AK",59.0306666667,-158.1945,2014-05-14,2014,True,True,Devon,True,True
+"NOAA SHIP HI'IALAKAI; Maug Islands, CNMI",20.0205555556,145.221111111,2014-05-02,2014,True,True,NOAA HI'IALAKAI,True,True
+"M/V Sealion; Boca Raton, FL",26.33735,-79.9989333333,2014-02-23,2014,True,True,Sealion,True,True
+"Barge E2MS 303; Mile Marker 154, Lower Mississippi River",30.0125,-90.7883333333,2014-02-22,2014,True,True,E2MS 303,True,True
+"F/V Lauren Dorothy II; Oregon Inlet, NC",36.25,-74.44,2014-02-15,2014,True,True,Lauren Dorothy II,True,True
+"F/V DAIKI  MARU 7 grounding; Apra Harbor, Guam",13.45,144.616666667,2014-02-13,2014,True,True,DAIKI  MARU,True,True
+M/V Commander; Gallows Bay St Croix USVI,17.7666666667,-64.6966666667,2014-02-01,2014,True,True,Commander,True,True
+"M/V PING DA 7 Grounding; Pohnpei, Federated States of Micronesia",5.29,-197.05,2013-12-16,2013,True,True,PING DA,True,True
+"F/V Nat; Newport, OR",44.612047,-124.070536,2013-12-15,2013,True,True,Nat,True,True
+"M/V Sun Right; 40 nm NW of Akutan Island, AK",54.637287,-167.209167,2013-12-10,2013,True,True,Sun Right,True,True
+"M/V CSL Niagara; Lk Erie, approach to Sandusky Bay, OH",41.5043333333,-82.6683333333,2013-11-18,2013,True,True,CSL Niagara,True,True
+"M/V Windmere; Pt, Judith, RI",41.3555,-71.4848333333,2013-11-14,2013,True,True,Windmere,True,True
+"F/V Alaska Mist; IVO Amak Isl Aleutian Isls, AK",55.39,-163.14,2013-11-09,2013,True,True,Alaska Mist,True,True
+"F/V Cheyenne; 32 miles WSW of Naples, FL",25.955,-82.29,2013-11-04,2013,True,True,Cheyenne,True,True
+"F/V Arctic Hunter; Unalaska Bay, Dutch Harbor, Alaska",53.9338333333,-166.4405,2013-11-02,2013,True,True,Arctic Hunter,True,True
+"F/V Terra Nova; Rockport, MA",42.6883333333,-70.5166666667,2013-10-26,2013,True,True,Terra Nova,True,True
+"T/V Christine Alexis; Mississippi River MM98 (New Orleans, LA)",29.9168333333,-90.0858333333,2013-10-22,2013,True,True,Christine Alexis,True,True
+"F/V IL SIN HO; Tinian Island, CNMI",14.96469,145.62436,2013-09-13,2013,True,True,IL SIN HO,True,True
+"F/V ANDRIANNA aground; Outside Grays Harbor, WA",46.9013888889,-124.134444444,2013-09-06,2013,True,True,ANDRIANNA,True,True
+"F/V SEA BREAKER sunk; Pt. Roberts, WA",48.9421666667,-122.993,2013-09-05,2013,True,True,SEA BREAKER,True,True
+"M/V Fernstream wreck project; San Francisco Bay, CA",37.8199888889,-122.459044444,2013-06-11,2013,True,True,Fernstream,True,True
+"F/V Neahkanie; Whidbey Island, WA",48.085,-122.61,2013-06-04,2013,True,True,Neahkanie,True,True
+"M/V Matthew I; 83 NM South of Vieques Island, Puerto Rico",16.7166666667,-65.3833333333,2013-06-02,2013,True,True,Matthew I,True,True
+F/V Georgia Girl; SE of Tybee Island Georgia,31.895,-80.8566666667,2013-05-31,2013,True,True,Georgia Girl,True,True
+"TUG KALEEN MCALLISTER; Baltimore, MD",39.268843,-76.580683,2013-05-06,2013,True,True,KALEEN MCALLISTER,True,True
+"SMI 572 Collision; Bayou Perot, Lafitte, LA",29.6338888889,-90.1772222222,2013-03-12,2013,True,True,SMI 572,True,True
+"M/V Champion Express adrift; Off Half Moon Bay, CA",37.52,-122.686666667,2013-02-28,2013,True,True,Champion Express,True,True
+"M/V Helena Star sunk; Tacoma, WA",47.2767,-122.389413889,2013-02-28,2013,True,True,Helena Star,True,True
+"Barge YON268; Apra Harbor, Guam",13.4421388889,144.664055556,2013-02-12,2013,True,True,YON268,True,True
+"Barge MOC-12 Allision with Miss. R. Bridge; Miss R. at Vicksburg, MS",32.31498,-90.90706,2013-01-27,2013,True,True,MOC,True,True
+"Barge HMS 2000; Port Angeles, WA",48.1417277777778,-123.446452777778,2012-11-07,2012,True,True,HMS 2000,True,True
+"F/V MAVERICK; 30 miles W. of La Push, WA",47.925,-125.326666667,2012-09-28,2012,True,True,MAVERICK,True,True
+"F/V GEMINI, F/V WESTERN FLYER; Swinomish Channel, WA",48.4548,-122.514944444,2012-09-24,2012,True,True,GEMINI,True,True
+"F/V Sea Biscuit; Near Bodega Bay, CA",38.3067361111,-123.019272222,2012-08-24,2012,True,True,Sea Biscuit,True,True
+"M/V Ocean Crescent ; GOMEX south of Pensacola, FL",29.1233333333,-87.1533333333,2012-08-03,2012,True,True,Ocean Crescent,True,True
+"F/V Two Mikes sunk; Yaquina Bay bar entrance, OR",44.6118555556,-124.082991667,2012-07-23,2012,True,True,Two Mikes,True,True
+"Tug MADISON; South Lake Huron, near the entrance to St Clair River, MI",43.1016666667,-82.4508333333,2012-07-19,2012,True,True,MADISON,True,True
+"F/V Joe; Terrebonne, LA",29.1746666667,-91.0198333333,2012-07-18,2012,True,True,Joe,True,True
+"F/V Sound Leader sunk; Offshore Newport, OR",44.6666666667,-124.1,2012-07-03,2012,True,True,Sound Leader,True,True
+"F/V Quest Sunk; Offshore Westport, WA",46.9666666667,-124.466666667,2012-06-29,2012,True,True,Quest Sunk,True,True
+"M/V Monterrey; Chiniak Bay, Kodiak, AK",57.755,-152.446666667,2012-06-09,2012,True,True,Monterrey,True,True
+F/V Lucky Diamond; Nearshore LA,29.4347222222,-92.2691666667,2012-05-11,2012,True,True,Lucky Diamond,True,True
+F/V Lady Myrtle; US/Canada Border (Maine/New Brunswick),44.7916666667,-66.875,2012-04-14,2012,True,True,Lady Myrtle,True,True
+"M/V Overseas Beryl; Near New Orleans, LA",29.923256,-89.939554,2012-04-09,2012,True,True,Overseas Beryl,True,True
+"TUG INVADER, Vigor Marine Shipyard; Everett, WA",47.9814444444,-122.218055556,2012-03-19,2012,True,True,INVADER,True,True
+"F/V CHEVELLE grounding with diesel leaking; Yaquina Bay, OR",44.6116666667,-124.08,2012-03-10,2012,True,True,CHEVELLE,True,True
+F/V PLAN B; Southern Maine,43.2863333333,-70.2745,2012-02-21,2012,True,True,PLAN B,True,True
+"Barge SMI 30020; New Orleans, LA",30.0483333333,-90.5902777778,2012-02-17,2012,True,True,SMI,True,True
+"FV Kimberly grounding; Shelikof Strait, Alaska",57.55,-155.0,2012-01-28,2012,True,True,Kimberly,True,True
+"M/V Morning Cedar; Aleutian Islands, Alaska",52.3466666667,-178.61,2011-12-07,2011,True,True,Morning Cedar,True,True
+"M/V Justin; Alki Point, Washington",47.5205194444,-122.401419444,2011-10-14,2011,True,True,Justin,True,True
+"M/V Rena; Tauranga, New Zealand",-37.56,176.39,2011-10-05,2011,True,True,Rena,True,True
+"F/V Phyllis aground; South shore of Santa Cruz Island, CA",33.9871333333,-119.648166667,2011-09-27,2011,True,True,Phyllis,True,True
+"F/V Midnight Hour; Approx 1nm off the West End of Santa Catalina Island, CA",33.4666666667,-118.625,2011-08-31,2011,True,True,Midnight Hour,True,True
+"T/V Sea Falcon; Delaware Bay, Delaware",38.94,-75.12,2011-08-06,2011,True,True,Sea Falcon,True,True
+"F/V Copacetic sinking; Puget Pt, NW Gulf of Alaska",59.9166666667,-148.45,2011-07-07,2011,True,True,Copacetic,True,True
+"F/V Relentless Pursuit; Sandy Hook, NJ",40.4783333333333,-74.0177777777778,2011-06-05,2011,True,True,Relentless Pursuit,True,True
+"F/V Nor'Quest grdg-Bristol Bay, Alaska; NW side of Hagemeister Island",58.745,-160.881666667,2011-05-25,2011,True,True,Nor'Quest,True,True
+"F/V Atlantic Traveler; Manasquan Inlet, NJ",40.0983333333,-74.03,2011-05-11,2011,True,True,Atlantic Traveler,True,True
+"F/V Kathy Ann; Avila Beach, CA",35.162,-120.751,2011-03-30,2011,True,True,Kathy Ann,True,True
+"F/V Capt Andrew; King Cove, Alaska Peninsula",55.0252,-162.224,2011-03-06,2011,True,True,Capt Andrew,True,True
+"F/V Midnite Son; Afognak Island, Alaska",58.2727,-153.094,2011-02-11,2011,True,True,Midnite Son,True,True
+"F/V Terrigail; Unalaska Isl., Aleutian Isl., Alaska",53.4333,-167.383,2011-02-09,2011,True,True,Terrigail,True,True
+"F/V Ruffian; Latouche Isl, PWS, Alaska",60.0793,-147.862,2011-01-25,2011,True,True,Ruffian,True,True
+"M/V Golden Seas; 70nm North of Adak Island, AK",52.7403,-176.138,2010-12-03,2010,True,True,Golden Seas,True,True
+"M/V Nelson; 130 miles south of St Croix, USVI",15.3667,-64.6167,2010-12-02,2010,True,True,Nelson,True,True
+"M/V CSL METIS; Guayama, Puerto Rico",17.9198,-66.1573,2010-10-12,2010,True,True,CSL METIS,True,True
+"M/V JIA QIANG; New Orleans, LA",29.936,-89.9986666666667,2010-08-24,2010,True,True,JIA QIANG,True,True
+"F/V Miss Kaitln; Rockledge Dr, Indian River Florida",28.3047,-80.7007,2010-07-29,2010,True,True,Miss Kaitln,True,True
+"T/V Pere Ana C; Mud Lake, LA",29.4793,-90.0086,2010-07-27,2010,True,True,Pere Ana C,True,True
+"F/V Cape Cross; Main Bay, AK",60.5298,-148.062,2010-07-26,2010,True,True,Cape Cross,True,True
+"M/V Nordmeer; Thunder Bay NMS, MI",45.136,-83.1598,2010-07-26,2010,True,True,Nordmeer,True,True
+"F/V Nightwatch; Off Eugene Island, La",29.3243,-91.5065,2010-05-20,2010,True,True,Nightwatch,True,True
+"M/V Miss Maridith; Biscayne Bay, Florida",25.4207,-80.1247,2010-05-16,2010,True,True,Miss Maridith,True,True
+"F/V Charlie Girl; Offshore, Cape Canaveral, FL",28.3884722222,-80.6038888889,2010-05-15,2010,True,True,Charlie Girl,True,True
+"F/V Big Cobb; Darien, Georgia",31.3661,-81.4335,2010-04-21,2010,True,True,Big Cobb,True,True
+"F/V Pacific Bully; Santa Ana jetty, CA",33.6298,-117.961,2010-04-20,2010,True,True,Pacific Bully,True,True
+"F/V Betty K; 7 miles west of Half Moon Bay, CA",37.5,-122.633,2010-04-02,2010,True,True,Betty K,True,True
+"F/V Perseverance; 60 miles S of Shinnecock, NY",39.8333,-72.1667,2010-02-16,2010,True,True,Perseverance,True,True
+"T/V Eagle Otome-Barge Collision; Port Arthur, TX",29.87,-93.93,2010-01-23,2010,True,True,Eagle Otome-Barge Collision,True,True
+"F/V Sheila Rene; Oregon Inlet, NC",35.77,-75.531,2010-01-02,2010,True,True,Sheila Rene,True,True
+"T/V Suhail Star; Offshore Galveston, TX",27.605,-94.0383,2009-12-14,2009,True,True,Suhail Star,True,True
+"S/V RULING ANGEL-Coral Grounding; St. Croix, USVI",16.756,-64.6965,2009-12-10,2009,True,True,RULING ANGEL,True,True
+"CAPT MIKE, Sunken Vessel; Gulf of Mexico, off LA Coast",29.3997,-88.9701,2009-12-06,2009,True,True,CAPT MIKE,True,True
+"F/V Sea Wind; Toke Point, Willapa Bay, WA",46.7083,-123.968,2009-11-19,2009,True,True,Sea Wind,True,True
+F/V  Absolutely; Off Murrels Inlet South Carolina,33.403,-78.5582,2009-11-06,2009,True,True,Absolutely,True,True
+"F/V Lisa Marie; Unimak Isl., E. Aleutians, Alaska",55.2833,-164.133,2009-11-05,2009,True,True,Lisa Marie,True,True
+"T/V Titan Express; Miami River, Florida",25.7976,-80.2469,2009-11-04,2009,True,True,Titan Express,True,True
+"F/V Carley Renee; Unalaska Isl., Aleutians, Alaska",53.9,-166.1,2009-10-30,2009,True,True,Carley Renee,True,True
+"F/V Lady Anna; Kapolei, HI",21.3352777777778,-158.057777777778,2009-10-30,2009,True,True,Lady Anna,True,True
+"M/V PAC ALKAID Oil Spill; SW Pass, Mississippi Delta, GOM, LA",28.8717,-89.34,2009-10-30,2009,True,True,PAC ALKAID Oil Spill,True,True
+"T/V Dubai Star; San Francisco, CA",37.7658,-122.341,2009-10-30,2009,True,True,Dubai Star,True,True
+"T/V KRYMSK Oil Spill; Gulf of Mexico, Galveston Lightering Zone",28.6167,-94.5333,2009-10-20,2009,True,True,KRYMSK Oil Spill,True,True
+"F/V Sea Dancer; Sand Point, Alaska",55.365,-160.521,2009-10-14,2009,True,True,Sea Dancer,True,True
+"F/V Lady Frances; Santa Cruz Island, CA",34.0267,-119.54,2009-10-06,2009,True,True,Lady Frances,True,True
+M/T Eagle Tuscon grounding; MM3 Miss. R,29.1932,-89.2675,2009-09-28,2009,True,True,Eagle Tuscon,True,True
+"CHEMICAL SUPPLIER Oil Spill; Houston Ship Channel, Houston TX",29.7265,-95.2615,2009-09-26,2009,True,True,CHEMICAL SUPPLIER,True,True
+"Fishing Vessel SUGAR BABE; Gulf of Mexico, LA",29.2012,-91.4811,2009-09-11,2009,True,True,SUGAR BABE,True,True
+"F/V Blue Diamond Fire; Off Barnegat Inlet, NJ",39.225,-72.882,2009-08-15,2009,True,True,Blue Diamond Fire,True,True
+"M/V Harns; Silver Bank, Dominican Republic",20.5167,-69.65,2009-08-13,2009,True,True,Harns,True,True
+"F/V Little Linda Aground; Newport, OR",44.6423,-124.066,2009-08-11,2009,True,True,Little Linda Aground,True,True
+"F/V TINA RAY; Diamond Shoals, Cape Hateras, NC",35.1692,-75.2972,2009-07-21,2009,True,True,TINA RAY,True,True
+"Tug CAPT MAC Sinking; Lake Pontchartrain, LA",30.0594,-90.0111,2009-06-25,2009,True,True,CAPT MAC,True,True
+"M/V TRISTAN, Stern Tube Oil; Gulf of Mexico, Galveston, TX ",29.0333,-94.4,2009-06-23,2009,True,True,TRISTAN,True,True
+"F/V Hot Tuna; Off Florence, OR",44.012,-124.189,2009-06-21,2009,True,True,Hot Tuna,True,True
+"F/V Cowboy; Vineyard Sound, MA",41.4317,-70.845,2009-04-18,2009,True,True,Cowboy,True,True
+"F/V Dandy Bill; San Mateo Bridge, San Francisco Bay, CA",37.5993,-122.214,2009-04-14,2009,True,True,Dandy Bill,True,True
+"F/V Renee Marie; Offshore Queets River, WA",47.4502,-124.509,2009-04-14,2009,True,True,Renee Marie,True,True
+"Tanker Vessel SKS SATILLA; GOM, off Galveston, TX",28.595,-93.8583,2009-03-06,2009,True,True,SKS SATILLA,True,True
+"T/V Minerva Iris Grounding; Galveston Bay, TX",29.4628,-94.851,2009-03-03,2009,True,True,Minerva Iris Grounding,True,True
+F/V Maranatha and Tug Mary L Collision; Tampa Bay FL,27.6583,-82.5917,2009-02-12,2009,True,True,Maranatha,True,True
+"M/V Lituya; Metlakatla, SE Alaska",55.1407,-131.568,2009-01-30,2009,True,True,Lituya,True,True
+"Barge RTC 150; Western Long Island Sound, NY",40.8483,-73.7563,2009-01-22,2009,True,True,RTC 150,True,True
+"M/V GENMAR PROGRESS; Gulf of Mexico, Offshore Galveston, TX",28.5617,-94.04,2009-01-20,2009,True,True,GENMAR PROGRESS,True,True
+"M/V Monarch/Granite Pt.Platform; Upper Cook Inlet, Alaska",60.95,-151.48,2009-01-15,2009,True,True,Monarch,True,True
+"F/V American Way; Aghiyuk Island,  W. Gulf of Alaska",56.2259,-156.769,2009-01-06,2009,True,True,American Way,True,True
+"Sunken Vessel at Boat Ramp; Moss Landing, California",36.811476,-121.786806,2026-08-30,2026,True,True,,True,False
+"Disabled Vessel near Elk Horn Slough; Moss Landing, California",36.81544899999999,-121.791881,2026-08-07,2026,True,True,,True,False
+"Vessel Sinking in San Joaquin River; Isleton, California",38.10807428703154,-121.59828416581148,2026-07-31,2026,True,True,,True,False
+"Sheen Surrounding Vessel Jaira Provider; Mayagüez, Puerto Rico",18.218323,-67.161022,2026-07-16,2026,True,True,,True,False
+"Sunken Fishing Vessel in Santa Cruz Harbor; Santa Cruz, California",36.96582440674398,-122.00232931470966,2026-06-13,2026,True,True,,True,False
+"Sunken Sailboat, San Diego Bay; Coronado, California",32.630044207508334,-117.135791759938,2026-04-21,2026,True,True,,True,False
+"Recreational Vessel Grounding, Salinas River; Monterey Bay, California",36.748580316725,-121.80634800572298,2026-03-27,2026,True,True,,True,False
+"Stranded Vessel in San Francisco Bay; Belvedere Tiburon, California",37.89435126990176,-122.44960601383352,2026-03-05,2026,True,True,,True,False
+"Jet Fuel Spill at Newport News Shipyard; Newport News, Virginia",36.97146681254237,-76.43188476562497,2026-02-16,2026,True,True,,True,False
+"Vessel Sinking offshore of Shark River Inlet, New Jersey",40.11910585801178,-73.55484008789062,2026-01-17,2026,True,True,,True,False
+"Mystery Sheen, Ship Shoal 43; Gulf of America",29.02416667000001,-90.79111111,2026-01-08,2026,True,True,,True,False
+"Beached Sailboat on East Beach; Santa Barbara, California",34.41551100000001,-119.675351,2025-12-24,2025,True,True,,True,False
+"Vessel Adrift; Dillon Beach, California",38.24559706521757,-122.9763698671013,2025-12-15,2025,True,True,,True,False
+"Containership Fire at Port of Los Angeles; Long Beach, California",33.69833,-118.215,2025-11-21,2025,True,True,,True,False
+"Fire and Oil Spill on Commercial Fishing Vessel; Breton Sound, Louisiana",29.47616667,-89.24338889,2025-10-03,2025,True,True,,True,False
+"Derelict Fishing Vessel Sunk in Pamlico Sound; Buxton, North Carolina",35.29112241420674,-75.57083129882812,2025-09-29,2025,True,True,,True,False
+"Sunken Tug at Marina; Bremerton, Washington",47.56375299999996,-122.62026899999998,2025-09-18,2025,True,True,,True,False
+"Shipping Container Spill, Port of Long Beach; Long Beach, California",33.74369444,-118.20158333,2025-09-11,2025,True,True,,True,False
+"Sunken Tour Boat, Wailua River Pier; Kauai; Hawaii",22.04533333,-159.34305556,2025-08-26,2025,True,True,,True,False
+"Passenger Ship aground outside Kewalo Basin Harbor; Honolulu, Hawaii",21.291110000000003,-157.85721000000004,2025-08-09,2025,True,True,,True,False
+"Hydraulic Fluid Spill from Barge Presque Isle, St Marys River; Michigan, USA / Ontario, Canada",46.29,-84.1,2025-07-30,2025,True,True,,True,False
+"Towing Vessel Aground; Mile Marker 526 of Mississippi River, Arkansas",33.23018999999998,-91.10706000000002,2025-07-21,2025,True,True,,True,False
+"Tanker Truck Accident and Fuel Spill into Indian Creek; Highway 101 at Milepost 298.2, Washington",48.0638895,-123.6009748,2025-07-18,2025,True,True,,True,False
+"Potential Discharge from 60-foot Sailboat; Cape Canaveral, Florida",28.40733333,-80.56594444,2025-06-28,2025,True,True,,True,False
+"Sunken Vessel, Western Channel; Sitka, Alaska",57.05777778000001,-135.35888889,2025-05-29,2025,True,True,,True,False
+"Mystery Sheens: Ship Shoal 276; offshore Louisiana, Gulf of America",28.0,-91.09333333,2025-05-25,2025,True,True,,True,False
+"Derelict Vessel Sinking/Sheening; San Juan, Puerto Rico",18.458120000000008,-66.0899,2025-04-08,2025,True,True,,True,False
+"Tanker Truck Release, Colonna's Shipyard; Norfolk, Virginia",36.835061437712056,-76.27663421735635,2025-03-17,2025,True,True,,True,False
+"Three-Yacht Fire on the Miami River; Miami, Florida",25.800777780000004,-80.25216667,2025-03-07,2025,True,True,,True,False
+"Pleasure Craft Goldfinch Sinking and Diesel Spill; Port Townsend, Washington",48.11649102987121,-122.75031602395757,2025-02-22,2025,True,True,,True,False
+"Tugboat Fire on Delaware River; Delaware City, DE",39.6115028127123,-75.58133697719313,2025-02-18,2025,True,True,,True,False
+"Hydraulic Oil Leak from Integrated Tug/Barge Presque Isle; Duluth, MN",46.758581484471904,-92.10205916751876,2025-01-27,2025,True,True,,True,False
+"Spill from U.S. Navy Vessel at Newport News Terminal; Newport News, VA",36.97533083075757,-76.43408203963187,2025-01-09,2025,True,True,,True,False
+"Vessel Sinking, Adak Small Boat Harbor; Adak, AK",51.852,-176.657,2025-01-08,2025,True,True,,True,False
+Volgoneft 212 sinking and oil spill; Kerch Strait,45.08423612210686,36.57128892838954,2024-12-15,2024,True,True,,True,False
+"Grounding of Pleasure Craft 'Mystery'; Sand Point, AK",55.35567,-161.2462,2024-12-11,2024,True,True,,True,False
+"Tugboat Georgie Sinking; Ogunquit, ME",43.24000000000001,-70.58555556,2024-12-08,2024,True,True,,True,False
+"Fishing Vessel Aground; Jamestown, RI",41.46809513705759,-71.39786943822399,2024-11-25,2024,True,True,,True,False
+"Tug Kathy Pawg Sunk; Galveston Bay, TX",29.55364999999999,-94.91805,2024-11-21,2024,True,True,,True,False
+"Sunken Crabbing Vessel, Port of Westport; Westport, WA",46.90704056118909,-124.10854338901116,2024-11-05,2024,True,True,,True,False
+"Oil Spill during Barge Loading Operation, Buckeye Oil Terminal, Wilmington, DE",39.715100042600056,-75.51466369419357,2024-09-12,2024,True,True,,True,False
+"Vessel Grounding off Waadah Point; Neah Bay, WA",48.381,-124.602,2024-09-03,2024,True,True,,True,False
+"Fishing Vessel Bilge Discharge; South Padre Island, TX",26.12333333000001,-97.07166667,2024-07-19,2024,True,True,,True,False
+"Tug Miss Peggy Sunk; Houston Shipping Channel, TX",29.761560000000003,-95.0772,2024-07-19,2024,True,True,,True,False
+"Sunken Fishing Vessel Brizo; Chatham, MA",41.63247221999998,-68.99036111,2024-07-18,2024,True,True,,True,False
+"Recreational Vessel Hard Aground in Thunder Bay National Marine Sanctuary; Black River, MI",44.809,-83.283,2024-06-04,2024,True,True,,True,False
+"80-foot Yacht Atlantis Taking on Water; St. Augustine, FL",29.865499999999983,-81.23666667,2024-05-25,2024,True,True,,True,False
+"Pelican Island Bridge Allision; Galveston, TX",29.31267,-94.82217,2024-05-15,2024,True,True,,True,False
+"Fishing Vessel North American Sinking, Ballard Ship Canal; Seattle, WA",47.65764999999999,-122.37135,2024-05-14,2024,True,True,,True,False
+"Fishing Vessel Sinking near Sandy Point; Ferndale, WA",48.78800000000001,-122.706,2024-05-10,2024,True,True,,True,False
+"Commercial Fishing Vessel Sunk; Henry Island, San Juan Islands, WA",48.5906,-123.2037,2024-05-03,2024,True,True,,True,False
+"Sunken Recreational Vessel; Seekonk River, East Providence, RI",41.81832075211037,-71.38670325279234,2024-02-26,2024,True,True,,True,False
+"Sunken Pleasure Craft, Detroit River; Detroit, MI",42.309807567256826,-83.0838698412117,2024-02-12,2024,True,True,,True,False
+"Grounded Fishing Vessel Aleutian Storm; Bodega Bay, CA",38.332,-123.07,2024-02-10,2024,True,True,,True,False
+"First Marine Shipyard Waste Oil Barge, MM 11 Tennessee River; Calvert City, KY",37.04844700000004,-88.429593,2024-01-30,2024,True,True,,True,False
+"Tanker Truck Lube Oil Release; Port Hueneme, CA",34.15166667000001,-119.20666667,2024-01-30,2024,True,True,,True,False
+"Fuel Spill from Fishing Vessel, Tampa, FL",27.9284789,-82.4280267,2023-12-17,2023,True,True,,True,False
+"Submerged Barge, Newtown Creek, Brooklyn, NY",40.723775179783615,-73.92633318202572,2023-12-16,2023,True,True,,True,False
+"Pusher Tug Capsized/Sunk; Willamette River, Gladstone, OR",45.37668099999999,-122.616567,2023-12-14,2023,True,True,,True,False
+"Potential Vessel Discharge, West Cameron 513 block; Offshore Texas",28.424999999999983,-93.22611111000002,2023-12-06,2023,True,True,,True,False
+"Tug Releasing Residual Sheen; Orcas Island, WA",48.62916,-122.95934,2023-11-20,2023,True,True,,True,False
+"Fishing Vessel Aground; Pleasant Beach, NJ",40.09938164418861,-74.03270244598387,2023-11-17,2023,True,True,,True,False
+"Tug and Barge Collide with Pipeline on Columbia River; Clatskanie, OR",46.18115,-123.18584,2023-11-12,2023,True,True,,True,False
+"Iced-in Barges in Lake Johnson; Nunapitchuk, AK",60.84861111000001,-162.35805555999997,2023-11-07,2023,True,True,,True,False
+"Diesel Release from Sunk Tug Vessel; Steamboat Slough, Bethel, AK",60.78629699999996,-161.69938100000002,2023-11-02,2023,True,True,,True,False
+"Jet Fuel Spill at Norfolk Naval Shipyard; Norfolk, VA",36.95784239271275,-76.3231557549443,2023-10-28,2023,True,True,,True,False
+"Semi-derelict Fishing Vessel Sunk; Sitka, AK",57.05833333000001,-135.36277778,2023-10-28,2023,True,True,,True,False
+"Tug Vessel Sunk; Tulalip Bay Marina, WA",48.05,-122.33,2023-10-25,2023,True,True,,True,False
+"Barge on Fire in  Grand Bay; Boothville-Venice, LA",29.3775,-89.38333333,2023-10-11,2023,True,True,,True,False
+"Barge Discharges Heavy Fuel Oil into Intercoastal Waterway; Franklin, LA",29.76455,-91.73935000000002,2023-10-06,2023,True,True,,True,False
+"Overfill Spill on Offshore Supply Ship; Montville, CT",41.437979103349306,-72.09580421447754,2023-09-13,2023,True,True,,True,False
+"Diesel from Tanker Truck Released into Tributary of Union Slough, Everett, WA",48.02202,-122.17811,2023-09-08,2023,True,True,,True,False
+"53-foot Motor Yacht Adrift Off Big Sur, CA",36.02799999999999,-121.86733333,2023-08-27,2023,True,True,,True,False
+"38-foot Fishing Vessel Listing, Funter Bay, Angoon, AK",58.23105556,-134.919,2023-08-24,2023,True,True,,True,False
+"Fishing Vessel Taking on Water, Westport Marina, Grays Harbor, WA",46.909260000000046,-124.10906,2023-08-23,2023,True,True,,True,False
+"53-foot Recreational Vessel Sunk near Seguin Island, ME",43.69833333,-69.74888889,2023-08-21,2023,True,True,,True,False
+"169-Foot Fishing Vessel Leaking Anhydrous Ammonia; Tacoma, WA",47.24818504746244,-122.43201195378784,2023-08-17,2023,True,True,,True,False
+"43-Foot Vessel Sunk near Bolsa Chica Wetlands, Huntington Beach, CA",33.681944439999995,-118.04205556,2023-08-17,2023,True,True,,True,False
+"Tug Sunk offshore from Myrtle Beach, SC",33.77205556,-78.67166667,2023-08-09,2023,True,True,,True,False
+"Commercial Fishing Vessel Aground in Gastineau Channel, Juneau, AK",58.22583333,-134.2615,2023-08-01,2023,True,True,,True,False
+"Grounded 48' Recreational Vessel on Stewart Island, WA",48.67169999999999,-123.18259,2023-07-17,2023,True,True,,True,False
+"Fire aboard Car Carrier Vessel, Port Newark, NJ",40.72736716435844,-74.12612915039062,2023-07-06,2023,True,True,,True,False
+"108’ Vessel Aground, Brownsville Marina, WA",47.65049199999999,-122.613939,2023-06-30,2023,True,True,,True,False
+"Commercial Fishing Vessel Hard Aground, Horn Island, MS",30.243619000000024,-88.771096,2023-06-14,2023,True,True,,True,False
+Fishing Vessel Taking on Water off Southern Oregon Coast,42.65627778000001,-124.51572222,2023-06-13,2023,True,True,,True,False
+"Tanker Truck Explosion/Fire Leads to Collapse of I-95 Overpass, Philadelphia, PA",40.01536928763841,-75.05293965339659,2023-06-11,2023,True,True,,True,False
+"Sheen from Sunken Fishing Vessel in Five Fathom Creek, McClellan, SC",33.05200000000001,-79.479,2023-06-09,2023,True,True,,True,False
+"Release of Petroleum Coke (PET) from Sunk Barge, MM 54 of Lower Mississippi River, Davant,  LA",29.607699999999998,-89.8712,2023-05-09,2023,True,True,,True,False
+"Fishing Vessel Taking on Water, Partially Sunk, Port of Ilwaco, WA",46.30284502369685,-124.04233932495116,2023-04-25,2023,True,True,,True,False
+"Fishing Vessel Fire, Hylebos Waterway, Tacoma, WA",47.2835,-122.40874,2023-04-08,2023,True,True,,True,False
+"Towing Vessel Taking on Water (Submerged) in Sabine-Neches River, TX-LA",29.700278,-93.845,2023-03-31,2023,True,True,,True,False
+"Sunken 60-Foot Shrimping Vessel, Bolivar Peninsula, TX",29.50461111,-94.4945,2023-03-15,2023,True,True,,True,False
+"Partially Submerged Vessel off the Port of Los Angeles, CA",33.66499999999999,-118.28744444,2023-03-14,2023,True,True,,True,False
+"85' Fishing Vessel Fire, Westport Marina, WA",46.90856044324667,-124.1094160079956,2023-03-09,2023,True,True,,True,False
+"Vessel Sinking and Oil Spill off Balingawan Point, Naujuan Oriental Mindoro, Philippines",13.316111109999994,121.53,2023-03-07,2023,True,True,,True,False
+"Tug Aground near Ferry Terminal, Lopez Island, WA",48.57101,-122.88360000000002,2023-02-22,2023,True,True,,True,False
+"94-foot Luxury Yacht Aground, Honolua Bay, Maui",21.00926992994171,-156.64907153695822,2023-02-21,2023,True,True,,True,False
+"Fishing Vessel Sunk off Redondo Beach, CA",33.84577777999999,-118.41494444,2023-02-09,2023,True,True,,True,False
+"Pleasure Craft Adrift and Sinking, Southwest of Half Moon Bay, CA",37.39244443999998,-122.53950000000002,2023-02-04,2023,True,True,,True,False
+"Navy Vessel Sunk after Collision with Security Zone Boom, Bangor Trident Base, WA",47.73762114691274,-122.74117469089104,2023-01-23,2023,True,True,,True,False
+"Sunken Dredge Barge, MM 85 of the Mississippi River",29.911812999999995,-89.91650800000001,2023-01-16,2023,True,True,,True,False
+"Spill from U.S. Naval Vessel during Transfer Operations, Norfolk, VA",36.950140432430445,-76.32863491598981,2023-01-13,2023,True,True,,True,False
+"Derelict Tug Sheening on Black River, Lorain, OH",41.456606,-82.161217,2023-01-05,2023,True,True,,True,False
+"Inspected Tow Vessel (ITV) Taking on Water, Port of Milwaukee, WI",43.01152,-87.89776,2023-01-03,2023,True,True,,True,False
+"Fishing Vessel Grounded in Chinese Harbor, Santa Cruz Island, CA",34.032622155503304,-119.60650205612184,2022-12-15,2022,True,True,,True,False
+"Shrimping Vessel Sunk Offshore of Jamaica Beach, TX",29.04666667000004,-94.87861111,2022-12-08,2022,True,True,,True,False
+"Fishing Vessel Sinks in Pamlico Sound, White Plains, NC",35.410333330000014,-75.9825,2022-11-17,2022,True,True,,True,False
+"Sinking of Work Barge, Bon Secour Bay, South End of Mobile Bay, AL",30.279219999999995,-87.92687,2022-11-13,2022,True,True,,True,False
+"Allision between Tug Boat and out-of-service Flowline, South Pass 24, Pilottown, LA",29.15166667,-89.33,2022-11-07,2022,True,True,,True,False
+"Shrimping Vessel Capsize, Main Pass, LA",29.405,-89.27577778,2022-11-04,2022,True,True,,True,False
+"Fishing Vessel sunk SE of Assateague Island, Virginia",37.61238888999998,-74.24366667,2022-10-28,2022,True,True,,True,False
+"Towing Vessel ""Sandstone"" Sunk at its Moorings, Pine Bluff, AR",34.23395532758583,-91.97111570711988,2022-10-27,2022,True,True,,True,False
+"70’ Fishing Vessel Sunk, Fish Harbor, San Pedro, CA",33.7346,-118.2652,2022-10-24,2022,True,True,,True,False
+"Towing Vessel Aground, Mile Marker 659, Mississippi River, Helena-West Helena, AR",34.48089999999999,-90.59004,2022-09-16,2022,True,True,,True,False
+"40-foot Vessel Sunk, Two Harbors, Santa Catalina Island, CA",33.44333333,-118.495,2022-09-03,2022,True,True,,True,False
+"Fishing Vessel Aground, Grays Harbor Jetty, Westport, WA",46.87233333,-124.12216667,2022-08-16,2022,True,True,,True,False
+"Sunken pleasure craft, Whites Landing, Santa Catalina Island, CA",33.3912522920441,-118.36678504943846,2022-08-14,2022,True,True,,True,False
+"Fishing Vessel Sunk off San Juan Island, WA",48.5545,-123.1747,2022-08-13,2022,True,True,,True,False
+"Spill from Container Vessel, South Side of Dodge Island, Miami, FL",25.76966999999999,-80.1674,2022-08-13,2022,True,True,,True,False
+"58-foot Fishing Vessel Sunk, Southern Point of Prince of Wales Island, AK",54.67500000000001,-132.11667,2022-08-03,2022,True,True,,True,False
+"1924 Former Car Ferry Partially Sunk, Astoria, OR",46.192019879521865,-123.8367426395416,2022-07-28,2022,True,True,,True,False
+"Bunker Oil Discharge from Tanker into Lower Mississippi River, Almedia, LA",29.9691,-90.2816,2022-07-28,2022,True,True,,True,False
+"50-foot Sport Fishing Vessel Sinking, Pensacola Beach, FL",30.29536100000001,-87.298722,2022-07-09,2022,True,True,,True,False
+"Freighter Carrying Petroleum Coke Lost Propulsion, Dixon Entrance, AK",54.48666799999998,-134.323334,2022-07-08,2022,True,True,,True,False
+"Fishing Vessel Sunk at Pier, Neah Bay, WA",48.36786,-124.61256,2022-07-05,2022,True,True,,True,False
+"50-foot Yacht Sunk in Glacier Bay, AK",59.02146700000003,-136.141467,2022-07-01,2022,True,True,,True,False
+"72-foot Motor Vessel Fire and Salvage, Portsmouth, NH",43.03110000000001,-70.6836,2022-06-24,2022,True,True,,True,False
+"Diesel Leak from Commercial Fishing Vessel, Grays Harbor, WA",46.8725,-124.19966667,2022-06-21,2022,True,True,,True,False
+"Potential Diesel Spill from Tank Barge under Tow offshore Eureka, CA",40.94333333,-124.509,2022-06-20,2022,True,True,,True,False
+"42' Fishing Vessel on Fire off Coast of Manzanita Beach, OR",45.692166670000006,-123.98883333000002,2022-06-18,2022,True,True,,True,False
+"Fishing Vessel Aground, West End of Unimak Island, AK",54.48166700000005,-164.91500000000002,2022-06-18,2022,True,True,,True,False
+"Vessel on Fire and Adrift off Kodiak, AK",57.90666999999999,-152.11,2022-06-16,2022,True,True,,True,False
+"E-Crane Barge Sunk While in Tow, Louisiana Coast, Gulf of Mexico",29.5348704698644,-92.57299818098544,2022-06-15,2022,True,True,,True,False
+"Fire on 30' Vessel off Decatur Island, WA",48.47999999999999,-122.81,2022-06-15,2022,True,True,,True,False
+"Fishing Vessel Aground, Lois Island, Columbia River",46.19039000000001,-123.73074,2022-06-13,2022,True,True,,True,False
+"Passenger Ferry Burning, Towed to Norfolk Naval Station, Hampton Roads",36.9396818,-76.3339053,2022-06-07,2022,True,True,,True,False
+"Cedar Bayou Abandoned Tugs; Baytown, TX, USA",29.73611111,-94.93063889,2022-06-03,2022,True,True,,True,False
+Tanker Vessel Sunk Northwest of Aruba,14.75,-70.51666667,2022-06-03,2022,True,True,,True,False
+"90-foot Motor Yacht Sinking, Virginia Beach, VA",36.65196315285816,-75.87020874023436,2022-05-25,2022,True,True,,True,False
+"Tanker Vessel Aground, Fairport Harbor, OH",41.770833330000016,-81.27916667,2022-05-23,2022,True,True,,True,False
+"Marine Diesel Discharge from Tug Vessel, Lemont, IL",41.683886,-87.989848,2022-05-12,2022,True,True,,True,False
+"Disabled Yacht with 7 People Aboard, 45 Miles NW of Grays Harbor, WA",47.49511111000001,-124.67938889,2022-05-08,2022,True,True,,True,False
+"45-Foot Fishing Vessel Sinking, Charleston, SC",32.22411809635285,-79.3840916454792,2022-04-24,2022,True,True,,True,False
+"50-foot Vessel Sunk in Hawkes Marina, Everett, WA",48.03523000000004,-122.18399,2022-04-13,2022,True,True,,True,False
+"Container Ship Drifting in Heavy Weather off Point Reyes, CA",38.06049999999999,-123.12783333,2022-04-08,2022,True,True,,True,False
+"Tug Vessel Loses Power, Grounds, and Leaks Diesel in Neva Strait, Sitka, AK",57.27000000000001,-135.59333,2022-03-21,2022,True,True,,True,False
+Containership Grounded off Gibson Island in Chesapeake Bay,39.07,-76.41,2022-03-15,2022,True,True,,True,False
+"Commercial Fishing Tender Sinks in Sumner Strait, Prince of Wales Island, AK",56.29374999999999,-133.6983,2022-02-22,2022,True,True,,True,False
+"Fishing Vessel Fire at Ilwaco Marina, WA",46.30579,-124.0377,2022-02-02,2022,True,True,,True,False
+"Sunken Fishing Vessel Leaking Diesel Off Coast of Marshfield, MA",42.15333333000004,-70.68783333,2022-02-01,2022,True,True,,True,False
+"Fire and Diesel Spill from Recreational Fishing Vessel, Navesink River, Red Bank, NJ",40.35463082113765,-74.06437985569936,2022-01-20,2022,True,True,,True,False
+"Fishing Vessel Grounded, Sandy Hook, NJ",40.47766841826535,-74.01847047731279,2022-01-09,2022,True,True,,True,False
+"Fishing Vessel Spills Red Dye Diesel at Quileute Marina, La Push, WA",47.91126736170264,-124.63671044703734,2021-12-17,2021,True,True,,True,False
+"61-ft Paddleboat Sinking, Long Beach, CA",33.75542,-118.1587429,2021-12-15,2021,True,True,,True,False
+"Transient Vessel Sinking at West Basin, Long Beach, CA",33.7505,-118.23344000000002,2021-12-15,2021,True,True,,True,False
+"Sinking Tow Boat off of Chincoteague, VA",37.321665329511234,-75.66989583894609,2021-11-19,2021,True,True,,True,False
+"Derelict Barge Leaking Oil, Deep River, OR",46.31583333,-123.70555556,2021-11-04,2021,True,True,,True,False
+"Revere, MA Tanker Truck Rollover; 1030 Broadway, Revere, MA 02151, USA",42.42157999999998,-71.00471,2021-10-13,2021,True,True,,True,False
+"42' Sailing Vessel Aground, Nedonna Beach, OR",45.64147161516652,-123.9434623718262,2021-10-04,2021,True,True,,True,False
+"Vessel Aground, Doughty Point, NW Orcas Island, WA",48.71231968092425,-122.95143127441406,2021-10-03,2021,True,True,,True,False
+"llwaco Marina 50’ Commercial Vessel Sinking; 165 Howerton Ave, Ilwaco, WA 98624, USA",46.30548999999999,-124.03922,2021-09-16,2021,True,True,,True,False
+"Fish Magnet Aground; Big Sur, CA",36.252617,-121.836483,2021-08-18,2021,True,True,,True,False
+"Stone Barge Facility Release in Mesa Gulf Bayou; LA 70083, USA",29.554638889999996,-89.90294444,2021-07-22,2021,True,True,,True,False
+"Towed Vessel sinking near Bellingham, WA; Whatcom County, WA, USA",48.861167,-122.808167,2021-07-13,2021,True,True,,True,False
+"Steamboat Creek, Norfolk, Virginia; 401 Warner Cir, Norfolk, VA 23509, USA",36.89,-76.29,2021-05-25,2021,True,True,,True,False
+"70ft Wooden Hulled Vessel, Norwester, near Stuart Island, WA; Prevost Harbor, WA, USA",48.685299999999984,-123.20619999999998,2021-04-17,2021,True,True,,True,False
+"Quartermaster Yacht Club; Vashon Island, WA",47.39392999999998,-122.46590999999998,2021-03-29,2021,True,True,,True,False
+"Tug Boat and Towed Fishing Vessel Adrift, Bodega Bay, CA",38.28172222,-122.99383333,2021-03-05,2021,True,True,,True,False
+"Tar Oil Spill, Chicago Sanitary Ship Canal; Chicago, IL",41.8172352,-87.75664654,2021-03-03,2021,True,True,,True,False
+"Lucky Angel- 75ft fishing vessel; offshore Horn Island, Gulf of Mexico",30.018333400000017,-88.661914,2020-12-11,2020,True,True,,True,False
+"35’ vessel submerged/grounded; Long Beach, CA",33.741266063905954,-118.13886739190644,2020-12-09,2020,True,True,,True,False
+"Vessel Fire, Mystic, CT; 3 Williams Ave, Mystic, CT 06355, USA",41.35013921559548,-71.95937633514403,2020-11-20,2020,True,True,,True,False
+"Sunken Vessel City Island Marina, Bronx, New York; 703 Minnieford Ave, The Bronx, NY 10464, USA",40.86,-73.79,2020-11-16,2020,True,True,,True,False
+"Liberty Ship Thomas Heyward, Gulf of Mexico",30.30755556,-86.60394444,2020-10-22,2020,True,True,,True,False
+"Sunken Recreational Vessel, San Jacinto River; 20111 Rio Villa Dr, Houston",29.83086388999999,-95.68363888999998,2020-09-13,2020,True,True,,True,False
+"Barge grounded at Ekuk, AK; potential release of diesel",58.78599694130117,-158.49380495958033,2020-08-31,2020,True,True,,True,False
+"Fishing vessel aground, abandoned, and on fire at Sitka, AK",56.991389,-135.443889,2020-08-31,2020,True,True,,True,False
+"Fishing vessel struck rock; intentionally beached to prevent sinking; Karluk, AK",57.63999999999996,-154.34653,2020-08-27,2020,True,True,,True,False
+"Gunslinger Vessel Aground; False Pass, AK",54.86863894009832,-163.40572357876223,2020-08-05,2020,True,True,,True,False
+"Pacific Jade Aground; Whale Island, Kodiak, AK",57.92833000000002,-152.82167,2020-08-04,2020,True,True,,True,False
+"Vessel Capsizes at Naval Station Norfolk, VA; Norfolk, VA",36.96251177659819,-76.31584167480469,2020-07-28,2020,True,True,,True,False
+"Barge Sea Lion Rodman Panama; Pier 1 2-3, Rousseau, Panama",8.952652,-79.57444,2020-07-17,2020,True,True,,True,False
+"Tug Lee W - Barge Collision, Bolivar. TX; Port Bolivar, TX",29.40502778,-94.74330556,2020-06-09,2020,True,True,,True,False
+"Tug ""Lucedale"" Mile Marker 279 Ohio River; Ashton, WV 25503, USA",38.67816667,-82.18633333,2020-05-13,2020,True,True,,True,False
+"Fishing Vessel ""Bay of Isle"" Aground, Barnegat Inlet, NJ; Barnegat Light, NJ, USA",39.75853981561028,-74.09462928771973,2020-05-07,2020,True,True,,True,False
+"Navy Vessel Diesel Spill, York River, VA; Yorktown, VA, USA",37.25619444,-76.53505556000002,2020-05-07,2020,True,True,,True,False
+"PV Bella Vita Sinking; Cochrane Bay, Prince William Sound, Alaska",60.66472199999998,-148.379167,2020-04-16,2020,True,True,,True,False
+"Fishing Vessel Aground on Shackleford Banks, NC; Harkers Island, NC, USA",34.652188877140645,-76.62304697558282,2020-02-07,2020,True,True,,True,False
+"Sea View Harbor Vessel Fire; Mystic Islands, NJ 08087, USA",39.55361244190027,-74.42468265071508,2019-12-17,2019,True,True,,True,False
+"Bayou Bouillion Vessel Discharge; Parish Governing Authority District 5, LA, USA",30.269166670000004,-91.61416667,2019-12-02,2019,True,True,,True,False
+"Grounded vessel, Kauai, HI; Fuji Beach, Kauai, HI",22.06333333000001,-159.31799999999998,2019-11-27,2019,True,True,,True,False
+"Tugboat Miss Bonnie Allision, Oregon Inlet, NC; Herbert C. Bonner Bridge, Oregon Inlet, NC",35.77281188199514,-75.53485105745493,2019-11-17,2019,True,True,,True,False
+"Crowley Barge 650-2 Crude Oil Spill; Anacortes, WA",48.50453554333939,-122.57486341986804,2019-11-16,2019,True,True,,True,False
+"Onyx Grounding; Strait Island, AK",56.39667000000003,-133.71667,2019-11-12,2019,True,True,,True,False
+"Calcasieu Ship Channel Discharge; Lake Charles, LA",30.13166667,-93.32055556,2019-11-07,2019,True,True,,True,False
+"Grounded Sailboat, Maui, Hawaii; Lahaina, HI , USA",20.80747157680652,-156.62212371826172,2019-10-24,2019,True,True,,True,False
+"Grounded Rec Vessel, San Bernard, TX; Brazoria County, TX, USA",28.85083333,-95.44444444,2019-10-11,2019,True,True,,True,False
+"Sunken Vessel - P/C King's Way; West Bay Marina, Olympia, WA",47.06638028321396,-122.91516780853271,2019-10-04,2019,True,True,,True,False
+"Sunken Dredge Tender, Calcasieu Channel; Louisiana",29.860111110000005,-93.34527778,2019-10-01,2019,True,True,,True,False
+"Capsized Vessel near Duluth Harbor; Duluth, MN",46.71611110999999,-92.02277778,2019-09-30,2019,True,True,,True,False
+"Construction Barge Potential Spill; Long Beach Inner Harbor, CA",33.74250000000001,-118.16888899999998,2019-07-22,2019,True,True,,True,False
+"Olympic Tug and Barge Grounding; Marginal Way S, Seattle, WA 98134, USA",47.58353136297325,-122.34501600265502,2019-06-29,2019,True,True,,True,False
+"Bayport Channel Collision, Houston Ship Canal near Bayport, TX; Houston Ship Channel, TX, USA",29.5928,-94.94095,2019-05-10,2019,True,True,,True,False
+"Sunken Crane Barge - Offshore Freeport; Offshore Freeport, TX",28.34999999999998,-95.48,2019-05-08,2019,True,True,,True,False
+"Womens Bay Abandoned Barge; Kodiak, AK",57.69913,-152.52545,2019-04-25,2019,True,True,,True,False
+"Lindsey Lake Tanker Spill; Vietnam Veterans Memorial Highway, Cascade Locks, OR 97014, USA",45.68741528038544,-121.71275496482846,2019-02-13,2019,True,True,,True,False
+"Corpus Christi Ship Channel Vacuum Oil Discharge; Corpus Christi, TX , USA",27.822222219999983,-97.43555556,2018-12-17,2018,True,True,,True,False
+"Vessel Discharge Ohio River, Greenup, KY; Greenup, KY",38.583333330000016,-82.84194444,2018-11-28,2018,True,True,,True,False
+"Corpus Christi Sinking Vessel; 35 miles east of Port Aransas, TX",27.76466667,-96.49366667,2018-09-10,2018,True,True,,True,False
+"Tug Sea Cypress Grounding; Lavallette Beach, NJ, USA",39.97,-74.06,2018-07-24,2018,True,True,,True,False
+"Sinking Fishing Vessel, LA; Leeville, LA , USA",29.073888889999992,-90.28305556,2018-07-17,2018,True,True,,True,False
+"Broken up vessel ""Dickey Byrd""; Santa Cruz, CA, USA",36.95000000000002,-122.1,2018-07-01,2018,True,True,,True,False
+"Judd Cove Trawler; Eastsound, WA, USA",48.684833,-122.920861,2018-06-05,2018,True,True,,True,False
+"Dredge Barge Fire, Port O' Connor, Matagorda Bay TX; TX 77979, USA",28.458333330000016,-96.38333333,2018-04-18,2018,True,True,,True,False
+"P/C Ocean Breeze aground; San Joaquin River Delta, CA, USA",38.0976861428,-121.592988968,2018-04-02,2018,True,True,,True,False
+"Oily water discharge Theodore Ship Channel; Theodore, AL 36582, USA",30.5344532969,-88.1348601295,2018-02-12,2018,True,True,,True,False
+"Grounded Vessel, Chui Zai Fa No. 1, American Samoa; American Samoa",-14.33879444,-170.79001667,2018-02-07,2018,True,True,,True,False
+"Sturgeon River Bridge Tanker Accident Chassell, MI; US-41, Chassell, MI 49916, USA",47.01755299999999,-88.50615,2018-02-04,2018,True,True,,True,False
+"Gasoline Tanker Truck Rollover, Detroit, OR; 559 OR-22, Idanha, OR 97350, USA",44.6629,-121.9565,2017-12-18,2017,True,True,,True,False
+"Barge B No. 255 fire; Corpus Christi, TX",27.84,-97.09,2017-10-20,2017,True,True,,True,False
+"Southern Belle - Sunken Fishing Vessel; Sabine Pass, TX",29.65222221999997,-93.82555556,2017-10-13,2017,True,True,,True,False
+"South Barge, Point A La Hache; 18859 Hwy 23, Port Sulphur, LA 70083, USA",29.603713889999995,-89.78798056,2017-10-08,2017,True,True,,True,False
+"Akutan Abandoned Vessel; Unalaska, AK",53.84103,-166.59492,2017-10-07,2017,True,True,,True,False
+"Sunken Tug, Eugene Island Block, Offshore LA; Gulf of Mexico",28.80333333,-91.63666667,2017-05-29,2017,True,True,,True,False
+"Tug Mr. Landon Aground; Calcasieu Ship Channel, Cameron, LA 70631, USA",29.80734799999999,-93.349403,2017-05-22,2017,True,True,,True,False
+"Sunken Pleasure Craft, Pass a Loutre; Venice, LA",29.14333332999999,-89.22266667000001,2017-04-24,2017,True,True,,True,False
+"Tug Powhatan; Sitka, AK",57.129633,-135.380201,2017-04-21,2017,True,True,,True,False
+"Vengeance crane barge sinking; San Francisco Bay, CA",37.8095,-122.35116667,2017-04-07,2017,True,True,,True,False
+"Racine Lock & Dam condensate barges; Racine Locks and Dam, Letart, WV 25253, USA",38.91694799999999,-81.911547,2017-03-02,2017,True,True,,True,False
+"Tug Ocean Eagle; Sumner Strait, AK",56.42063,-133.8906,2017-03-02,2017,True,True,,True,False
+"Tug Samson Mariner; Gravina Island, AK",55.41166667,-131.80333333,2017-02-16,2017,True,True,,True,False
+"Ferry Peter Stuyvesant; 70 Northern Ave, Boston, MA 02210, USA",42.3534380789,-71.0425114632,2017-02-14,2017,True,True,,True,False
+Fieldwood Energy Pipeline; Ship Shoal,28.58222222000001,-91.20638889,2017-02-12,2017,True,True,,True,False
+"Renaissance Ship Shoal 266A Platform Fire; Offshore of Terrabonne Parish, Lousiana",28.35694444000002,-91.08833333,2017-01-05,2017,True,True,,True,False
+"Richmond Yacht Basin Fire, Richmond, Virginia; 9998 Arrahatteck Trail, Henrico, VA 23231, USA",37.39383333000001,-77.36705556,2016-12-09,2016,True,True,,True,False
+"Jack-Up Barge Grounding; Nome, AK",64.49599999999995,-165.43899999999996,2016-11-17,2016,True,True,,True,False
+"Iron Throne Sinking; Prince William Sound, Alaska",60.65332999999998,-147.45,2016-10-30,2016,True,True,,True,False
+"Grounded Barges Hatteras Island, NC; Hatteras, NC, USA",35.2456190942,-75.5557250977,2016-10-11,2016,True,True,,True,False
+"Sunken Vessel, Tinian Harbor; Northern Mariana Islands",14.965000000000018,145.62072222,2016-10-03,2016,True,True,,True,False
+"Gretna Ferry Landing Diesel Spill; Gretna, LA, USA",29.917908999999995,-90.06710699999998,2016-09-30,2016,True,True,,True,False
+"Capsized Landing Craft, Kure Atoll, HI; Kure Atoll, Hawaii",28.01,182.6,2016-09-03,2016,True,True,,True,False
+"Tarrytown Tug Barge Collision; Tappan Zee Bridge, NY",41.068813,-73.877728,2016-03-17,2016,True,True,,True,False
+"Tug Gregory David; Pool 27, Upper Mississippi River MM 184.5",38.702863,-90.180711,2016-03-03,2016,True,True,,True,False
+"Stone Oil Barge Allision; New Orleans, LA",29.9243222222,-90.0607027778,2016-01-15,2016,True,True,,True,False
+"Pipeline Leak, Ship Shoal Block 233; Offshore Terrebonne Bay, LA",28.4611666667,-90.8848333333,2015-12-21,2015,True,True,,True,False
+"Tugs in Adak; Sweeper Cove, Adak Island, AK",51.86241,-176.630308333,2015-12-14,2015,True,True,,True,False
+"Grounded Tug; Galveston, TX",29.336,-94.7435,2015-10-26,2015,True,True,,True,False
+"Sunken Barge; Garyville, LA",30.0488555556,-90.5912777778,2015-10-25,2015,True,True,,True,False
+"Tug Challenger; Juneau, Alaska",58.3016333333,-134.439,2015-10-21,2015,True,True,,True,False
+"Tug Harken 10; Straits of Georgia, Briitish Columbia, Canada",49.087,-123.460166667,2015-09-28,2015,True,True,,True,False
+"Tank Barge Argo; Western Lake Erie, Ohio",41.6393166667,-82.4933166667,2015-09-16,2015,True,True,,True,False
+"Private Recreation Vessel; Patricia Cay, St Thomas, USVI",18.3034333333,-64.8728166667,2015-07-06,2015,True,True,,True,False
+"Adams Slip; Greens Bayou, Houston Ship Channel, TX",29.741,-95.175,2015-06-10,2015,True,True,,True,False
+"Barge DB 165-1; Kuskokwim Bay, AK",59.915,-162.903333333,2015-06-03,2015,True,True,,True,False
+"Sunken Tug, LMR Mile Marker 163; New Orleans, LA",30.0638888889,-90.8636111111,2015-05-30,2015,True,True,,True,False
+"37 ft boat sinks in Columbia River; West of Sand Island, WA",46.2705,-124.033333333,2015-05-23,2015,True,True,,True,False
+"Vessel Collision; 17 m south of Long Island, NY",40.55,-72.4733333333,2015-05-17,2015,True,True,,True,False
+"Targa Terminals Houston Ship Channel; Houston, Texas",29.740308,-95.209632,2015-04-13,2015,True,True,,True,False
+Sunken deck barge; ICW near Horn Island Gulf of Mexico,30.2548333333,-88.609,2015-04-10,2015,True,True,,True,False
+"Good Friday Oil Spill - Forest City Yacht Club; Cleveland, Ohio",41.5276833333,-81.6579666667,2015-04-03,2015,True,True,,True,False
+Towboat Rebecca Lynn; Lake Michigan,45.8716666667,-85.1766666667,2015-03-31,2015,True,True,,True,False
+Towboat David Dunnigan; Ohio River MM 897.5,37.4180555556,-88.425,2015-03-19,2015,True,True,,True,False
+"Dredge Barge Jack Adams; Lake Ferguson, MS",33.4232333333,-91.0584,2015-03-17,2015,True,True,,True,False
+"Tug Sea Bear; Fire Island, NY",40.65445,-73.0575333333,2015-03-15,2015,True,True,,True,False
+"Eyak Fishing Vessel Grounding; Sitka, Alaska",56.8504666667,-135.39115,2015-01-20,2015,True,True,,True,False
+"Recreational Vessel; Norwalk, CT",41.1175,-73.411,2015-01-07,2015,True,True,,True,False
+"Barge National II; Beaufort Sea, AK",70.2155,-142.145666667,2014-10-24,2014,True,True,,True,False
+"Capsized Tug; Mobile Bay, AL",30.5846666667,-88.0291666667,2014-10-14,2014,True,True,,True,False
+"Salmon Tending Barge; Black Island, Maine",44.18649,-68.3505,2014-10-01,2014,True,True,,True,False
+"42ft. Vessel collision/sinking; 9 mi ENE of Vieques, PR",18.1833333333,-65.1166666667,2014-09-23,2014,True,True,,True,False
+"Sunken Shrimp Vessel; Southwest Pass, LA",28.8253333333,-89.4036666667,2014-09-23,2014,True,True,,True,False
+"Boat Fire; NW Neah Bay, WA",48.415,-124.546666667,2014-08-03,2014,True,True,,True,False
+"Tug Walter D. Johnson; Gulf of Mexico, 17 nmi west of Hernando Bch. ",28.4169444444,-83.0166666667,2014-07-17,2014,True,True,,True,False
+"Boston Ship Repair; Boston, MA",42.3454027778,-71.0289194444,2014-07-10,2014,True,True,,True,False
+"Yacht sinking; Anacortes, WA",48.5022083333,-122.605683333,2014-07-07,2014,True,True,,True,False
+"Recreational boat aground; Tulalip, WA",48.03,-122.23,2014-07-02,2014,True,True,,True,False
+Semi collision Interstate 65 Mobile/Tensaw Delta; Middle River/ General W. K. Wilson Bridge I65 Mobile/Tensaw River Delta AL,30.933333,-87.918333,2014-05-22,2014,True,True,,True,False
+"Tug Neptune - Dann Ocean Towing; Government Cut, Port of Miami",25.7561111111111,-80.1144444444444,2014-04-16,2014,True,True,,True,False
+"Sunken Pleasure Craft; Off Sanibel Island, FL",26.3773666667,-82.0869,2014-03-03,2014,True,True,,True,False
+"Vessel Fires; La Connor, Washington",48.39,-122.5,2014-02-21,2014,True,True,,True,False
+"Tug Sea Lion; Atlantic Beach, NY",40.59,-73.57,2014-01-15,2014,True,True,,True,False
+"46 Foot Fishing Boat; Muskeget Channel, MA",41.381317,-70.431633,2013-10-10,2013,True,True,,True,False
+"Sunk Tug Chickamauga; Eagle Harbor, WA",47.6211166667,-122.5212,2013-10-02,2013,True,True,,True,False
+"Wellhead Release; Ship Shoal Block 225, GOM, Louisiana",28.4666666667,-91.3166666667,2013-07-09,2013,True,True,,True,False
+"Sunken Vessel; Entrance to St Mary's River, MI",46.4737888889,-84.579525,2013-07-01,2013,True,True,,True,False
+"Tug Delta Captain; Offshore of Point Sur, CA",36.27,-122.155,2013-04-13,2013,True,True,,True,False
+"Tug Miss Melinda; Near Empire Locks, LA",29.2441666667,-89.6028333333,2013-02-28,2013,True,True,,True,False
+"Offshore Collision; Vermillion Block 94, LA",29.1911111111,-92.2819444444,2013-02-26,2013,True,True,,True,False
+"Swift Energy Wellhead Allision; Lake Washington, LA",29.3641666667,-89.7688888889,2013-02-26,2013,True,True,,True,False
+"Hansa Berlin; Mariel, Cuba",23.0333333333,-82.7833333333,2012-08-27,2012,True,True,,True,False
+"F/V ""Up The Ladder""; Cuttyhunk, MA",41.4163333333,-70.9457833333,2012-08-16,2012,True,True,,True,False
+"Oily Waste Discharge; Ship Shoal 22A, LA",28.4558333333,-91.0813888889,2012-07-08,2012,True,True,,True,False
+"Army Corps vessel; NW of Eureka, CA",41.1383333333,-124.386333333,2012-06-06,2012,True,True,,True,False
+"Fish Market Barge Sinking; Potomac River, Washington, DC",38.89,-77.03,2012-06-06,2012,True,True,,True,False
+"Makah F/V aground; Neah Bay, WA",48.3946166667,-124.653466667,2012-05-09,2012,True,True,,True,False
+"Garden Island Bay Barge hits old well; Garden Island Bay, Miss R Delta, LA",29.0909,-89.1636,2012-02-29,2012,True,True,,True,False
+"Russian icebreaker Tanker Renda; Winter fuel delivery to Nome, Alaska",64.4906777778,-165.446005556,2011-12-21,2011,True,True,,True,False
+Tug Nathan Stewart & Tanker Barge Adrift; NE Gulf of Alaska,58.46,-138.365,2011-12-18,2011,True,True,,True,False
+"Crowley Barge Adrift; Diomede Islands, AK",65.7852777778,-168.978333333,2011-09-21,2011,True,True,,True,False
+"Tug Aries; 95 miles east of St. Paul, Alaska",56.8,-167.383333333333,2011-06-26,2011,True,True,,True,False
+"Mystery Sheen; Ship Shoal Block 65, LA",28.9972,-90.8617,2011-03-13,2011,True,True,,True,False
+"Barge transfer accident; Goleta Point, CA",34.4075,-119.892,2010-10-29,2010,True,True,,True,False
+Grounded Diesel Barge; St Kitts,17.2896,-62.7113,2010-10-06,2010,True,True,,True,False
+Sunken vessel; Off Dominican Republic,17.16,-69.8167,2010-09-23,2010,True,True,,True,False
+"Stryker Barge Grounding; North Slope, Alaska",70.5219,-150.096,2010-09-15,2010,True,True,,True,False
+Ship Shoal Platform; 31 nm south of Isle Dernieres,28.5227,-90.9022,2010-09-14,2010,True,True,,True,False
+"Crowley Tug Pathfinder; Bligh Reef, Prince William Sound, Alaska",60.8383,-146.882,2009-12-23,2009,True,True,,True,False
+"Sheen; Ship Shoal Area, LA",28.8222,-90.9222,2009-11-16,2009,True,True,,True,False
+"Navy Jet Collision off Charleston, SC; 10mi east of Bull's Bay SC",32.8297,-79.3368,2009-10-15,2009,True,True,,True,False
+Mystery Spill Ship Shoal Block 118 ; Gulf of Mexico,28.8139,-90.8719,2009-10-01,2009,True,True,,True,False
+"Leaking vessel; Off Cape Flattery, Washington",48.349,-124.967,2009-09-25,2009,True,True,,True,False
+"Sailboat sinking; Little Egg Inlet, NJ",39.4883,-74.2853,2009-09-22,2009,True,True,,True,False
+"Crowley Barge 160-1; Quinhagak, Alaska",59.75,-161.917,2009-09-17,2009,True,True,,True,False
+"Barge Allision with Mooring Buoy; ICW at Colorado River, TX",28.6817,-95.975,2009-08-04,2009,True,True,,True,False
+"Grounded Barges, CTCO 336/358; Texas City Dike, TX",29.3795,-94.8673,2009-08-01,2009,True,True,,True,False
+"F/V Unknown name; 19 miles west of Tarpon Springs, FL",28.1611,-83.105,2009-07-15,2009,True,True,,True,False
+"Grounded Barge; Columbia River, OR",45.719,-121.508,2009-07-09,2009,True,True,,True,False
+"Sailing Vessel ""Paul Eric""; Rose Atoll, American Samoa",-14.5356,-168.151,2009-06-16,2009,True,True,,True,False
+"Dredge Support Vessel Grounded; Barataria Bay, LA",29.3836,-89.9925,2009-05-23,2009,True,True,,True,False
+"Economy Boat Store; Wickliff, KY",36.967,-89.0981,2009-05-13,2009,True,True,,True,False
+"Tanker Truck; Revere, MA",45.4238,-71.003,2009-04-20,2009,True,True,,True,False
+Tanker Eltanin; Offshore LA/TX,29.4798,-93.8318,2009-03-01,2009,True,True,,True,False
+"Wassaw Sound Yacht Grounding; Off Wassaw Sound, GA",31.9316,-80.9629,2009-02-28,2009,True,True,,True,False
+"Yasa Golden Dardanelles Grounding; GOM, off Galveston, TX",29.0869,-94.2511,2009-02-21,2009,True,True,,True,False
+"Tanker Truck Fuel Spill; Leesburg, VA",39.1163888888889,-77.5647222222222,2009-01-26,2009,True,True,,True,False
+"F/V Santa Lucia; Key West, FL",24.625,-81.83,2008-12-12,2008,True,True,Santa Lucia,False,False
+"Tug HOUSTON Tow Grounding; ICW near E Matagorda Bay, TX",28.7625,-95.6552,2008-12-12,2008,True,True,HOUSTON,False,False
+"Tug SABINE PASS Grounding; Dickinson Bayou, TX",29.4667,-94.95,2008-12-11,2008,True,True,SABINE PASS,False,False
+"Shrimp Boat Aground; South Pass, Mississippi Delta, LA",28.98,-89.155,2008-12-02,2008,True,True,,False,False
+"F/V Network; Tillamook Bay, OR",45.5717,-123.962,2008-11-28,2008,True,True,Network,False,False
+"F/V MISS Rhianna; Brazos Santiago Pass, TX",26.0653,-97.1583,2008-11-24,2008,True,True,MISS Rhianna,False,False
+"Sunken Vessel, M/V YOUNG GUNS; Hopedale Canal, South LA",29.8197,-89.6558,2008-11-13,2008,True,True,YOUNG GUNS,False,False
+"Tug Southern Cross; Buzzards Bay, MA",41.535,-70.9748,2008-11-09,2008,True,True,,False,False
+"M/V MISTER JACOB Grounding; GOM, Mississippi Delta, LA",28.8753,-89.038,2008-11-06,2008,True,True,MISTER JACOB Grounding,False,False
+"LIL SUSAN S Grounding; Bolivar, Texas",29.3723,-94.7837,2008-11-02,2008,True,True,LIL SUSAN,False,False
+"Butylene Barge Aground; Chocolate Bayou, TX",29.2165,-95.2134,2008-10-31,2008,True,True,,False,False
+F/V Lou ; Dry Tortugas,24.7233,-82.803,2008-10-28,2008,True,True,Lou,False,False
+"Tug Miss Janice; New Orleans, LA",29.9172,-90.0793,2008-10-28,2008,True,True,,False,False
+F/V Katmai; 100 mi w of Adak Is in Amchitka Pass,51.9333,-179.55,2008-10-22,2008,True,True,Katmai,False,False
+Two Barges Adrift; Leeward Islands - West Indies,16.5633,-62.4433,2008-10-16,2008,True,True,,False,False
+"Grounded Barge, MM329 ICW; Gilchrist, Texas",29.5185,-94.5057,2008-10-08,2008,True,True,,False,False
+"Tug Twilite; Wood River, SW Alaska",59.27,-158.583,2008-10-08,2008,True,True,,False,False
+"M/V Nunaniq; Mekoryuk village beach, Nunivak Isl., AK ",60.3887,-166.185,2008-10-02,2008,True,True,Nunaniq,False,False
+Hurricane Ike: Mystery Sheen ; Ship Shoal Block 154,28.6807,-91.2107,2008-09-16,2008,True,True,,False,False
+"Red Flag Barge Allision ; Bolivar Roads, Bolivar Peninsula, TX",29.4104,-94.7374,2008-08-28,2008,True,True,,False,False
+Portland Yacht Club Spill; Columbia River,45.6007,-122.651,2008-08-19,2008,True,True,,False,False
+"M/V Island Intrepid; Miami, FL",25.7646,-80.1336,2008-08-14,2008,True,True,Island Intrepid,False,False
+"F/V Northern Mariner; Prince William Sd., Fleming Isl., Alaska",60.1763,-148.003,2008-08-07,2008,True,True,Northern Mariner,False,False
+Grounded Jackup vessel; Offshore of Belle Pass,29.0893,-90.2278,2008-08-04,2008,True,True,,False,False
+"Sunken Tugs; Schuylkill River, Philadelphia, PA",39.8951,-75.1989,2008-07-29,2008,True,True,,False,False
+"Barge DM932; New Orleans, LA",29.9125,-90.0917,2008-07-23,2008,True,True,DM932,False,False
+"Crowley Barge 180-1; Togiak, AK",59.05,-160.333,2008-07-23,2008,True,True,,False,False
+Jet Collision; Guam,13.4375,144.751388889,2008-07-21,2008,True,True,,False,False
+"F/V SUSAN II; Manasquan, NJ",40.107,-74.0242,2008-07-02,2008,True,True,SUSAN II,False,False
+"T/V FAIRCHEM FILLY Grounding; Galveston, TX",29.3562,-94.7777,2008-07-02,2008,True,True,FAIRCHEM FILLY Grounding,False,False
+"Barge GULFSTREAM; Bolivar Anchorage, Galveston, TX",29.3468,-94.7668,2008-06-28,2008,True,True,GULFSTREAM,False,False
+"Mystery Sheen, Ship Shoal 182; Gulf of Mexico, Offshore LA",28.5967,-90.9794,2008-06-27,2008,True,True,,False,False
+"M/V RAMLAH Oil Spill; LOOP, Gulf of Mexico, LA",28.8875,-89.9997,2008-06-23,2008,True,True,RAMLAH Oil Spill,False,False
+"F/V Stacey Lynn; Forest River, Savannah, Ga",31.935,-81.155,2008-06-20,2008,True,True,Stacey Lynn,False,False
+"Ship Shoal Block 7 Pipeline Release; Gulf of Mexico, LA",29.1878,-91.1786,2008-06-10,2008,True,True,,False,False
+"M/V Dog Fish; MP Block 72, Mississippi Delta, LA",29.2672,-88.9377,2008-05-25,2008,True,True,Dog Fish,False,False
+"F/V King Fisher; Southwest Pass, Vermillion Bay, LA",29.6108,-92.0088,2008-05-15,2008,True,True,King Fisher,False,False
+"Barge Energy 11102 ; Bolivar Roads, Galveston, TX",29.3378,-94.7653,2008-05-09,2008,True,True,,False,False
+Kewalo Basin F/V grounding; Honolulu ,21.29,-157.86,2008-05-02,2008,True,True,,False,False
+"TUG DOROTHY ANN; Marquette, MI",46.534,-87.3868,2008-04-22,2008,True,True,DOROTHY ANN,False,False
+"Tanker Truck Spill; Chester River, MD",39.377,-75.809,2008-04-15,2008,True,True,,False,False
+"M/V MEVLUT DOVEN; Cape Henry, VA.",35.2,-71.3,2008-04-04,2008,True,True,MEVLUT DOVEN,False,False
+Sunken Tug; Off Alabama Coast,29.0533,-86.6917,2008-04-04,2008,True,True,,False,False
+"Tug Yankee and Barge DBL151; Tampa Bay, FL",27.6065,-82.8153,2008-04-02,2008,True,True,DBL151,False,False
+"F/V Miss Sonya; 2 mi E of Gloucester, MA",42.545,-70.68,2008-03-25,2008,True,True,Miss Sonya,False,False
+"F/V Alaska Ranger; 120nm W. of Unalaska Is., Bering Sea, AK",53.8817,-169.983,2008-03-23,2008,True,True,Alaska Ranger,False,False
+"F/V MISS LISA; Rockerfeller Refuge, LA",29.5933,-92.6633,2008-03-15,2008,True,True,MISS LISA,False,False
+M/V JILLIAN MORRISON ; Gulf of Mexico,29.2533,-92.0425,2008-03-12,2008,True,True,JILLIAN MORRISON,False,False
+"Grounded Tanker, M/V EOS; Corpus Christi, TX",29.83,-97.1382,2008-03-02,2008,True,True,EOS,False,False
+"F/V Isabelle; Resurrection Bay, Seward, Alaska",60.1166,-140.434,2008-02-20,2008,True,True,Isabelle,False,False
+"F/V Westward; Prince of Wales Isl., SE Alaska",55.5808,-133.277,2008-02-18,2008,True,True,Westward,False,False
+"OSV GRADY FAGAN Allision; GOM, South of FGBNMS",27.3099,-93.5691,2008-02-16,2008,True,True,OSV GRADY FAGAN,False,False
+"M/V Centaurus Leader; Brunswick, GA",31.1115,-81.4697,2008-02-13,2008,True,True,Centaurus Leader,False,False
+F/V Allegura; Off Jupiter Inlet Florida,26.9105,-79.9862,2008-02-04,2008,True,True,Allegura,False,False
+"M/V Supe; off Zorritos, Peru",-3.63333,-80.7667,2008-02-01,2008,True,True,Supe,False,False
+"Tug Accue IV ; Calcasieu, LA",30.0683,-93.27,2008-01-28,2008,True,True,,False,False
+"Vessel Collision; Newark Bay, NJ",40.6644,-74.1409,2008-01-24,2008,True,True,,False,False
+"F/V Anna Marie; Copalis Beach, WA",47.1265,-124.188,2008-01-23,2008,True,True,Anna Marie,False,False
+"Tug Joseph Foss; Cape Meares, OR",45.4617,-124.05,2008-01-23,2008,True,True,,False,False
+"F/V Haeshin; Gray's Harbor, WA",46.905,-124.133,2008-01-21,2008,True,True,Haeshin,False,False
+"M/V Ever Radiant; Savannah River, Ga",32.25,-80.8083,2008-01-16,2008,True,True,Ever Radiant,False,False
+"Oil Well Allision and Release; West Cote Blanche Bay, LA",29.6947,-91.8128,2008-01-11,2008,True,True,,False,False
+"M/V Sun Venus; Offshore, HI",20.0,-159.55,2008-01-03,2008,True,True,Sun Venus,False,False
+F/V Silver Wings; Gulf of Mexico,27.9833,-91.8483,2007-12-21,2007,True,True,Silver Wings,False,False
+"F/V Bowfin; Tacoma, WA",47.2833,-122.377,2007-12-11,2007,True,True,Bowfin,False,False
+"M/V Lady Marie; Breton Sound, LA",29.6615,-89.1785,2007-12-11,2007,True,True,Lady Marie,False,False
+"Burning Fishing Vessel; Tillamook, OR",45.222,-124.327,2007-12-10,2007,True,True,,False,False
+"Tug Ocean 1; Port Everglades, FL",26.0483,-80.1153,2007-12-08,2007,True,True,,False,False
+"Barge Tamara V; Guam, Pacific Ocean",13.4831,144.74,2007-12-03,2007,True,True,,False,False
+"Tug Deschutes; Snake River, WA",46.2477,-118.962,2007-12-02,2007,True,True,,False,False
+"Evergreen Timber House Boat; George Inlet, SE Alaska",55.455,-131.478,2007-11-23,2007,True,True,,False,False
+"M/V Seaboard Rio Haina; Jacksonville, FL",30.6775,-81.4644,2007-11-17,2007,True,True,Seaboard Rio Haina,False,False
+"Sunken Fishing Vessel, MAMA JUNE; Gulf of Mexico",28.184,-92.6863,2007-11-17,2007,True,True,,False,False
+"M/V Cosco Busan; San Francisco Bay, CA",37.8005,-122.372,2007-11-07,2007,True,True,Cosco Busan,False,False
+"Sunken Fishing Vessel LA7516EG; Dead Women Pass, Mississippi Delta, LA",29.2552,-89.1155,2007-10-26,2007,True,True,LA7516EG,False,False
+"F/V Miss Cindy II; 10 miles Off Cumberland Island, Ga",30.8967,-81.305,2007-10-12,2007,True,True,Miss Cindy II,False,False
+"Fishing vessel aground; Barnegat Light, NJ",39.7667,-74.1,2007-10-11,2007,True,True,,False,False
+"T/V Tigani; Delaware River, Paulsboro, NJ",39.8545,-75.2276,2007-10-10,2007,True,True,Tigani,False,False
+"Barge OB6; Ugashik Bay, AK",57.5733,-157.595,2007-10-05,2007,True,True,OB6,False,False
+"F/V PAPA GEORGE; Off Willapa Bay, OR",46.4675,-124.209,2007-09-03,2007,True,True,PAPA GEORGE,False,False
+"F/V Secret; 6 miles south of Umpqua R, OR",43.5698,-124.287,2007-09-02,2007,True,True,Secret,False,False
+"F/V Aldebaran; Revillagigedo Channel, AK",55.2438,-131.438,2007-08-18,2007,True,True,Aldebaran,False,False
+"F/V Rough Seas; Little Egg Inlet, NJ",39.485,-74.2917,2007-08-01,2007,True,True,Rough Seas,False,False
+"MP 21 Platform Allision and Oil Spill; Breton Sound GOM, LA",29.5642,-89.3358,2007-07-29,2007,True,True,,False,False
+"M/V Pegasus; Sunshine Cove, AK",58.6035,-134.926,2007-07-25,2007,True,True,Pegasus,False,False
+"F/V Nordic Viking; Prince William Sound, AK",60.7137,-146.194,2007-07-22,2007,True,True,Nordic Viking,False,False
+"F/V Christine Ann; Crystal River, FL",28.9333,-82.8167,2007-07-20,2007,True,True,Christine Ann,False,False
+"Grounded vessel; Rogue River Reef, OR",42.4633,-124.5,2007-07-14,2007,True,True,,False,False
+"Tug Russel B Murray; Hampton Roads, VA",36.9633,-76.384,2007-07-13,2007,True,True,,False,False
+"T/V WHITE SEA; Ambrose Channel, New York",40.5483,-74.0217,2007-07-12,2007,True,True,WHITE SEA,False,False
+"T/V Eagle Otome; 30nm off Galveston , TX",29.0825,-94.2497,2007-07-01,2007,True,True,Eagle Otome,False,False
+"M/V Koznitsa; Off Brunswick, Ga",31.0458,-81.2417,2007-06-23,2007,True,True,Koznitsa,False,False
+"Sunken Tug; Chandelier Islands, LA",29.6667,-88.8833,2007-05-25,2007,True,True,,False,False
+"F/V Miss Kathy; Sebastioan Inlet, FL",27.8484,-80.4653,2007-04-28,2007,True,True,Miss Kathy,False,False
+"M/V Fifty-First Lady; St Thomas, USVI",18.335,-65.8483,2007-04-24,2007,True,True,Fifty-First Lady,False,False
+"F/V Miss Mary; La Push, WA",47.9686,-125.28,2007-04-21,2007,True,True,Miss Mary,False,False
+"Tug American Challenger and Barge (Dredge ); Off Charleston, SC",33.2775,-77.8332,2007-04-11,2007,True,True,,False,False
+"Moncla Marina Barge; East Cote Blanche Bay, LA",29.4887,-91.6483,2007-03-28,2007,True,True,,False,False
+"Yacht Mermaid; Marathon, FL",24.7022,-81.0853,2007-03-20,2007,True,True,,False,False
+Ferry American Pride; USVI,18.3132,-64.9188,2007-03-17,2007,True,True,,False,False
+M/V Kobe Express grounding; NY,40.57,-74.04,2007-03-17,2007,True,True,Kobe Express,False,False
+"Tank Vessel East Point; Offshore, Atlantic Ocean",21.31,-58.01,2007-03-02,2007,True,True,,False,False
+"M/V Montrose grounding; Chesapeake Bay, MD",38.6299,-76.4064,2007-02-28,2007,True,True,Montrose,False,False
+"F/V Nisshin Maru; Cape Adare, Antarctica",-73.33,176.3,2007-02-16,2007,True,True,Nisshin Maru,False,False
+"F/V Island Charter; Offshore Winyah Bay, SC",33.0836,-78.7178,2007-02-07,2007,True,True,Island Charter,False,False
+"Oil Barge Fire; Mississippi River near Vicksburg, MS",32.156,-91.003,2007-02-02,2007,True,True,,False,False
+"F/V American Freedom; Long Island, NY",40.652,-72.46,2007-01-22,2007,True,True,American Freedom,False,False
+M/V Tong Cheng; Hawaiian Islands,20.6167,-164.767,2007-01-16,2007,True,True,Tong Cheng,False,False
+"F/V Wahine Kepaloa II; Ni'ihau Island, HI",21.8087,-160.193,2006-12-30,2006,True,True,Wahine Kepaloa II,False,False
+"Yacht ""Big Blow""; Sunk Off Crystal River, FL",28.8283,-82.8502,2006-12-30,2006,True,True,,False,False
+F/V Kotobuki Maru No. 38; Midway Island,28.1933,-177.355,2006-12-29,2006,True,True,Kotobuki Maru No,False,False
+"Disabled  Lift Boat  ""Juan""; Offshore, LA",28.5374,-90.9807,2006-12-28,2006,True,True,,False,False
+"Tug Seneca; Lake Superior, MI",46.6783,-85.54,2006-12-06,2006,True,True,,False,False
+"M/V Sea Honesty; Adak,  Bering Sea, AK",54.7781,-174.958,2006-12-04,2006,True,True,Sea Honesty,False,False
+"T/V Kristin Poling; Rockaway Inlet, NY",40.5875,-73.7667,2006-11-10,2006,True,True,Kristin Poling,False,False
+"F/V Medusa; Off St Petersburg, FL",27.1033,-83.6383,2006-11-07,2006,True,True,Medusa,False,False
+"Tug LA MARIE; Gulf of Mexico, LA",29.4492,-93.4278,2006-10-22,2006,True,True,MARIE,False,False
+"M/V Vagabond; Virgin Gorda, BVI",18.4008,-64.4519,2006-10-16,2006,True,True,Vagabond,False,False
+"Penn Maritime Barge P-120; Long Island Sound, NY",40.9748,-72.7419,2006-10-16,2006,True,True,,False,False
+"Barge MOR 152; Belle Chasse, LA",29.8203,-90.0071,2006-10-05,2006,True,True,MOR 152,False,False
+"M/V Clipper Lasco; Fort Lauderdale, FL",26.1178,-80.0838,2006-09-14,2006,True,True,Clipper Lasco,False,False
+"M/V Toro; St. Lawrence Seaway, NY",45.0,-74.6667,2006-09-06,2006,True,True,Toro,False,False
+"Tank Vessel Solar 1; Guimaras, Philippines",10.7,122.567,2006-08-21,2006,True,True,,False,False
+"F/V Virginia; Eagle Cove, San Juan Island, WA",48.45,-123.0,2006-08-08,2006,True,True,Virginia,False,False
+"Dredge Barge; Sturgeon Bay, Lake Michigan, WI",44.322,-86.851,2006-08-04,2006,True,True,,False,False
+"F/V Five Gs; Santa Cruz Island, CA",34.0172,-119.622,2006-07-12,2006,True,True,Five Gs,False,False
+"F/V Norqueen; Sitka, AK",56.4113,-135.042,2006-07-12,2006,True,True,Norqueen,False,False
+"M/V SPAR ORION; Port Everglades, FL",26.0928,-80.1112,2006-05-17,2006,True,True,SPAR ORION,False,False
+"F/V Special Lady; Lake Salvador, LA",29.759,-90.2278,2006-05-16,2006,True,True,Special Lady,False,False
+"M/V Crowley Ambassador; Florida Keys, FL",25.4024,-80.0536,2006-05-01,2006,True,True,Crowley Ambassador,False,False
+"Barge Hygrade 42; St Croix, US Virgin Islands",17.7527,-64.706,2006-04-28,2006,True,True,,False,False
+"T/V  Margara; Tallaboa, Puerto Rico",17.95,-66.7267,2006-04-27,2006,True,True,Margara,False,False
+"F/V Blue North; NW Unalaska Island, AK",53.6313,-167.839,2006-03-31,2006,True,True,Blue North,False,False
+"M/V Empress of the North; Columbia River, WA",45.5717,-122.36,2006-03-24,2006,True,True,Empress,False,False
+"F/V Relentless; Half Moon Bay, CA",37.6,-122.933,2006-02-23,2006,True,True,Relentless,False,False
+"Tank Barge Fire; Pas A Loutre, LA",29.1417,-89.1967,2006-02-17,2006,True,True,,False,False
+"F/V Miss Caroline; Montauk Pt, NY",40.8333,-71.8967,2006-02-16,2006,True,True,Miss Caroline,False,False
+"T/V Seabulk Pride; Nikiski, AK",60.6767,-151.403,2006-02-02,2006,True,True,Seabulk Pride,False,False
+"Asphalt Barge M-53; Louisville, KY",38.2819,-85.7986,2006-01-26,2006,True,True,,False,False
+"F/V Chovie Clipper; Catalina Island, CA",33.45,-118.483,2006-01-23,2006,True,True,Chovie Clipper,False,False
+"Barge Energy 5501; New Haven, CT",41.2822,-72.9118,2006-01-21,2006,True,True,,False,False
+"Tank Barge Maritrans-192; Offshore Cape Fear, NC",33.4869,-77.7333,2006-01-18,2006,True,True,,False,False
+Tug Valour; NC,33.285,-77.69,2006-01-18,2006,True,True,,False,False
+"F/V Captain Chance; Near Tampa, FL",28.15,-82.8317,2006-01-17,2006,True,True,Captain Chance,False,False
+"F/V Northern Orion; Offshore, Oregon",46.1034,-124.473,2006-01-10,2006,True,True,Northern Orion,False,False
+"F/V Infidel; SSW of Catalina Island, CA",33.2978,-118.317,2006-01-09,2006,True,True,Infidel,False,False
+"F/V  Buccaneer; Point Mugu, CA",34.0467,-119.117,2006-01-06,2006,True,True,Buccaneer,False,False
+"F/V Hail Mary II; Long Island, NY",40.85,-72.4833,2006-01-03,2006,True,True,Hail Mary II,False,False
+"M/V Panama; Ensenada, Mexico",31.8591,-116.618,2005-12-28,2005,True,True,Panama,False,False
+"F/V Sky Sun; Cape Kumukahi, HI",19.465,-154.826,2005-12-15,2005,True,True,Sky Sun,False,False
+F/V Captain A.B.; FL,30.1183,-81.345,2005-12-14,2005,True,True,Captain A,False,False
+"F/V Ace; Dana Point, CA",33.408,-117.65,2005-11-28,2005,True,True,Ace,False,False
+"T/V Sperchious; Bahia de Guayanilla, Puerto Rico",17.9607,-66.7683,2005-11-21,2005,True,True,Sperchious,False,False
+"F/V Eric H; Offshore St. Petersburg, FL",26.6683,-84.0883,2005-10-05,2005,True,True,Eric H,False,False
+"New Windsor Cargo Terminal; Hudson River, NY",41.5435,-73.9741,2005-07-29,2005,True,True,,False,False
+"F/V Royal Quarry; Columbia River Entrance, OR",46.2528,-123.991,2005-07-25,2005,True,True,Royal Quarry,False,False
+"Barge VB53; Richmond, VA",37.3933,-77.3833,2005-05-09,2005,True,True,VB53,False,False
+"FV Hannah and Sarah Grounding; Nantucket Island, MA",41.2833,-69.965,2005-04-29,2005,True,True,Hannah,False,False
+"Barge B-35; Hudson River, NY",41.5962,-73.9567,2005-04-28,2005,True,True,,False,False
+"Crew Boat Rene I; Sabine Pass, LA",29.7118,-93.8462,2005-04-28,2005,True,True,,False,False
+"Cold Springs Harbor Barge; Arthur Kill, NY/NJ",40.5408,-74.2547,2005-03-24,2005,True,True,,False,False
+"RTC Barge 380; Elizabeth Port, NJ",40.6366,-74.1966,2005-03-22,2005,True,True,RTC 380,False,False
+"Tank Barge Millicoma; North Head, WA",46.302,-124.079,2005-03-21,2005,True,True,,False,False
+"Yacht TV; Port Everglades, FL",26.0945,-80.1037,2005-03-17,2005,True,True,,False,False
+"Bouchard Tug; Offshore, NJ",39.8333,-73.8333,2005-02-27,2005,True,True,,False,False
+"T/V Great Lakes; Arthur Kill, NJ",40.6,-74.2,2005-02-22,2005,True,True,Great Lakes,False,False
+"F/V Westwind III; 26 miles Offshore Tampa, FL",27.3967,-83.3567,2005-02-02,2005,True,True,Westwind III,False,False
+"M/V Cape Flattery; Barbers Point, Oahu, HI",21.31,-158.127,2005-02-02,2005,True,True,Cape Flattery,False,False
+"Tug WALLEY BLESSEY; Corpus Christi Bay, TX",29.82,-97.295,2005-01-13,2005,True,True,WALLEY BLESSEY,False,False
+"Barge RTC503; Hells Gate, NY Harbor, NY",40.7201,-73.9695,2005-01-06,2005,True,True,RTC503,False,False
+"Ievoli Splendor; Houston Ship Channel, TX",29.7182,-95.0277,2004-12-15,2004,True,True,,False,False
+"HY-Line Ferry Dock; Hyannis, MA",41.63,-70.3,2004-12-11,2004,True,True,,False,False
+"F/V Miss Dottie; Offshore Marathon Key, FL",24.585,-80.8117,2004-12-08,2004,True,True,Miss Dottie,False,False
+"M/V Selendang Ayu; Unalaska-Aleutian Islands, AK",53.7567,-167.346,2004-12-08,2004,True,True,Selendang Ayu,False,False
+"T/V Kristin Poling; East Rockaway Inlet, NY",40.5846,-73.7602,2004-12-03,2004,True,True,Kristin Poling,False,False
+"M/V Athos I; Delaware River, NJ/PA",39.8583,-75.23,2004-11-27,2004,True,True,Athos I,False,False
+"M/V Nadine Baker; Green River, KY",37.7381,-87.3467,2004-11-18,2004,True,True,Nadine Baker,False,False
+"M/V Fortune Epoch; Offshore Savannah, GA",31.9833,-80.6833,2004-11-17,2004,True,True,Fortune Epoch,False,False
+"Tanker Adrift; Offshore Mexican Waters, SW of Manzanillo, Mexico",24.0,-112.0,2004-11-01,2004,True,True,,False,False
+"F/V THE BOSS; Yaquina Bay, OR",44.6126,-124.072,2004-10-07,2004,True,True,THE BOSS,False,False
+"M/V Federal Pescadores; Ft Lauderdale, FL",26.1117,-80.0917,2004-10-07,2004,True,True,Federal Pescadores,False,False
+"Fishing Vessel Spill; Grays Harbor, WA",46.4,-124.0,2004-09-14,2004,True,True,,False,False
+"F/V Royal Flush Grounding; SE Alaska, AK",54.8033,-130.933,2004-09-14,2004,True,True,Royal Flush Grounding,False,False
+"Tug Delta Star; Sabine, TX",29.7359,-93.8711,2004-08-22,2004,True,True,,False,False
+"M/T Eagle Memphis Collision; Mississippi River, MS",29.9383,-90.0008,2004-07-29,2004,True,True,Eagle Memphis Collision,False,False
+"F/V Andrew and Aaron; Marco Island, FL",25.45,-81.8567,2004-07-21,2004,True,True,Andrew,False,False
+Barge Grounding; NY,40.5,-73.7,2004-07-17,2004,True,True,,False,False
+"Truck Collision Spill; Magee Marsh, OH",41.6061,-83.1663,2004-06-22,2004,True,True,,False,False
+"Captain Jack Grounding; Southeast Alaska, AK",55.885,-133.71,2004-06-09,2004,True,True,,False,False
+"Vessel On Fire; Off Tampa, FL",27.5,-83.0,2004-05-29,2004,True,True,,False,False
+"Vessel; Off SC, SC",31.0,-73.0,2004-05-20,2004,True,True,,False,False
+"Ferry LaConte Grounding; Peril Strait, AK",57.5667,-135.433,2004-05-11,2004,True,True,,False,False
+"M/V Eastwind; Ft. Lauderdale, FL",26.1177,-80.0928,2004-03-26,2004,True,True,Eastwind,False,False
+"Yacht Fire; Tampa Bay, FL",27.5583,-82.6317,2004-03-04,2004,True,True,,False,False
+"T/V Bow-Mariner; Offshore, VA",37.8833,-74.25,2004-02-28,2004,True,True,Bow-Mariner,False,False
+"Tug Debra Ann; Mississippi Sound, MS",30.2483,-88.8267,2004-02-23,2004,True,True,,False,False
+"Vessel; Off Virginia Coast, VA",36.6,-75.4,2004-01-31,2004,True,True,,False,False
+"Collision; Terrebone Bay, LA",29.3,-90.6,2004-01-19,2004,True,True,,False,False
+"M/V Brali; New Haven, CT",41.1833,-72.8833,2004-01-13,2004,True,True,Brali,False,False
+"Pleasure Craft Collision; Pt. Roberts, WA",48.9771,-123.065,2004-01-01,2004,True,True,,False,False
+"Foss Barge Point Wells; Edmonds, WA",47.7833,-122.4,2003-12-30,2003,True,True,,False,False
+"Unknown Barge; Alcote Key,FL",20.1833,-82.9,2003-12-22,2003,True,True,,False,False
+"Tug Jerry Jones; Memphis, TN",34.8692,-90.341,2003-12-16,2003,True,True,,False,False
+"F/V Miss Margaret; Sabine Jetty, TX",29.6544,-93.8118,2003-12-15,2003,True,True,Miss Margaret,False,False
+"Barge B-80; Arthur Kill, NY",40.6458,-74.1824,2003-12-11,2003,True,True,,False,False
+"F/V MIZ B Adrift; Offshore, VA",37.6167,-75.0833,2003-12-11,2003,True,True,MIZ B Adrift,False,False
+"M/V Stellamare; Albany, NY",42.6167,-73.7538,2003-12-09,2003,True,True,Stellamare,False,False
+"Tug New River; Lake Worth Inlet, FL",26.7667,-80.0483,2003-12-04,2003,True,True,,False,False
+"Kristin Poling Aground; Rockaway Inlet, NY",40.59,-73.755,2003-12-03,2003,True,True,,False,False
+"Barge and Tanker Collision; Mobile Bay, AL",30.6833,-88.0333,2003-12-02,2003,True,True,,False,False
+"M/V Brussel; New York Harbor, NY",40.63,-74.06,2003-12-02,2003,True,True,Brussel,False,False
+"Sunken tug FRITZ CENAC; Dauphin Island, AL",30.2508,-88.1813,2003-11-28,2003,True,True,FRITZ CENAC,False,False
+"Sunken F/V; Off Foul Weather Bluff, Hood Canal, WA",47.939,-122.584,2003-10-29,2003,True,True,,False,False
+"F/V Raven Adrift; North of Alaska Peninsula, Bering Sea, AK",55.6167,-163.15,2003-10-15,2003,True,True,Raven Adrift,False,False
+"M/V Presque Isle; Lake Superior near Eagle Harbor, MI",47.2736,-90.2047,2003-10-06,2003,True,True,Presque Isle,False,False
+"Jackup Barge Superior Endeavor Grounded; Boston Harbor, MA",42.3229,-70.9189,2003-10-03,2003,True,True,,False,False
+"M/V Kent Reliant Grounded; Entrance San Juan Harbor, PR",18.4742,-66.1338,2003-09-18,2003,True,True,Kent Reliant Grounded,False,False
+"Tug Laine Jones on Fire; Mississippi River, AR",34.5208,-90.5733,2003-09-08,2003,True,True,,False,False
+"Tug Victoria Hunt Rose; Nahant, MA",42.4368,-70.8765,2003-09-07,2003,True,True,,False,False
+"M/V Peljesac Grounded; Near Sabine Jetties, TX",29.6544,-93.8118,2003-08-31,2003,True,True,Peljesac Grounded,False,False
+"F/V Decade Overturned; Pavlof Bay, AK",55.3009,-161.805,2003-08-27,2003,True,True,Decade Overturned,False,False
+T/V Great Lakes; NY,42.5843,-73.7557,2003-08-26,2003,True,True,Great Lakes,False,False
+"F/V Donna Ann Grounding; Tanglefoot Bay, AK",57.5733,-154.49,2003-08-20,2003,True,True,Donna Ann Grounding,False,False
+"F/V Valiant Maid Sinking; Offshore Cordova, AK",60.55,-145.772,2003-08-19,2003,True,True,Valiant Maid Sinking,False,False
+"F/V Chichagof Grounded; Kodiak Island, AK",55.8933,-155.223,2003-08-07,2003,True,True,Chichagof Grounded,False,False
+"F/V Jami Lynn Burned and Sank; Offshore Tampa Bay, FL",27.6067,-83.2583,2003-07-31,2003,True,True,Jami Lynn Burned,False,False
+"M/V Alam Senang Grounded; Off Port Everglades, FL",26.1,-80.0833,2003-07-25,2003,True,True,Alam Senang Grounded,False,False
+"F/V Four Daughters; Offshore Sandy Hook, NJ",39.991,-73.1875,2003-07-17,2003,True,True,Four Daughters,False,False
+"Submerged Tug Captain Duff; Little River Inlet, SC",33.8417,-78.5403,2003-07-16,2003,True,True,,False,False
+"Sunken F/V Waterworld; Entrance to Sabine Jetty, TX",29.6471,-93.8255,2003-07-15,2003,True,True,Waterworld,False,False
+"Mystery Sheen; Ship Shoal Area, Offshore, LA",28.9919,-90.9889,2003-06-18,2003,True,True,,False,False
+"Freighter Silhouette Sinking; Offshore Ft. Lauderdale, FL",26.1028,-80.1209,2003-06-15,2003,True,True,,False,False
+"Bouchard Barge 160; Long Island Sound, NY",40.992,-72.6499,2003-06-07,2003,True,True,,False,False
+"M/V Freedom Express; Offshore Miami Beach, FL",25.7733,-80.1033,2003-06-04,2003,True,True,Freedom Express,False,False
+"F/V Capt Bob Fire and Sinking; Offshore Currituck, NC",36.2103,-75.4677,2003-05-29,2003,True,True,Capt Bob Fire,False,False
+"Sunken Fishing Vessel; Barataria Bay, LA",29.33,-89.9867,2003-05-15,2003,True,True,,False,False
+"Sunken Vessel M/V Mr. C; Gulf of Mexico, Offshore, LA",28.4539,-91.7564,2003-05-10,2003,True,True,,False,False
+"Sunken Vessel OSV April; Gulf of Mexico, Offshore, LA",28.4547,-91.4062,2003-05-10,2003,True,True,OSV,False,False
+Sunken Tug Mathilde; Gulf of Mexico,28.5069,-91.7997,2003-05-08,2003,True,True,,False,False
+"Bouchard Barge 120; Buzzards Bay, MA",41.5667,-70.7417,2003-04-27,2003,True,True,,False,False
+"F/V Leader Aground; Napeaque, NY",40.9833,-72.0667,2003-04-17,2003,True,True,Leader Aground,False,False
+"F/V Night Lady; Dry Tortugas, FL",24.7933,-82.67,2003-04-08,2003,True,True,Night Lady,False,False
+"F/V Angel Dawn Aground; Oregon Inlet, NC",35.7027,-75.5167,2003-03-05,2003,True,True,Angel Dawn Aground,False,False
+"M/V Genmar Alexandra; Mississippi River, LA",29.25,-89.6,2003-02-19,2003,True,True,Genmar Alexandra,False,False
+"Tank Barge Energy 5501; Long Island Sound, CT",41.0433,-73.3676,2003-02-14,2003,True,True,,False,False
+"Vane Brothers Fuel Barge; Chesapeake Bay, MD",38.2,-75.98,2003-02-03,2003,True,True,,False,False
+"F/V Reel Fishing Adrift on Fire; Columbia River, OR",46.2757,-124.227,2003-01-18,2003,True,True,Reel Fishing Adrift,False,False
+"Anthea Y Aground; Cementown, NY",42.1293,-73.9141,2003-01-14,2003,True,True,,False,False
+"F/V Grounding; Umpqua River, OR",43.6751,-124.224,2003-01-14,2003,True,True,Grounding,False,False
+"Tanker Truck; School House Creek, OR",46.0002,-122.852,2003-01-13,2003,True,True,,False,False
+"Allouette Arrow Aground; Cape Canaveral, FL",28.3917,-80.4267,2003-01-09,2003,True,True,,False,False
+"M/V Kyowa Violet Grounded; Yap, FSM",9.53686,138.134,2003-01-02,2003,True,True,Kyowa Violet Grounded,False,False
+M/V Prestige; Spain,42.3167,-12.3167,2002-11-15,2002,True,True,Prestige,False,False
+"CT Barge 1112; Chicago Ship and Sanitary Canal, IL",41.65,-88.05,2002-01-03,2002,True,True,,False,False
+"OR Vessel Adrift; 90 nm west of Cape Foulweather, OR",45.1167,-126.317,2001-11-20,2001,True,True,,False,False
+"Elizabeth River Fuel Barge Spill; Elizabeth River in downtown Norfolk, VA",36.8833,-76.3333,2001-10-31,2001,True,True,,False,False
+M/V New Amity; Upper Galveston Bay,29.6172,-94.9497,2001-09-23,2001,True,True,New Amity,False,False
+"F/V Bono Grounding; Pfieffer Point, CA",36.227,-121.811,2001-09-09,2001,True,True,Bono Grounding,False,False
+"F/V Vixen; Cape Mendocino, CA",40.175,-124.242,2001-08-03,2001,True,True,Vixen,False,False
+"Buffalo Barge MF11; Intercoastal Waterway mile marker 292, near Port Arthur, TX",29.7897,-94.0058,2001-06-15,2001,True,True,MF11,False,False
+Tug John Terecamo; Delaware River,39.8633,-75.23,2001-06-15,2001,True,True,,False,False
+Tug Bay Titon; Chesapeake and Delaware (C&D) Canal,39.5617,-75.5617,2001-05-11,2001,True,True,,False,False
+F/V Blue Max; Columbia River Mouth,46.2383,-124.125,2001-02-15,2001,True,True,Blue Max,False,False
+Barge Bonita; Gulf of Mexico,29.1428,-94.67,2001-01-13,2001,True,True,,False,False
+"Tug Cassia Leigh; 500 yards off West Palm Beach, Florida",26.6967,-80.03,2000-12-15,2000,True,True,,False,False
+"M/V Albemarle Island; Staten Island, NY",38.5,-74.1833,2000-12-05,2000,True,True,Albemarle Island,False,False
+"Tug Gilbert Taylor; Mississippi Sound, AL",30.2133,-88.365,2000-11-22,2000,True,True,,False,False
+"Tug Eastern Star; 400 yards W of the western Point Judith Harbor jetty, southern Rhode Island",41.3828,-71.5159,2000-11-17,2000,True,True,,False,False
+"Navy Landing Ship Dock  (LSD-20) DONNER; James River, Ft. Eustas, VA",37.1667,-76.6333,2000-08-14,2000,True,True,,False,False
+"F/V Destiny; Shelikof Strait, 5 miles W of Rocky Point on the W side of Kodiak Island",57.7633,-154.262,2000-04-20,2000,True,True,Destiny,False,False
+"F/V Starrigaven; Sweeper Cove, Adak Island, Aleutian Islands",51.8333,-176.667,2000-04-19,2000,True,True,Starrigaven,False,False
+"Barge ST112; Tolchester Channel, Chesapeake Bay",39.1463,-76.3387,2000-04-18,2000,True,True,ST112,False,False
+"T/V Eagle Baltimore; Gravesend Bay, New York",40.6,-74.0167,2000-03-20,2000,True,True,Eagle Baltimore,False,False
+"Barge Paula Lee; Grays Harbor, WA",46.9869,-124.169,2000-03-03,2000,True,True,,False,False
+"Simmsport Barge Fire; Simmsport, LA",30.98,-91.7983,2000-02-25,2000,True,True,,False,False
+"F/V American Star; Unimak Island, Alaska",57.63,-163.533,2000-02-11,2000,True,True,American Star,False,False
+Barge Fire; Atchafalaya River,28.6917,-90.95,2000-01-25,2000,True,True,,False,False
+Hollywood Barge; Gulf of Mexico,28.6917,-90.95,2000-01-25,2000,True,True,,False,False
+Ship Shoal 332 Pipeline Break; Gulf of Mexico,28.1167,-90.7833,2000-01-21,2000,True,True,,False,False
+"F/V Siddie Golden; Ocracoke Inlet, NC",35.095,-75.9967,1999-12-20,1999,True,True,Siddie Golden,False,False
+"T/V APNOIA; Jay Bird Shoals, Wilmington, NC",33.8483,-78.0367,1999-12-20,1999,True,True,APNOIA,False,False
+"M/V HMI DIAMOND SHOAL; St Johns River, FL",30.37,-81.6317,1999-10-21,1999,True,True,HMI DIAMOND SHOAL,False,False
+"M/V River Ways 10; Just offshore, village of Mekoryuk, N side Nunivak Island, Bering Sea",60.3833,-166.183,1999-09-30,1999,True,True,River Ways,False,False
+"M/V Gardenia Ace; Point Piedras Blancas, California",35.5,-123.0,1999-08-12,1999,True,True,Gardenia Ace,False,False
+"Ohio River Barge Collision; Mount Vernon, Indiana",37.9256,-87.8942,1999-08-09,1999,True,True,,False,False
+"M/V Spirit of 98; Tracey Arm, southeast Alaska",57.55,-133.183,1999-07-27,1999,True,True,Spirit,False,False
+"M/V Navios Pioneer; Port Royal Sound, South Carolina",32.0967,-80.5842,1999-07-21,1999,True,True,Navios Pioneer,False,False
+"F/V Sea Farer; New Bedford Harbor, Massachussets",41.6372,-70.92,1999-07-16,1999,True,True,Sea Farer,False,False
+F/V Su-Ce K; Sitka Sound,56.9833,-134.583,1999-07-01,1999,True,True,Su-Ce K,False,False
+"M/V  Wilderness Adventurer; Dundas Bay, Alaska",58.4333,-136.5,1999-06-12,1999,True,True,Wilderness Adventurer,False,False
+"M/V Redfin; Cold Bay, Alaska Peninsula",55.1072,-162.527,1999-05-10,1999,True,True,Redfin,False,False
+"F/V Controller Bay; Unimak Island at Cave Point, Alaska",54.8033,-164.602,1999-05-08,1999,True,True,Controller Bay,False,False
+"Fish Boat Aground; Pillar Point, California",37.5,-122.5,1999-03-30,1999,True,True,,False,False
+"M/V HollandicConfidence; Cape Mendicino, California",40.0317,-124.7,1999-03-04,1999,True,True,HollandicConfidence,False,False
+"T/V Hyde Park; New Orleans, Louisiana",29.1833,-90.0333,1999-02-27,1999,True,True,Hyde Park,False,False
+"M/V Hekifu; Dutch Harbor, Alaska",53.8333,-166.5,1999-02-19,1999,True,True,Hekifu,False,False
+"F/V Sea Quayle; Whale Passage, Alaska",57.914,-152.789,1999-02-18,1999,True,True,Sea Quayle,False,False
+M/V Star Evviva; South Carolina Coast,33.728,-78.5803,1999-01-14,1999,True,True,Star Evviva,False,False
+Tug Miss Jessica; offshore Texas,28.8333,-94.35,1999-01-11,1999,True,True,,False,False
+"M/V Violetta; Galveston, Texas",29.3417,-94.7533,1998-12-28,1998,True,True,Violetta,False,False
+"F/V Captain Justin; Tampa Bay, Florida",27.5745,-82.7538,1998-12-23,1998,True,True,Captain Justin,False,False
+"T/V Nord-Jahre Traveler; Long Island, New York",40.3283,-71.9833,1998-12-19,1998,True,True,Nord-Jahre Traveler,False,False
+T/V Somerset; Gulf of Mexico,28.725,-93.6083,1998-11-23,1998,True,True,Somerset,False,False
+"Freeport Sunken Vessel; Freeport, Texas",28.9065,-95.2176,1998-11-09,1998,True,True,,False,False
+"Sunken Vessel; Freeport, Texas",28.63,-95.62,1998-11-09,1998,True,True,,False,False
+"F/V Miss Conch; Freeport, Texas",28.7567,-95.48,1998-11-04,1998,True,True,Miss Conch,False,False
+"T/V Command; San Francisco Bay, California",37.75,-122.333,1998-09-24,1998,True,True,Command,False,False
+Drill Rig Allision; Offshore Louisiana,29.32,-88.8867,1998-09-17,1998,True,True,,False,False
+"Barge MRT 15; mile 36.5 Monongahela River Pittsburgh, PA",40.4271,-79.9596,1998-09-15,1998,True,True,MRT 15,False,False
+"M/V Author; Ponce, Puerto Rico",17.9383,-66.6267,1998-09-08,1998,True,True,Author,False,False
+"Barge OCEAN STATE; Manhattan Island, NY",40.7435,-73.9678,1998-09-05,1998,True,True,OCEAN STATE,False,False
+"M/V Cape Douglas; Womens Bay, Kodiak, Alaska",57.6667,-152.5,1998-09-01,1998,True,True,Cape Douglas,False,False
+Tug Creole River; 2 miles east of Pascagoula River,30.2758,-88.4312,1998-08-31,1998,True,True,,False,False
+"F/V Turner Ross; Wanchese, North Carolina",35.457,-75.8868,1998-07-06,1998,True,True,Turner Ross,False,False
+"Barge CTCO-211; Darrow, Louisiana",30.1124,-90.9888,1998-06-27,1998,True,True,CTCO,False,False
+"F/V Juan Gabriel; York Spit Channel, Virginia",37.055,-76.0933,1998-06-22,1998,True,True,Juan Gabriel,False,False
+"Barge Coastal 2010; Marseilles Locks, Illinois River",41.318,-88.6879,1998-06-10,1998,True,True,,False,False
+"Barge Domar #6502; Aguirre, Puerto Rico",17.9317,-66.265,1998-05-29,1998,True,True,,False,False
+"Barge Ocean 211; Pascagoula, MS",30.2167,-88.5083,1998-05-28,1998,True,True,,False,False
+"F/V Granny B; Pamlico Sound, North Carolina",35.2242,-76.2115,1998-04-20,1998,True,True,Granny B,False,False
+"Barge Hannah 5101; Port Huron, Michigan",42.9743,-82.4178,1998-04-15,1998,True,True,,False,False
+"M/V James K. Ellis; Ohio River, MM 638",37.9576,-86.0507,1998-04-01,1998,True,True,James K,False,False
+Freighter Grounded; Port Everglades Inlet,26.1067,-80.1,1998-03-18,1998,True,True,,False,False
+"M/V Hind; Fort Lauderdale, Florida",26.1067,-80.1,1998-03-18,1998,True,True,Hind,False,False
+"Yazoo River Barge; St. Joseph Bay, FL",29.8333,-85.3333,1998-03-16,1998,True,True,,False,False
+"M/V Kure (grounding); 100 yards off the South Jetty, Entrance Channel, Humboldt Bay, CA",40.7653,-124.246,1998-03-14,1998,True,True,Kure,False,False
+"Crane Barge; Wilmington, North Carolina",33.9833,-77.8683,1998-03-09,1998,True,True,,False,False
+"Tug Florida Seahorse; Houma, Louisiana",29.0145,-90.5598,1998-02-26,1998,True,True,,False,False
+"M/V PACIFIC MAKO; FT LAUDERDALE BEACH, FL",26.0891,-80.1001,1998-02-03,1998,True,True,PACIFIC MAKO,False,False
+F/V Adriatic Sea; American Samoa,-12.7667,-170.582,1998-01-25,1998,True,True,Adriatic Sea,False,False
+M/V Red Seagull; Offshore Texas,28.7217,-94.6317,1998-01-23,1998,True,True,Red Seagull,False,False
+"M/V Stone Fueler; Belle Pass, Louisiana",29.0767,-90.1833,1998-01-07,1998,True,True,Stone Fueler,False,False
+"M/V ANADYR; Commencment Bay, Tacoma, WA",47.2741,-122.425,1998-01-03,1998,True,True,ANADYR,False,False
+"Tug Captain Frank; Wilmington, North Carolina",33.9817,-77.8683,1997-12-29,1997,True,True,,False,False
+Ship Shoal Block 126; 2 miles offshore Louisiana,28.8167,-91.2667,1997-12-17,1997,True,True,,False,False
+"M/V Kuroshima; Unalaska Island, Alaska",53.9167,-166.417,1997-11-26,1997,True,True,Kuroshima,False,False
+"M/V Kure; Humboldt Bay, California.",40.8167,-124.167,1997-11-05,1997,True,True,Kure,False,False
+M/V Shogun; Rota West Harbor,14.1383,145.133,1997-11-05,1997,True,True,Shogun,False,False
+"F/V Fortuna 21; Pearl Harbor, HI",21.3622,-157.973,1997-10-30,1997,True,True,Fortuna,False,False
+"F/V Celia M; Barataria Pass, Louisiana",29.185,-89.8853,1997-10-21,1997,True,True,Celia M,False,False
+"T/V Western Lion; Galveston, Texas",28.5833,-94.16,1997-10-08,1997,True,True,Western Lion,False,False
+T/V Mystra; Delaware Bay,38.9767,-75.2017,1997-09-18,1997,True,True,Mystra,False,False
+"Freighter Fortuna Reefer; Mona Island, Puerto Rico",18.055,-67.8667,1997-07-24,1997,True,True,,False,False
+"T/V Vanadis; Galveston, Texas",28.7833,-94.4833,1997-07-24,1997,True,True,Vanadis,False,False
+"Tug Marie M; Grays Harbor, WA",46.9682,-124.118,1997-07-07,1997,True,True,,False,False
+"Barge Bell 157; San Pablo Bay, California",38.0167,-122.35,1997-06-10,1997,True,True,,False,False
+"Cedar Island Ferry Breakwater; Cedar Island, Pamlico Sound, North Carolina",35.1333,-76.5,1997-06-04,1997,True,True,,False,False
+"T/B Boxer fuel/cargo barge; Anchor Point, Alaska",58.96,-160.317,1997-05-17,1997,True,True,,False,False
+Barge RTC320; Arthur Kill,40.5833,-74.2,1997-05-15,1997,True,True,RTC320,False,False
+"F/V Lisa Jo; Akun Island, Aleutian Island Chain, Alaska",54.2117,-165.482,1997-02-19,1997,True,True,Lisa Jo,False,False
+"M/V Handy Gunner; Portland, Oregon",45.5383,-122.68,1997-02-02,1997,True,True,Handy Gunner,False,False
+"M/V Shirley L. Stapp; Robinsville, Mississippi",34.8257,-90.4474,1997-01-15,1997,True,True,Shirley L,False,False
+"M/V Baneasa; Aleutian Island chain, Alaska",51.0,-174.0,1996-12-25,1996,True,True,Baneasa,False,False
+"F/V Green Arrow; Block Island, Rhode Island",41.15,-71.55,1996-12-22,1996,True,True,Green Arrow,False,False
+"F/V Gladys Loraine; Newport News, Virginia",36.9667,-76.4133,1996-12-10,1996,True,True,Gladys Loraine,False,False
+"M/V Jo Beth; Rosedale, Mississippi",33.8662,-91.0634,1996-11-19,1996,True,True,Jo Beth,False,False
+"F/V Maria Angela; Nantucket Island, Massachusetts",41.2833,-70.1167,1996-11-15,1996,True,True,Maria Angela,False,False
+"M/V Elizabeth Beesecker; Hastings, Minnesota",44.75,-92.8667,1996-11-15,1996,True,True,Elizabeth Beesecker,False,False
+M/V Tanya; Florida Keys,25.1767,-80.166,1996-11-13,1996,True,True,Tanya,False,False
+"M/V Cape Mohican; San Francisco, California",37.7633,-122.382,1996-10-28,1996,True,True,Cape Mohican,False,False
+"F/V Rebecca B; Tanaga Island, Aleutian Island chain, Alaska",51.6,-177.95,1996-10-24,1996,True,True,Rebecca B,False,False
+"F/V Lady Luck; Cape May, New Jersey",38.8067,-73.3167,1996-08-11,1996,True,True,Lady Luck,False,False
+"T/V Provence; Portsmouth, New Hampshire",43.0833,-70.7833,1996-07-01,1996,True,True,Provence,False,False
+Barge MF12; Mississippi River,29.821,-89.9993,1996-06-21,1996,True,True,MF12,False,False
+"Collision Saudi Makkah and USS Jacksonville; Norfolk, Virginia",36.5,-75.5833,1996-05-17,1996,True,True,USS,False,False
+"T/V Anitra; Big Stone Anchorage, Delaware Bay",38.91,-75.22,1996-05-09,1996,True,True,Anitra,False,False
+"M/V Citrus; St. Paul Island, Alaska",57.245,-170.17,1996-02-16,1996,True,True,Citrus,False,False
+"Barge Bouchard B-140; Hart Island, New York",40.855,-73.7633,1996-02-12,1996,True,True,,False,False
+"F/V Captain Zack; Hatteras, North Carolina",35.1017,-75.6317,1996-01-23,1996,True,True,Captain Zack,False,False
+"Barge North Cape; Narragansett, Rhode Island",41.36972,-71.57333,1996-01-19,1996,True,True,,False,False
+"F/V Shauna Louise; Hatteras Inlet, North Carolina",35.1917,-75.7667,1996-01-19,1996,True,True,Shauna Louise,False,False
+"T/B 409 and Tug M. Jenne Dudley; Chesapeake Bay, Virginia",37.7783,-75.975,1996-01-19,1996,True,True,,False,False
+"F/V Pioneer; Santa Cruz Island, California",34.09,-119.952,1995-10-30,1995,True,True,Pioneer,False,False
+"Barge Patricia Sheridan; Charleston Harbor, South Carolina",32.5717,-79.805,1995-10-12,1995,True,True,,False,False
+"Barge Apex 3512; Norco, Louisiana",29.9917,-90.4167,1995-10-11,1995,True,True,,False,False
+"Abandoned Bunker Barges; Norfolk, Virginia",36.1333,-76.3833,1995-10-06,1995,True,True,,False,False
+"F/V Anna-K; Kanagunut Island, Alaska",54.7033,-130.722,1995-08-10,1995,True,True,Anna-K,False,False
+"M/V Northern Wind; Sequam Island, Aleutian Island chain, Alaska",52.3783,-172.433,1995-07-24,1995,True,True,Northern Wind,False,False
+"M/V Shamwari; 25 miles north of Havana, Cuba",23.4167,-82.9667,1995-07-15,1995,True,True,Shamwari,False,False
+"M/V Alexia and M/V Enif; Southwest Pass, Louisiana",28.7833,-89.3167,1995-07-01,1995,True,True,Alexia,False,False
+"M/V Star Princess; Juneau, Alaska",58.385,-134.648,1995-06-23,1995,True,True,Star Princess,False,False
+"F/V Miss Doreen; Kupreanof Island, Alaska",57.0,-133.317,1995-06-15,1995,True,True,Miss Doreen,False,False
+"F/V American Heritage; Santa Monica Bay, California",33.8583,-118.7,1995-05-03,1995,True,True,American Heritage,False,False
+"M/V Wealthy River; Charleston, South Carolina",32.7233,-79.805,1995-05-02,1995,True,True,Wealthy River,False,False
+"F/V Red October; Oahu, Hawaii",22.7667,-158.533,1995-03-07,1995,True,True,Red October,False,False
+"T/V Florida Express; Galveston Lightering Area, Gulf of Mexico",28.5105,-94.5058,1995-02-27,1995,True,True,Florida Express,False,False
+"Tug Tarus; Georgetown, South Carolina",33.3167,-77.7833,1995-02-22,1995,True,True,,False,False
+"T/V Mormac Star; Sandy Hook, New Jersey",40.4667,-73.956,1995-02-10,1995,True,True,Mormac Star,False,False
+"Tug Christina; Alligator River, Engelhard, North Carolina",35.6667,-76.0167,1995-02-07,1995,True,True,,False,False
+"M/V Comorant II; Florida Keys, Florida",24.665,-81.0817,1995-02-04,1995,True,True,Comorant II,False,False
+"F/V Alaskan Star; Dixon Entrance, southeast Alaska",54.0933,-133.77,1995-01-16,1995,True,True,Alaskan Star,False,False
+"Crowley Marine Services Barge 101; Guemes Island, Puget Sound, Washington",48.5833,-122.617,1994-12-31,1994,True,True,,False,False
+"Pleasure Vessel MD5352Z; Baltimore, Maryland",39.2633,-76.625,1994-12-27,1994,True,True,MD5352Z,False,False
+"M/V Sealand Atlantic; Port Everglades, Florida",26.0917,-80.095,1994-12-02,1994,True,True,Sealand Atlantic,False,False
+"F/V Pathfinder; Holden, North Carolina",33.9167,-78.2783,1994-11-16,1994,True,True,Pathfinder,False,False
+"M/V Firat; Fort Lauderdale, Florida",26.11,-80.0917,1994-11-15,1994,True,True,Firat,False,False
+Abandoned Vessel; Florida Keys,24.5,-80.5333,1994-11-14,1994,True,True,,False,False
+"M/V Jeano Express; Long Key, Florida",24.5,-80.5333,1994-11-14,1994,True,True,Jeano Express,False,False
+"Ferry Hatteras; Newport River, Morehead City, North Carolina",34.7283,-76.6933,1994-11-02,1994,True,True,,False,False
+"Tug Snapper; Neuse River, New Bern, North Carolina",34.9833,-75.8333,1994-09-06,1994,True,True,,False,False
+"Barge Umpqua Fisher; Cape Nome, N side of Norton Sound",64.45,-165.0,1994-08-10,1994,True,True,,False,False
+"F/V Knight Island; Cape Ugat, NW side of Kodiak Island, Alaska",57.8533,-153.887,1994-08-02,1994,True,True,Knight Island,False,False
+"T/V Kentucky; Paulsboro, New Jersey",39.85,-75.25,1994-07-19,1994,True,True,Kentucky,False,False
+"Cleveco Barge; Lake Erie, 9 miles N of Euclid, Ohio",41.7933,-81.6017,1994-07-12,1994,True,True,,False,False
+"Freighter Forum Chemist; Gulf of Mexico, 35 miles SSE of SW Pass, Mississippi",28.3667,-89.15,1994-07-01,1994,True,True,,False,False
+"F/V Penny Marshall; Pantego Creek, Belhaven, North Carolina",34.5,-77.35,1994-06-21,1994,True,True,Penny Marshall,False,False
+"M/V Manzanita; Ocean City, Maryland",38.3333,-75.1,1994-06-02,1994,True,True,Manzanita,False,False
+"Recreational vessel fire and sinking; Chesapeake Island, Maryland",39.4833,-75.9,1994-05-31,1994,True,True,,False,False
+"T/V Eastern Lion; Valdez, Alaska",61.09,-146.403,1994-05-21,1994,True,True,Eastern Lion,False,False
+"T/V Panda; Newport, Rhode Island",41.5167,-71.3333,1994-05-10,1994,True,True,Panda,False,False
+"F/V Starlight; Shackleford Banks, Morehead City, North Carolina",32.6867,-76.6633,1994-04-16,1994,True,True,Starlight,False,False
+"F/V Rapture of the Deep; Hatteras Village, North Carolina",35.1667,-75.6667,1994-04-15,1994,True,True,Rapture,False,False
+"LPG vessel ISOMARIA; Norfolk,VA",36.8833,-76.2833,1994-03-22,1994,True,True,LPG ISOMARIA,False,False
+"M/V Isomeria; Elizabeth River, Norfolk, Virginia",36.7667,-76.3,1994-03-22,1994,True,True,Isomeria,False,False
+"Little Wendy D; Bush Key, Dry Tortugas National Park, Florida",24.625,-82.8667,1994-03-09,1994,True,True,,False,False
+"F/V Chevak; St. Paul Island, Pribilof Islands, Bering Sea",57.0833,-170.3,1994-02-22,1994,True,True,Chevak,False,False
+F/V Westerly; Glacier Bay National Park in southeast Alaska,58.5167,-135.983,1994-02-15,1994,True,True,Westerly,False,False
+"F/V Belair; south side of St. George Island, Pribilof Islands, Bering Sea",56.0833,-169.0,1994-02-02,1994,True,True,Belair,False,False
+"F/V Captain Shannon; Key Largo National Marine Sanctuary, Florida",25.28,-80.21,1994-01-27,1994,True,True,Captain Shannon,False,False
+"M/V ANN PING 6; LONGVIEW, WA",46.1133,-122.967,1994-01-10,1994,True,True,ANN PING,False,False
+"BARGE MORRIS J. BERMAN; San Juan, Puerto Rico",18.4717,-66.09,1994-01-07,1994,True,True,MORRIS BERMAN,False,False
+"M/V SAUDI DURYIK; HAMPTON ROADS, VA",36.9932,-76.3534,1993-12-02,1993,True,True,SAUDI DURYIK,False,False
+"Tug Jenna B; Southern Branch, Elizabeth River, Norfolk, Virginia",36.8417,-76.2667,1993-10-23,1993,True,True,,False,False
+"F/V Helen Euphane; West Ocean City, Maryland",38.3258,-75.0758,1993-10-16,1993,True,True,Helen Euphane,False,False
+"F/V Jin Shiang Fa; Rose Island, 150 miles east of America Samoa",-14.54,-168.167,1993-10-14,1993,True,True,Jin Shiang Fa,False,False
+"M/V RED SEAGULL 93; Galveston, TX",28.7167,-94.6667,1993-09-02,1993,True,True,RED SEAGULL,False,False
+"M/V Sun Tide; Upper Cook Inlet, Alaska",61.0,-151.0,1993-08-23,1993,True,True,Sun Tide,False,False
+"F/V Billy and I; San Fernando Island, southeast Alaska",55.4667,-133.7,1993-08-21,1993,True,True,Billy,False,False
+"M/V Yorktown Clipper; Geikie Rock in Glacier Bay National Park, Alaska",58.7,-136.333,1993-08-18,1993,True,True,Yorktown Clipper,False,False
+"T/V Overseas Philadelphia; Ambrose Light, New York",39.75,-73.6667,1993-08-14,1993,True,True,Overseas Philadelphia,False,False
+"Barge Bouchard 155; Tampa Bay, Florida",27.6,-82.7167,1993-08-10,1993,True,True,,False,False
+"F/V Francis Lee; Southeast of Kodiak Island, Alaska",56.9167,-153.583,1993-07-23,1993,True,True,Francis Lee,False,False
+"M/V Central; Longview, Washington",46.1167,-122.983,1993-06-03,1993,True,True,Central,False,False
+"T/V Prime Trader; Saint John's River, Jacksonville, Florida",30.6833,-83.4667,1993-05-19,1993,True,True,Prime Trader,False,False
+"M/V Nosac Forest; Blair Waterway, Tacoma, Washington",47.2667,-122.367,1993-04-20,1993,True,True,Nosac Forest,False,False
+"F/V Phoenix; Umnak Island, Aleutian Islands, Alaska",53.175,-168.798,1993-04-12,1993,True,True,Phoenix,False,False
+"F/V EAGLE B; Straits of Juan de Fuca, WA",48.1516,-122.717,1993-03-24,1993,True,True,EAGLE B,False,False
+"F/V Yukon; Womens Bay, Kodiak, Alaska",57.5,-152.5,1993-03-24,1993,True,True,Yukon,False,False
+T/V Anthony J; East Rockaway Inlet,40.623,-73.676,1993-03-15,1993,True,True,Anthony J,False,False
+"T/V Potomic; East River, Hallets Point",40.729,-73.973,1993-03-14,1993,True,True,Potomic,False,False
+"F/V Elizabeth C; Chesapeake Bay Bridge-Tunnel, Virginia",36.9667,-76.1167,1993-01-29,1993,True,True,Elizabeth C,False,False
+"Freighter Lyra Lyke; Cape Lookout, North Carolina",33.6167,-76.7,1993-01-27,1993,True,True,,False,False
+"M/V Lyra; Frying Pan Shoals, North Carolina",34.15,-76.5,1993-01-26,1993,True,True,Lyra,False,False
+"F/V Massacre Bay; Alitak Bay, Alaska",56.84,-154.077,1993-01-16,1993,True,True,Massacre Bay,False,False
+"T/V BOW PETROS; Conamicut Pt., Narragansett Bay",41.719,-71.35,1992-12-30,1992,True,True,BOW PETROS,False,False
+"Barge RTC380; Avery Point, CT",41.3033,-72.0717,1992-12-21,1992,True,True,RTC380,False,False
+"M/V CAPE HUDSON; Chincoteague Inlet, Chincoteague Shoals, VA",37.45,-75.15,1992-12-11,1992,True,True,CAPE HUDSON,False,False
+"Tug May; Frederick Sound, Alaska",57.0833,-133.167,1992-11-22,1992,True,True,,False,False
+"Russian Trawler Fire; Dutch Harbor, AK",53.8928,-166.538,1992-10-29,1992,True,True,,False,False
+"F/V Loon; Nuka Bay, East Arm, SW corner of Kenai Fjords National Park, Alaska",59.4858,-150.413,1992-08-28,1992,True,True,Loon,False,False
+M/V HEREDIA; Gulf of Mexico,28.5617,-90.98,1992-08-14,1992,True,True,HEREDIA,False,False
+"CRUDE OIL BARGE; ICW, LOUISIANA",29.6922,-91.4965,1992-05-15,1992,True,True,CRUDE,False,False
+"M/V Durdy Dudley, and Pat Salvaggio, collision; Morgan City, Louisiana",29.7,-91.525,1992-05-15,1992,True,True,Durdy Dudley,False,False
+"F/V Silver Star; Whale Pass between Afognak Island and Kodiak Island, Alaska",57.9683,-152.878,1992-03-26,1992,True,True,Silver Star,False,False
+"T/V CAROL V; East Rockaway Inlet, NY",40.629,-73.66,1992-01-15,1992,True,True,CAROL V,False,False
+"M/V Tai Chung; Willamette River, Portland, Oregon",45.5483,-122.7,1991-12-28,1991,True,True,Tai Chung,False,False
+"Aviva America barge; Breton Islands in Breton Sound, Louisiana",29.5383,-89.2683,1991-12-22,1991,True,True,,False,False
+"Kiptopeke Concrete Ships, Potential Impact Assessment; Kiptopeke Beach, Cape Charles, Virginia",37.1667,-76.0,1991-12-12,1991,True,True,,False,False
+"M/V President Madison; West Duwamish Waterway Seattle, Washington",47.5833,-122.362,1991-12-08,1991,True,True,President Madison,False,False
+"F/V Eijyu Maru; Ngarapalas Island, Kayangel Islands Group, Republic of Palau",8.03333,134.7,1991-12-01,1991,True,True,Eijyu Maru,False,False
+"M/V Lavaux; Long Beach, California",33.6883,-118.228,1991-11-28,1991,True,True,Lavaux,False,False
+"F/V Windrunner; Womans Bay, Kodiak, Alaska",57.7,-152.533,1991-11-24,1991,True,True,Windrunner,False,False
+"T/V Yupex; Honolulu Harbor, Hawaii",21.3167,-157.875,1991-11-20,1991,True,True,Yupex,False,False
+"T/V Mega Sun; Big Stone Anchorage, Delaware",39.0,-75.0,1991-09-05,1991,True,True,Mega Sun,False,False
+"F/V JUSTIN TIME; Sozavarika Island, Alaska",52.5691,-170.926,1991-09-04,1991,True,True,JUSTIN TIME,False,False
+"M/V SEA JADE; Dutch Harbor, Alaska",53.9004,-166.509,1991-08-23,1991,True,True,SEA JADE,False,False
+"M/V ATLANTIC SEAHORSE; Cook Inlet, Alaska",61.0967,-150.48,1991-08-14,1991,True,True,ATLANTIC SEAHORSE,False,False
+"F/V GREENHOPE; Atka Island, Aleutian Island Chain, Alaska",52.4677,-174.751,1991-08-13,1991,True,True,GREENHOPE,False,False
+"Barge B&R #5; Port Clarence, Alaska",65.2579,-166.849,1991-08-10,1991,True,True,,False,False
+"Tank Barge COASTAL 32; Key Largo, Florida",25.0254,-80.3429,1991-07-26,1991,True,True,COASTAL 32,False,False
+"F/V Tenyo Maru; Neah Bay, Washington",48.4667,-125.3,1991-07-22,1991,True,True,Tenyo Maru,False,False
+"M/V ZIM CANADA; Los Angeles, California",33.7224,-118.242,1991-07-10,1991,True,True,ZIM CANADA,False,False
+Freighter GOLDEN HILL; Port Everglades,26.0938,-80.1084,1991-06-21,1991,True,True,GOLDEN HILL,False,False
+"F/V HUI FENG NO. 1; Palmyra Atoll, Pacific Ocean",5.86667,-162.117,1991-06-19,1991,True,True,HUI FENG NO,False,False
+"M/V GOLDEN HILL; Port Everglades, Florida",26.0917,-80.095,1991-06-19,1991,True,True,GOLDEN HILL,False,False
+"F/V ALMIGHTY; Bristol Bay, Bering Sea, Alaska",58.403,-158.483,1991-05-29,1991,True,True,ALMIGHTY,False,False
+"M/V LA MINERA; Galveston, Texas",28.8396,-93.7532,1991-05-20,1991,True,True,LA MINERA,False,False
+"F/V MAX; Hinchinbrook Entrance, Prince William Sound, Alaska",60.2712,-146.82,1991-05-15,1991,True,True,MAX,False,False
+"T/V BORSEC; Marcus Hook, Pennsylvania",39.809,-75.408,1991-05-13,1991,True,True,BORSEC,False,False
+"M/V  PACI; Old Plantation Creek, Virginia",37.1431,-75.9616,1991-05-03,1991,True,True,PACI,False,False
+"T/V DELPHINA; Braintree, Massachusetts",42.226,-70.962,1991-05-03,1991,True,True,DELPHINA,False,False
+"M/V PRINCE WILLIAM SOUND; Dutch Harbor, Alaska",53.9004,-166.509,1991-04-22,1991,True,True,PRINCE WILLIAM SOUND,False,False
+"T/V Haven; Genoa, Italy",44.3333,9.0,1991-04-11,1991,True,True,Haven,False,False
+"F/V NANCY JANE; Vermilion Bay, Louisiana",29.6204,-91.9976,1991-04-03,1991,True,True,NANCY JANE,False,False
+"M/V JESULA II; Miami, Florida",25.7941,-80.0271,1991-03-28,1991,True,True,JESULA II,False,False
+"T/V STAVANGER PRINCE; Plaquemine, Louisiana",30.285,-91.218,1991-03-20,1991,True,True,STAVANGER PRINCE,False,False
+"Sanko Harvest; Esperance, Western Australia",-34.1667,122.5,1991-02-13,1991,True,True,,False,False
+"F/V SKAGIT EAGLE; Unalaska Island, Alaska",53.7237,-166.875,1991-02-08,1991,True,True,SKAGIT EAGLE,False,False
+"M/V SAMMI SUPERSTARS; Los Angeles, California",33.7224,-118.242,1991-01-09,1991,True,True,SAMMI SUPERSTARS,False,False
+"F/V JESSICA B; Kashega Bay, Unalaska Island, Alaska",53.7237,-166.875,1991-01-03,1991,True,True,JESSICA B,False,False
+"M/V SEPTEMBER; Key Largo, Florida",25.0633,-80.405,1991-01-02,1991,True,True,SEPTEMBER,False,False
+"T/V COAST RANGE; Cook Inlet, Alaska",59.964,-152.252,1990-12-18,1990,True,True,COAST RANGE,False,False
+T/V KEYSTONE CANYON; Central California,43.796,-126.77,1990-12-04,1990,True,True,KEYSTONE CANYON,False,False
+"F/V COLLIPSO; Nantucket Island, Massachusetts",41.2522,-69.9483,1990-11-30,1990,True,True,COLLIPSO,False,False
+"S/S KINSMAN INDEPENDENT; Isle Royale, Michigan",47.9902,-88.8481,1990-11-25,1990,True,True,KINSMAN INDEPENDENT,False,False
+"M/V MEI GUI HAI; French Frigate Shoals, Hawaii",22.1805,-160.46,1990-11-10,1990,True,True,MEI GUI HAI,False,False
+"T/V STAR CONNECTICUT; Barbers Point, Hawaii",21.2079,-158.129,1990-11-06,1990,True,True,STAR CONNECTICUT,False,False
+"M/V COLUMBINE; Tolchester Beach, Maryland",39.25,-76.2333,1990-11-01,1990,True,True,COLUMBINE,False,False
+"DREDGE BARGE; OREGON INLET, NC",35.7667,-75.5333,1990-10-26,1990,True,True,DREDGE,False,False
+T/V PROBO GULL; Delaware River,39.7,-75.53,1990-10-19,1990,True,True,PROBO GULL,False,False
+"T/V WORLD BRAZILIA; Mobile, Alabama",30.695,-88.0373,1990-10-02,1990,True,True,WORLD BRAZILIA,False,False
+"M/V Jupiter; Saginaw River, Bay City, Michigan",43.5,-84.0,1990-09-16,1990,True,True,Jupiter,False,False
+"GALVESTON BAY BARGE, BUOY 58; GALVESTON BAY, TX",29.4983,-94.87,1990-07-29,1990,True,True,GALVESTON,False,False
+"Apex 3417 Barge, Apex 3503 Barge; near buoy 58 in Galveston Bay, Texas",29.4983,-94.87,1990-07-28,1990,True,True,,False,False
+"BARGE INTERSTATE 53; ARTHUR KILL, NJ/NY",40.652,-74.1705,1990-07-18,1990,True,True,INTERSTATE 53,False,False
+"UNKNOWN BARGE; BUZZARDS BAY, MA",41.6333,-70.6833,1990-06-18,1990,True,True,,False,False
+"M/V Mega Borg; Gulf of Mexico, 57 miles SE of Galveston, Texas",28.55,-94.1333,1990-06-08,1990,True,True,Mega Borg,False,False
+"M/V NAUTILUS; KILL VAN KULL, NJ",40.5833,-74.0167,1990-06-07,1990,True,True,NAUTILUS,False,False
+ACONCAGUA Grounding; Long Island Sound,40.8667,-73.44,1990-04-11,1990,True,True,ACONCAGUA,False,False
+"BARGE CIBRO SAVANNAH; LINDEN, NJ",40.6152,-74.2044,1990-03-06,1990,True,True,CIBRO SAVANNAH,False,False
+"E-25 BARGE; Constable Hook, NY/NJ",40.6488,-74.1047,1990-02-28,1990,True,True,,False,False
+"T/V American Trader; Huntington Beach, California",33.6333,-118.017,1990-02-07,1990,True,True,American Trader,False,False
+"Aragon; Madeiran Archipelago, Portugal",33.5667,-15.5667,1989-12-29,1989,True,True,,False,False
+Chevron Barge; Delaware River,39.8866,-75.1623,1989-11-20,1989,True,True,,False,False
+"T/V UNIVERSAL MONARCH; Southwest Pass, Mississippi River",29.769,-90.0189,1989-09-25,1989,True,True,UNIVERSAL MONARCH,False,False
+"M/V SAN JUAN VICTORY; James River, Virginia",37.2257,-76.8955,1989-09-08,1989,True,True,SAN JUAN VICTORY,False,False
+"T/V MINERVA; Marcus Hook, Pennsylvania",39.81,-75.397,1989-08-31,1989,True,True,MINERVA,False,False
+"M/V LORNA B; Upper Cook Inlet, Alaska",61.0748,-150.804,1989-08-21,1989,True,True,LORNA B,False,False
+"F/V OCEAN PACIFIC; Tongass Narrows, Ketchikan, Alaska",55.3145,-131.606,1989-08-12,1989,True,True,OCEAN PACIFIC,False,False
+"M/V BONHEUR; Sitkoh Bay, Chatham Strait, Alaska",56.5549,-134.489,1989-08-12,1989,True,True,BONHEUR,False,False
+"T/V NORTHERN SUN; Cape Cod Canal, Massachusetts",41.773,-70.507,1989-07-29,1989,True,True,NORTHERN SUN,False,False
+"T/V R. HAL DEAN; Bayou Cassotte, Pascagoula, Mississippi",30.34,-88.569,1989-07-14,1989,True,True,HAL DEAN,False,False
+"Abandoned Barges; Empire, Louisiana",29.4806,-89.6925,1989-07-03,1989,True,True,,False,False
+"BARGE 2514; HOUSTON, TX",29.6226,-94.9898,1989-06-25,1989,True,True,,False,False
+"T/B 2514; Houston Ship Channel, Bay Port, Texas",29.748,-95.291,1989-06-24,1989,True,True,,False,False
+"T/V PRESIDENTE RIVERA; Delaware River, South of Marcus Hook, Pennsylvania",39.75,-75.45,1989-06-24,1989,True,True,PRESIDENTE RIVERA,False,False
+"T/V World Prodigy; Newport, Rhode Island",41.4333,-71.3667,1989-06-23,1989,True,True,World Prodigy,False,False
+"T/V CAMARGUE; St. John, New Brunswick, Canada",45.268,-66.07,1989-06-20,1989,True,True,CAMARGUE,False,False
+"F/V TARPON; Port Moller, Alaska",55.9137,-160.582,1989-06-19,1989,True,True,TARPON,False,False
+"T/V JAHRE SPRAY; Big Stone Anchorage, Delaware Bay, Delaware",39.028,-75.12,1989-06-17,1989,True,True,JAHRE SPRAY,False,False
+"T/V O.M.I Leader; Virginia Beach, Virginia",36.856,-75.865,1989-06-15,1989,True,True,,False,False
+"T/V Exxon Valdez; Bligh Reef, Prince William Sound, Alaska",60.8389,-146.883,1989-03-24,1989,True,True,Exxon Valdez,False,False
+"T/V CHESTNUT HILL; Port Arthur, Texas",29.978,-93.861,1989-03-20,1989,True,True,CHESTNUT HILL,False,False
+"F/V MERIDITH T; Harwichport, Nantucket Sound, Massachusetts",41.6316,-70.0599,1989-03-18,1989,True,True,MERIDITH T,False,False
+"T/V NOTOS; Delaware Bay, Delaware",39.0,-75.0,1989-03-09,1989,True,True,NOTOS,False,False
+"F/V PACIFIC EAGLE; Humboldt Bay, Ell River Basin, California",40.7701,-124.256,1989-03-01,1989,True,True,PACIFIC EAGLE,False,False
+"Tug KIDD; Marco, Florida",25.9561,-81.8185,1989-02-28,1989,True,True,KIDD,False,False
+"M/V SWALLOW; Dutch Harbor, Aleutian Islands, Alaska",53.9004,-166.509,1989-02-27,1989,True,True,SWALLOW,False,False
+"T/V CAPTAIN W. ARVELO; Northeast Coast, Dominican Republic",19.4,-69.155,1989-02-24,1989,True,True,CAPTAIN W,False,False
+"M/V Yardarm Knot; St. Paul Island, Pribilof Islands, Alaska",57.1438,-170.2,1989-02-20,1989,True,True,Yardarm Knot,False,False
+"T/V UNICORN DEREK; Virgin Gorda, British Virgin Islands",18.489,-64.4007,1989-02-16,1989,True,True,UNICORN DEREK,False,False
+"Barge SFI 61; Houma, Louisiana",29.5539,-90.7045,1989-02-14,1989,True,True,SFI 61,False,False
+"M/V WAARDRECHT; San Francisco, California",37.7991,-122.391,1989-02-04,1989,True,True,WAARDRECHT,False,False
+"F/V HARRY GLEN; Nantucket Sound, Massachusetts",41.1419,-70.0975,1989-01-29,1989,True,True,HARRY GLEN,False,False
+"M/V Bahia Paraiso; Palmer Station, Antarctica",-64.7833,-64.1,1989-01-28,1989,True,True,Bahia Paraiso,False,False
+"M/V ENCOURAGER; Mississippi Delta, Louisiana",29.1813,-89.2515,1989-01-23,1989,True,True,ENCOURAGER,False,False
+"M/V MARY KATHRYN H; Prince of Wales Island, Alaska",55.1397,-131.94,1989-01-23,1989,True,True,MARY KATHRYN H,False,False
+"M/V CHIL BO SAN #6; Unalaska Island, Aleutian Islands, Alaska",53.7237,-166.875,1989-01-11,1989,True,True,CHIL BO SAN,False,False
+"Barge KENAI; Thin Point, Cold Bay, Alaska",54.906,-162.52,1989-01-04,1989,True,True,KENAI,False,False
+"T/V Thompson Pass; Alyeska Terminal, Port Valdez, Alaska",61.1194,-146.364,1989-01-03,1989,True,True,Thompson Pass,False,False
+"Tank Barge 283; Shumagin Islands, Western Gulf of Alaska",54.9078,-159.662,1988-12-28,1988,True,True,,False,False
+"M/V JARAMA; Gravesend Bay, New York",40.6635,-74.0226,1988-12-26,1988,True,True,JARAMA,False,False
+"F/V TRUE GRIT; Loggerhead Key, Dry Tortugas, Florida",24.6349,-82.8919,1988-12-20,1988,True,True,TRUE GRIT,False,False
+"T/V Oriental Crane; Nikiski, Cook Inlet, Alaska",60.669,-151.496,1988-12-12,1988,True,True,Oriental Crane,False,False
+"M/V Aoyagi Maru; Akun Island, Aleutian Islands, Alaska",54.1893,-165.557,1988-12-10,1988,True,True,Aoyagi Maru,False,False
+"F/V OPTY; Shemya Island, Aleutian Island Chain, Alaska",52.7344,-174.076,1988-12-07,1988,True,True,OPTY,False,False
+"F/V VALERIE G; Nehenta Bay, Gravina Island, Alaska",55.157,-131.794,1988-11-28,1988,True,True,VALERIE G,False,False
+"F/V City of Seattle; Atka Island, Aleutian Islands Chain",52.2092,-174.159,1988-11-03,1988,True,True,City,False,False
+"M/V Alaska Constructor; Trading Bay, Upper Cook Inlet, Alaska",60.8645,-151.108,1988-11-02,1988,True,True,Alaska Constructor,False,False
+"T/V OMI COLUMBIA; Point Ano Neuevo, California",34.229,-120.426,1988-10-13,1988,True,True,OMI COLUMBIA,False,False
+"M/V JAHRE SPRAY; Delaware Bay, Pennsylvania",39.8004,-75.3904,1988-10-07,1988,True,True,JAHRE SPRAY,False,False
+"Barge 565; Chesapeake Bay, Virginia and Maryland",37.0161,-76.2015,1988-08-24,1988,True,True,,False,False
+BARGE 865; Chesapeake Bay,37.6667,-70.3167,1988-08-24,1988,True,True,,False,False
+"Crowley Barge Tanker  570; Flaxman Island, Beaufort Sea, Alaska",70.2254,-146.001,1988-08-21,1988,True,True,,False,False
+"F/V Melissa Chris; Otstoia Island, Peril Straits, Alaska",57.4272,-135.602,1988-08-19,1988,True,True,Melissa Chris,False,False
+"F/V Andromeda; Off Cape Cod, Massachusetts",41.788,-69.4186,1988-08-08,1988,True,True,Andromeda,False,False
+"F/V Nancy Christine II; Woods Hole, Massachusetts",41.5199,-70.6778,1988-08-04,1988,True,True,Nancy Christine II,False,False
+"F/V Naiad; Halfway Rock, Sakonnet, Rhode Island",41.4478,-71.2044,1988-07-18,1988,True,True,Naiad,False,False
+"Tug Cindy Lee; Jackolof Bay, Homer, Alaska",59.5823,-151.438,1988-07-18,1988,True,True,,False,False
+"F/V Edna G; Cape Ann, Gloucester, Massachusetts",42.5742,-70.4784,1988-07-01,1988,True,True,Edna G,False,False
+"F/V CAPT. BOB; Port Canaveral, Florida",28.4083,-80.5666,1988-05-31,1988,True,True,CAPT,False,False
+"F/V Defiance; Ketchikan, Alaska",55.3276,-131.628,1988-05-20,1988,True,True,Defiance,False,False
+"M/V Matsukaze; Whiskey Creek, Washington",48.1685,-123.712,1988-04-28,1988,True,True,Matsukaze,False,False
+"T/V Overseas Boston; March Point, Anacortes, Washington",48.5036,-122.568,1988-03-18,1988,True,True,Overseas Boston,False,False
+"F/V Libby; Old Harbor, Block Island, Rhode Island",41.1896,-71.5798,1988-03-06,1988,True,True,Libby,False,False
+"Tug Sydney Foss; Chiniak Bay, Kodiak, Alaska",57.7054,-152.245,1988-02-24,1988,True,True,,False,False
+"F/V Alaska Star; Nikolski Bay, Umnak Island, Aleutian Islands, Alaska",52.9676,-168.88,1988-02-22,1988,True,True,Alaska Star,False,False
+"F/V Captain Billy; Yunaska Island, Aleutian Island Chain, Alaska",52.5808,-170.718,1988-02-17,1988,True,True,Captain Billy,False,False
+"F/V Andrew McGee; Whale Passage between, Kodiak and Afognak Islands",57.9718,-152.96,1988-02-02,1988,True,True,Andrew McGee,False,False
+"Pac Northern Barge MCN5; Anacortes, WA",48.5107,-122.685,1988-01-31,1988,True,True,MCN5,False,False
+"M/V FRANK H. BROWN; Skagway, Alaska",59.4599,-135.334,1988-01-26,1988,True,True,FRANK H,False,False
+"F/V Icy Queen; Suemez Island, Meares Passage, Alaska",55.2822,-133.491,1988-01-15,1988,True,True,Icy Queen,False,False
+"F/V InNuendo; Old Harbor, Block Island, Rhode Island",41.1876,-71.5771,1988-01-07,1988,True,True,InNuendo,False,False
+"F/V  SEA MASTER; Rocky Point, California",40.4432,-124.526,1988-01-05,1988,True,True,SEA MASTER,False,False
+Barge Jovalan; California Coast,37.0217,-122.598,1987-12-16,1987,True,True,,False,False
+"M/V Doric; Off Point Arguello, California",34.5734,-120.645,1987-12-14,1987,True,True,Doric,False,False
+"M/V Meister Stersinger; Virginia Beach, Virginia",36.856,-75.865,1987-12-07,1987,True,True,Meister Stersinger,False,False
+"Pontoon Derrick Barge Lady Eleanor; Half Moon Bay, California",37.4972,-122.482,1987-12-06,1987,True,True,,False,False
+"F/V NOBANDEER; Newport, Rhode Island",41.4921,-71.3344,1987-12-04,1987,True,True,NOBANDEER,False,False
+"F/V Midnight Sun; Humboldt Bay, California",40.7701,-124.256,1987-12-02,1987,True,True,Midnight Sun,False,False
+"F/V Vinnie Lee; Woods Hole, Massachusetts",41.5199,-70.6778,1987-11-14,1987,True,True,Vinnie Lee,False,False
+"Truck Collision; San Leandro, California",37.7106,-122.155,1987-11-05,1987,True,True,,False,False
+Tug Mary McAllister; Great Wicomico River,37.584,-76.3048,1987-11-02,1987,True,True,,False,False
+"T/V EXXON NEW ORLEANS; San Francisco, California",37.665,-122.271,1987-10-30,1987,True,True,EXXON NEW ORLEANS,False,False
+"F/V OCEAN WAVE; Eastern Shore, Virginia",37.9466,-75.3894,1987-10-21,1987,True,True,OCEAN WAVE,False,False
+"M/V Alma Llanera; Hillsboro Inlet, Florida",26.2948,-80.9759,1987-10-13,1987,True,True,Alma Llanera,False,False
+T/V Stuyvesant; Gulf of Alaska Off Dixon Entrance,54.126,-137.017,1987-10-06,1987,True,True,Stuyvesant,False,False
+F/V WESTERN ONE; Moss Landing,36.8034,-121.793,1987-09-10,1987,True,True,WESTERN ONE,False,False
+"T/V Glacier Bay; Kenai, Cook Inlet, Alaska",59.809,-152.357,1987-07-02,1987,True,True,Glacier Bay,False,False
+"Barge Govenor Hendricks; Norfolk, Virginia",36.8914,-76.3214,1987-06-05,1987,True,True,,False,False
+"F/V Beverly J; Salt Point State Park, Bodega Bay, California",38.3084,-123.044,1987-06-04,1987,True,True,Beverly J,False,False
+"Tug Challenger; San Luis Obispo, California",35.2141,-121.15,1987-05-10,1987,True,True,,False,False
+"F/V Pavlof; St. Paul Island, Pribilof Islands, Bering Sea",57.1833,-170.15,1987-05-07,1987,True,True,Pavlof,False,False
+"F/V TAE WOONG; Uliaga Island, Aleutian Islands, Alaska",53.1,-169.733,1987-05-06,1987,True,True,TAE WOONG,False,False
+"T/V Jinei Maru; Northwest of Bodega Bay, San Francisco, California",38.318,-123.133,1987-04-21,1987,True,True,Jinei Maru,False,False
+"M/V Honan Ace; Dora Bay, Alaska",55.2167,-134.233,1987-04-15,1987,True,True,Honan Ace,False,False
+"F/V Ocean Clipper; St. Paul Island, Pribilof Islands, Bering Sea",57.1526,-170.424,1987-03-23,1987,True,True,Ocean Clipper,False,False
+"F/V All Alaskan; St. Paul Island, Pribilof Islands, Bering Sea",57.1764,-170.287,1987-03-20,1987,True,True,All Alaskan,False,False
+"F/V Miss Leona; Mitrofania Island, Alaska",55.7,-158.717,1987-03-20,1987,True,True,Miss Leona,False,False
+"M/V Vardaas; Key Biscayne, Florida",25.6984,-80.0491,1987-03-16,1987,True,True,Vardaas,False,False
+"F/V Birgit N; Ulak Island, Aleutian Islands",51.35,-178.983,1987-03-09,1987,True,True,Birgit N,False,False
+"M/V Fern Passat; Mayport, Florida",30.4002,-81.3973,1987-02-27,1987,True,True,Fern Passat,False,False
+"Tug Barbara R. MacAllister; Morehead City, North Carolina",34.7159,-76.7342,1987-01-24,1987,True,True,,False,False
+"Barge Hana; Laau Point, Molokai, Hawaii",21.0735,-157.314,1987-01-20,1987,True,True,,False,False
+"T/V STUYVESANT1; Sitka, AK",56.946,-135.575,1987-01-12,1987,True,True,STUYVESANT1,False,False
+"Barge Great Alaskan; Captain's Bay, Dutch Harbor, Unalaska, Alaska",53.9004,-166.509,1986-12-22,1986,True,True,,False,False
+M/V Toros Bay; Coco Island Guam,13.25,144.645,1986-12-22,1986,True,True,Toros Bay,False,False
+"F/V Jamie Lynn; St. Paul, Pribilof Islands, Alaska",57.1229,-170.28,1986-12-08,1986,True,True,Jamie Lynn,False,False
+"M/V Pieniny 2; Bering Sea, 300 Miles North of Adak Island",54.589,-177.26,1986-12-08,1986,True,True,Pieniny,False,False
+"T/V Amazon Venture; Savannah River, Garden City, Georgia",40.5833,-73.8667,1986-12-04,1986,True,True,Amazon Venture,False,False
+"F/V Tony Kaye; Moss Landing, Monterey, California",36.8034,-121.793,1986-10-06,1986,True,True,Tony Kaye,False,False
+"M/V Cape Sarichef; Grass Bar Island, Copper River Delta, Gulf of Alaska",60.2573,-145.089,1986-09-09,1986,True,True,Cape Sarichef,False,False
+"T/V Viking Osprey; Delaware River, Pennsylvania",39.7979,-75.4243,1986-09-08,1986,True,True,Viking Osprey,False,False
+"M/V Falcon Duchess; Jacksonville, Florida",30.4314,-81.7476,1986-09-04,1986,True,True,Falcon Duchess,False,False
+"F/V Jenny; Manasquan Inlet, Point Pleasant, New Jersey",40.1009,-74.0293,1986-08-13,1986,True,True,Jenny,False,False
+"M/V North Star; San Alberto Bay, Prince of Wales Island, Alaska",55.0695,-131.998,1986-08-08,1986,True,True,North Star,False,False
+"M/V Ulla Karin; Bahia Las Cabezas, Cabo San Juan, Puerto Rico",18.4945,-66.0585,1986-06-17,1986,True,True,Ulla Karin,False,False
+"F/V Alydar; New Bedford Harbor, New Bedford, Massachusetts",41.6446,-70.9168,1986-06-16,1986,True,True,Alydar,False,False
+"M/V Vashon; Johnson Cove, Prince of Wales Island, Alaska",55.5986,-133.459,1986-06-07,1986,True,True,Vashon,False,False
+"F/V Hong Hanh; Point Sur, Monterey, California",36.5537,-121.989,1986-05-16,1986,True,True,Hong Hanh,False,False
+Barge E-24; Long Island Sound,41.2433,-72.03,1986-05-05,1986,True,True,,False,False
+"F/V Gertrude D; Nantucket Island Harbor, Massachusetts",41.2853,-70.0873,1986-04-25,1986,True,True,Gertrude D,False,False
+"F/V Peregrine; Cultus Bay, Whidbey Island, Washington",47.9896,-122.56,1986-03-15,1986,True,True,Peregrine,False,False
+"MLC310 Barge; Bolinas Point, California",37.892,-122.703,1986-02-13,1986,True,True,MLC310,False,False
+"M/V Forest Prince refueling spill; Port Angeles Harbor, WA",48.1323336,-123.4199821,1986-02-10,1986,True,True,Forest Prince,False,False
+"Barge St. Thomas; St. Thomas, US Virgin Islands",18.3959,-64.9583,1986-02-06,1986,True,True,,False,False
+"Tugs Napa River-Sea Breeze Collision; Benicia, California",38.0362,-122.148,1986-01-04,1986,True,True,,False,False
+"T/V Arco Anchorage; Port Angeles Harbor, Port Angeles, Washington",48.1167,-123.45,1985-12-21,1985,True,True,Arco Anchorage,False,False
+"Cement Barge Robert Koch; Oswego, New York",43.476,-76.5546,1985-12-15,1985,True,True,,False,False
+"Containership American Legion; Apra Harbor, Guam",13.5023,144.745,1985-12-13,1985,True,True,,False,False
+"Fishing Vessel; Hood Canal, Washington",47.5878,-122.98,1985-11-19,1985,True,True,,False,False
+"M/V Sun Bird; Wilkes Ledge, Buzzards Bay, Massachusetts",41.6167,-70.6833,1985-10-30,1985,True,True,Sun Bird,False,False
+"M/V Sybil I; Mississippi River Mouth, Louisiana",29.1548,-89.2488,1985-10-28,1985,True,True,Sybil I,False,False
+M/V Kate Maersk; Offshore Louisiana,28.9829,-89.8867,1985-10-25,1985,True,True,Kate Maersk,False,False
+T/V Kate Maersk; Offshore Louisiana,28.7833,-89.95,1985-10-21,1985,True,True,Kate Maersk,False,False
+"Sunken Barge; Bellingham Bay, Washington",48.75,-122.5,1985-10-13,1985,True,True,,False,False
+"Fishing boat oil spill; Diamond Shoal Light Tower, Cape Hatteras, NC",35.148188,-75.457617,1985-06-22,1985,True,True,,False,False
+Tug John A. Downs; East Long Island Sound,41.2583,-72.1417,1985-03-04,1985,True,True,,False,False
+"M/V A. Regina; Isla de Mona, Caribbean",18.0533,-67.8837,1985-02-15,1985,True,True,,False,False
+"T/V Grand Eagle; Delaware River, Marcus Hook, Pennsylvania",39.8333,-75.4167,1985-02-01,1985,True,True,Grand Eagle,False,False
+"T/V William H. Bennett; New Bedford Harbor, Massassachusetts",41.6446,-70.9168,1985-01-29,1985,True,True,William H,False,False
+"Barge Corpus Christi; Buzzards Bay, Massachusetts",41.5761,-70.7838,1985-01-24,1985,True,True,,False,False
+"M/V Nememcha fuel oil spill; Key West, FL",24.323,-82.115,1985-01-18,1985,True,True,Nememcha,False,False
+"T/V Puerto Rican; San Francisco Bay, California",37.5,-123.033,1984-10-31,1984,True,True,Puerto Rican,False,False
+"M/V Alvenus; Calcasieu River bar channel, 11 miles SE of Cameron, Louisiana",29.5833,-93.25,1984-07-30,1984,True,True,Alvenus,False,False
+"Olympic Glory; Houston Ship Channel, Texas",29.6833,-95.0,1981-01-28,1981,True,True,,False,False
+"Jakob Maersk; Leixoes, Portugal",41.15,-8.83333,1975-01-29,1975,True,True,,False,False
+"Bayou Lafousche /Barge PC 2901; Upper Galveston Bay, Houston Ship Channel, Texas",29.6333,-94.9667,1973-03-09,1973,True,True,,False,False

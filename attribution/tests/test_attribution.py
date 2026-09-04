@@ -25,8 +25,11 @@ from ..simulate import make_scenario, synth_ais_day
 
 # ------------------------------------------------------------------- basics --
 
-def test_fourteen_features_are_defined():
-    assert len(FEATURE_NAMES) == 14
+def test_sixteen_features_are_defined():
+    # 14 original + platform_score (infrastructure discriminator) +
+    # track_match (drift-coupled; defaults to 0.0 until a hindcast supplies a
+    # backward-track, then both scorers actually weight it -- see scoring.py).
+    assert len(FEATURE_NAMES) == 16
 
 
 def test_synthetic_ais_is_placed_where_asked():
