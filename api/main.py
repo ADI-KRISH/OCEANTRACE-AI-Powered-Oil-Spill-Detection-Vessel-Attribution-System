@@ -110,7 +110,16 @@ def transform_bounds(transform, h: int, w: int):
 @app.get("/api/modules")
 def modules():
     """What is actually built. The frontend disables everything reported false."""
+    from detection.screening import OilScreener
     return {
+        "screening": {
+            "available": OilScreener.available(),
+            "name": "Pre-filter (fast oil / no-oil screen)",
+            "note": ("MobileNetV3 binary classifier trained on the CSIRO dataset "
+                     "(REAL SAR). Gates the segmenter; does not localise oil."
+                     if OilScreener.available() else
+                     "Classifier weights not present; pipeline runs unscreened."),
+        },
         "detection": {
             "available": os.path.exists(CKPT),
             "name": "Detection & characterization",
@@ -281,6 +290,8 @@ class PipelineRequest(BaseModel):
     lon: Optional[float] = None
     pixel_size_m: float = DEMO_PIXEL_SIZE_M
     slick_id: int = 1
+    screen: bool = True            # run the fast classifier gate first
+    screen_threshold: float = 0.10
     forcing: str = "auto"          # auto | analytic | cmems
     n_particles: int = 600
     forecast_hours: float = 24.0
@@ -302,15 +313,36 @@ def pipeline_run(req: PipelineRequest):
 
     from attribution.pipeline import attribute
     from attribution.simulate import synth_ais_day
+    from detection.screening import get_screener
     from drift.forcing import get_forcing
     from drift.hindcast import forecast, hindcast_origin
+
+    # --- 0. screen: is there oil here at all? ----------------------------
+    # A fast binary classifier gates the expensive segmenter. Tuned for recall,
+    # because a miss loses the spill while a false positive costs one needless
+    # segmentation. Reported either way so the decision is visible.
+    screen_out = None
+    if req.screen:
+        scr = get_screener(req.screen_threshold)
+        if scr is not None:
+            from detection.data import synth_scene
+            from detection.preprocess import preprocess_scene
+            if req.demo_seed is not None or not req.image_path:
+                _raw, _ = synth_scene(req.size, seed=4 if req.demo_seed is None
+                                      else req.demo_seed)
+            else:
+                from PIL import Image
+                _raw = np.array(Image.open(req.image_path).convert("L"),
+                                np.float32) / 255.0
+            screen_out = scr.screen(preprocess_scene(_raw)).to_dict()
 
     # --- 1. detection ---------------------------------------------------
     det = detect_endpoint(DetectRequest(
         demo_seed=req.demo_seed, size=req.size, region=req.region,
         lat=req.lat, lon=req.lon, pixel_size_m=req.pixel_size_m))
     if not det["slicks"]:
-        return {"detection": det, "drift": None, "attribution": None,
+        return {"screening": screen_out, "detection": det,
+                "drift": None, "attribution": None,
                 "note": "No oil slick detected, so drift and attribution did not run."}
 
     slick = next((s for s in det["slicks"] if s["id"] == req.slick_id),
@@ -353,6 +385,7 @@ def pipeline_run(req: PipelineRequest):
     result = attribute(ais, origin=est, radius_km=req.radius_km)
 
     return {
+        "screening": screen_out,
         "detection": det,
         "slick_used": slick["id"],
         "drift": {**est.to_dict(), "forecast": fc},

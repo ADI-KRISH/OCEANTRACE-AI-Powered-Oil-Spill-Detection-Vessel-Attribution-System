@@ -296,3 +296,52 @@ def test_characterize_end_to_end_on_a_synthetic_scene():
         assert 0.0 <= s.orientation_deg < 180.0
         assert s.age_confidence == "low"
         assert s.oil_likelihood in ("likely_oil", "possible_oil", "uncertain")
+
+
+# ------------------------------------------------------------- screening ---
+
+def test_screener_loads_and_returns_a_verdict():
+    """Stage 0 must produce a bounded confidence and a boolean, or be absent."""
+    from ..screening import get_screener
+
+    scr = get_screener()
+    if scr is None:
+        pytest.skip("classifier weights not present")
+    img, _ = synth_scene(256, seed=4)
+    r = scr.screen(preprocess_scene(img))
+    assert 0.0 <= r.confidence <= 1.0
+    assert isinstance(r.oil_likely, bool)
+    assert r.oil_likely == (r.confidence >= r.threshold)
+
+
+def test_screener_separates_oily_from_clean_scenes():
+    """The screen must actually discriminate, not just return a constant."""
+    from ..screening import get_screener
+
+    scr = get_screener()
+    if scr is None:
+        pytest.skip("classifier weights not present")
+    oily, clean = [], []
+    for seed in range(900, 924):
+        img, lbl = synth_scene(256, seed=seed)
+        c = scr.screen(preprocess_scene(img)).confidence
+        (oily if (lbl == OIL).sum() > 200 else clean).append(c)
+    if not clean or not oily:
+        pytest.skip("sample lacked one of the two classes")
+    assert np.mean(oily) > np.mean(clean) * 2
+
+
+def test_screener_default_threshold_favours_recall():
+    """A miss loses the spill; a false positive costs one segmentation."""
+    from ..screening import DEFAULT_THRESHOLD
+
+    assert DEFAULT_THRESHOLD < 0.5
+
+
+def test_screen_result_serialises_and_states_its_limits():
+    from ..screening import ScreenResult
+
+    d = ScreenResult(oil_likely=True, confidence=0.9, threshold=0.1).to_dict()
+    assert d["oil_likely"] is True
+    # The UI and any consumer must be told this is not a localisation.
+    assert "not where" in d["note"]

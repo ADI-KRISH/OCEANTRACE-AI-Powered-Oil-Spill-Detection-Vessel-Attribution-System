@@ -4,7 +4,7 @@
 
 export default function ModuleStatus({ modules }) {
   if (!modules) return null
-  const order = ['detection', 'drift', 'attribution']
+  const order = ['screening', 'detection', 'drift', 'attribution']
   return (
     <>
       <h2>Pipeline modules</h2>

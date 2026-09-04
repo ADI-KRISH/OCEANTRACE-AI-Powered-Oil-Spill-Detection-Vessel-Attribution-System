@@ -34,6 +34,7 @@ export default function App() {
   const [attribution, setAttribution] = useState(null)
   const [suspect, setSuspect] = useState(null)
   const [frameIdx, setFrameIdx] = useState(0)
+  const [screening, setScreening] = useState(null)
   const [layers, setLayers] = useState({
     sar: true, mask: true, polygons: true, truth: false,
     originHeat: false, driftAnim: false, aisTracks: false,
@@ -84,6 +85,7 @@ export default function App() {
 
   async function runFull(useSeed = seed, useRegion = region, useLL = customLL) {
     setBusy(true); setError(null); setSelected(null); setSuspect(null)
+    setScreening(null)
     try {
       const body = { demo_seed: Number(useSeed), size: Number(size) }
       const m = String(useLL).match(/^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/)
@@ -92,6 +94,7 @@ export default function App() {
 
       const res = await runPipeline(body)
       setScene(res.detection)
+      setScreening(res.screening)
       setDrift(res.drift)
       setAttribution(res.attribution)
       setFrameIdx(0)
@@ -270,6 +273,27 @@ export default function App() {
               <div className="stat">
                 <span className="k">Trained on</span>
                 <span className="v">{scene.model.trained_on}</span>
+              </div>
+            </>
+          )}
+
+          {screening && (
+            <>
+              <h2>Pre-filter screen</h2>
+              <div className="slick" style={{ cursor: 'default' }}>
+                <div className="hd">
+                  <span className="id" style={{ color: screening.oil_likely ? '#3fb950' : '#8b98a5' }}>
+                    {screening.oil_likely ? 'OIL LIKELY' : 'NO OIL'}
+                  </span>
+                  <span className="area">{(screening.confidence * 100).toFixed(1)}%</span>
+                </div>
+                <div className="mm">
+                  {screening.model} · threshold {screening.threshold}
+                </div>
+                <div className="mm" style={{ marginTop: 4, color: '#3fb950' }}>
+                  Trained on {screening.trained_on}
+                </div>
+                <ul><li>{screening.note}</li></ul>
               </div>
             </>
           )}
