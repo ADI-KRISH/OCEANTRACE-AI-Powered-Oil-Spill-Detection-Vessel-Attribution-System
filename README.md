@@ -1,4 +1,6 @@
-# SIH 26143 — Oil-spill detection & vessel attribution
+# OCEANTRACE — AI-Powered Oil-Spill Detection & Vessel Attribution System
+
+**SIH 26143 · NTRO · Disaster Management**
 
 NTRO / Disaster Management. Detect oil spills in Sentinel-1 SAR, hindcast their
 origin, attribute them to a vessel via AIS, and show it all on a map.
@@ -91,6 +93,34 @@ precision 0.56 / recall 0.62 / **F1 0.59** — a supporting cue, not evidence.
 
 Attribution over the full chain (8 scenarios, real drift ensemble in the loop):
 **Top-1 38%, Recall@3 88%, median rank 2**.
+
+### Validated on a real incident
+
+`validation/real_cases.py` runs the attribution stage against a **real documented
+spill with a known responsible vessel**, using **real MarineCadastre AIS**:
+
+| case | result |
+|---|---|
+| M/V NYK DELPHINUS fire, offshore Monterey Bay, 2021-05-14 | ranked **#1 of 19** candidates, 45.2% attribution |
+
+The system was given only the reported position and a ±3 h window — the time was
+assumed, not fitted — and had to pick the right ship out of 19 candidates
+including four other cargo vessels and a tanker.
+
+```bash
+python -m validation.real_cases --case nyk_delphinus
+```
+
+**What this proves and what it does not.** It validates Module 3 given a
+reasonable origin. It does *not* validate Module 1 on real SAR (the detector is
+synthetic-trained) or Module 2 against a real drift, since the origin here is the
+reported position rather than a hindcast from a satellite detection. And this
+case is an **easy** one: the vessel caught fire and stayed on scene, so it sits in
+the search radius throughout. An operational discharge from a transiting ship is
+substantially harder. One case is a demonstration, not a benchmark.
+
+`data/validation/demo_candidates.csv` holds **201 more** real US incidents with a
+named vessel in the Sentinel-1 era, ready to run the same way.
 
 ### Known weaknesses
 
