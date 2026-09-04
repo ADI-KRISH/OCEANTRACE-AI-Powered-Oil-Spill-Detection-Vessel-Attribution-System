@@ -324,6 +324,8 @@ def pipeline_run(req: PipelineRequest):
     # --- 2. drift hindcast ----------------------------------------------
     # Detection time is synthetic; anchor it to "now" so the demo reads sensibly.
     t_detect = float(time.time())
+    lat_c = float(np.mean(slick_lat))
+    lon_c = float(np.mean(slick_lon))
     age_h = slick.get("age_estimate_h") or 6.0
     rng_lo, rng_hi = (slick.get("age_range_h") or [age_h / 4, age_h * 4])[:2]
     # Cap the backward sweep. Past ~2 days a slick has usually dispersed below
@@ -334,7 +336,8 @@ def pipeline_run(req: PipelineRequest):
     rng_lo = min(float(rng_lo), rng_hi * 0.5)
     age_h = min(float(age_h), rng_hi)
 
-    forcing = get_forcing(req.forcing, seed=abs(hash(det["scene_id"])) % 1000)
+    forcing = get_forcing(req.forcing, seed=abs(hash(det["scene_id"])) % 1000,
+                          lat=lat_c, lon=lon_c, t_unix=t_detect)
     est = hindcast_origin(
         slick_lat, slick_lon, t_detect, age_h=age_h,
         age_range_h=(rng_lo, rng_hi), n_particles=req.n_particles,

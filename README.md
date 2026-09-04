@@ -74,10 +74,12 @@ accuracy without losing the audit trail.
 - **SAR**: the Krestenitis Zenodo dataset needs a manual request (see
   [`data/README.md`](data/README.md)). Current detection numbers describe the
   generator, not Sentinel-1.
-- **Drift**: forcing is an **analytic field, not a met-ocean model**. Run
-  `copernicusmarine login` and `/drift` switches to real CMEMS currents
-  automatically. The UI says which is in use, and the API returns
-  `forcing.realistic: false` for the analytic one.
+- **Drift**: now uses **real Copernicus Marine surface currents** when
+  `copernicusmarine login` has been run — the module picks the analysis/forecast
+  product for recent dates and the multi-year reanalysis for historical ones, and
+  falls back to a clearly-labelled analytic field if the download fails. The API
+  reports `forcing.realistic` either way, so a viewer always knows which produced
+  a given result.
 - **AIS**: synthetic, generated for whatever location the scene is placed at.
   The problem statement permits this where real AIS is unavailable, and
   MarineCadastre covers US waters only, so a global demo cannot use it.
@@ -135,5 +137,5 @@ named vessel in the Sentinel-1 era, ready to run the same way.
 ## Next
 
 1. Zenodo dataset → retrain → replace every detection number.
-2. `copernicusmarine login` → real currents → re-measure attribution.
+2. ~~`copernicusmarine login` → real currents~~ **done** — re-measure attribution against real drift.
 3. Ship small-object head; coastline mask for land.

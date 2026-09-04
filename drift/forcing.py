@@ -72,7 +72,7 @@ class AnalyticForcing:
         return self.wind_speed * np.cos(d), self.wind_speed * np.sin(d)
 
     def describe(self) -> dict:
-        return {
+        d = {
             "source": "analytic",
             "realistic": False,
             "note": ("Deterministic synthetic field, NOT a met-ocean model. "
@@ -81,6 +81,11 @@ class AnalyticForcing:
             "bg_speed_ms": self.bg_speed,
             "wind_speed_ms": self.wind_speed,
         }
+        reason = getattr(self, "fallback_reason", None)
+        if reason:
+            d["note"] += f" (Fell back from CMEMS: {reason})"
+            d["fell_back_from_cmems"] = True
+        return d
 
 
 class CMEMSForcing:
@@ -142,16 +147,29 @@ class CMEMSForcing:
                 "note": "Copernicus Marine global analysis, hourly surface currents."}
 
 
-def get_forcing(prefer: str = "auto", seed: int = 0):
-    """Pick a forcing source.
+def get_forcing(prefer: str = "auto", seed: int = 0,
+                lat: float | None = None, lon: float | None = None,
+                t_unix: float | None = None):
+    """Pick a forcing source for a given place and time.
 
-    ``"auto"`` uses CMEMS when credentials exist and falls back to analytic,
-    saying so, rather than failing -- an offline demo must never hard-error.
+    ``"auto"`` uses real Copernicus Marine currents when credentials exist and a
+    location is known, and otherwise falls back to the analytic field -- saying
+    so in `describe()` rather than failing. A demo must never hard-error because
+    a download timed out, and it must never quietly pass off synthetic currents
+    as real.
     """
     if prefer == "analytic":
         return AnalyticForcing(seed=seed)
-    if prefer == "cmems":
-        return CMEMSForcing()
-    if CMEMSForcing.logged_in():
-        return CMEMSForcing()
+
+    want_cmems = prefer == "cmems" or (prefer == "auto" and CMEMSForcing.logged_in())
+    if want_cmems and lat is not None and lon is not None and t_unix is not None:
+        try:
+            from .cmems import CMEMSCurrents
+            return CMEMSCurrents(lat0=lat, lon0=lon, t_center=t_unix)
+        except Exception as exc:
+            if prefer == "cmems":
+                raise
+            f = AnalyticForcing(seed=seed)
+            f.fallback_reason = f"{type(exc).__name__}: {exc}"
+            return f
     return AnalyticForcing(seed=seed)

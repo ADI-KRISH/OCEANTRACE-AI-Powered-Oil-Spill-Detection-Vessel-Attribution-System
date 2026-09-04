@@ -45,7 +45,21 @@ main reason the two modules are worth coupling.
 | source | when | realistic |
 |---|---|---|
 | `AnalyticForcing` | offline, no account | **no** — declared in every response |
-| `CMEMSForcing` | after `copernicusmarine login` | yes |
+| `CMEMSCurrents` | after `copernicusmarine login` | yes |
+
+Two Copernicus products are needed, chosen automatically from the requested date
+rather than configured — getting it wrong is a silent failure, since the download
+just returns nothing for the period:
+
+| product | covers |
+|---|---|
+| `cmems_mod_glo_phy-cur_anfc_0.083deg_PT6H-i` | recent days + forecast |
+| `cmems_mod_glo_phy_my_0.083deg_P1D-m` | multi-year reanalysis (historical cases) |
+
+**Windage is not applied with CMEMS unless a wind is supplied.** The model's
+surface current already carries wind-driven Ekman transport; the extra ~3% a
+slick picks up from direct wind stress is separate, and inventing a wind to add
+it would be worse than omitting it.
 
 `get_forcing("auto")` prefers CMEMS and falls back to analytic rather than
 failing, because an offline demo must never hard-error. The analytic field is a
