@@ -254,9 +254,22 @@ def test_age_saturation_is_flagged_not_silently_clipped():
 
 
 def test_age_increases_with_area():
-    small = estimate_age(50_000.0, elongation=3.0)["hours"]
-    big = estimate_age(300_000.0, elongation=3.0)["hours"]
-    assert big > small
+    """Monotonic inside the band where the estimate is not saturated.
+
+    Areas are chosen inside ~0.5-3 km^2 deliberately: because t ~ r^4, anything
+    outside that band clamps to a bound, and two clamped values are equal by
+    design rather than by a bug.
+    """
+    small = estimate_age(0.8e6, elongation=3.0)
+    big = estimate_age(2.5e6, elongation=3.0)
+    assert small["saturated"] is None and big["saturated"] is None
+    assert big["hours"] > small["hours"]
+
+
+def test_age_saturates_outside_the_usable_band():
+    """Both tails must be reported as saturated, not silently clamped."""
+    assert estimate_age(0.05e6, elongation=3.0)["saturated"] == "lower"
+    assert estimate_age(20e6, elongation=3.0)["saturated"] == "upper"
 
 
 def test_oil_likelihood_prefers_elongated_dark_regions():

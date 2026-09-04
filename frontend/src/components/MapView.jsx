@@ -2,16 +2,30 @@ import { MapContainer, TileLayer, ImageOverlay, Polygon, CircleMarker,
          Popup, LayersControl, useMap } from 'react-leaflet'
 import { useEffect } from 'react'
 import { sceneUrl } from '../api'
+import { AisTracks, DriftParticles, OriginHeatmap, OriginTrack }
+  from './DriftLayers'
 
 // Leaflet wants [lat, lon]; the API emits GeoJSON order [lon, lat].
 const toLatLng = ([lon, lat]) => [lat, lon]
 
-/** Pans/zooms to a scene whenever a new one is detected. */
-function FitBounds({ bounds }) {
+/** Pans/zooms to fit everything the run produced, not just the scene.
+ *
+ * The drift cloud is routinely wider than the SAR footprint, so fitting to the
+ * scene alone pushes the origin estimate off-screen — which is the one thing the
+ * viewer most needs to see.
+ */
+function FitBounds({ bounds, drift }) {
   const map = useMap()
   useEffect(() => {
-    if (bounds) map.fitBounds(bounds, { padding: [30, 30] })
-  }, [bounds, map])
+    if (!bounds) return
+    let b = [[bounds[0][0], bounds[0][1]], [bounds[1][0], bounds[1][1]]]
+    if (drift?.heatmap?.bounds) {
+      const [laMin, laMax, loMin, loMax] = drift.heatmap.bounds
+      b = [[Math.min(b[0][0], laMin), Math.min(b[0][1], loMin)],
+           [Math.max(b[1][0], laMax), Math.max(b[1][1], loMax)]]
+    }
+    map.fitBounds(b, { padding: [40, 40] })
+  }, [bounds, drift, map])
   return null
 }
 
@@ -27,7 +41,9 @@ function FlyToSlick({ slick }) {
   return null
 }
 
-export default function MapView({ scene, layers, selected, onSelect }) {
+export default function MapView({ scene, layers, selected, onSelect,
+                                  drift, attribution, frameIdx,
+                                  selectedSuspect, onSelectSuspect }) {
   const center = scene ? [
     (scene.bounds[0][0] + scene.bounds[1][0]) / 2,
     (scene.bounds[0][1] + scene.bounds[1][1]) / 2,
@@ -65,7 +81,7 @@ export default function MapView({ scene, layers, selected, onSelect }) {
         </LayersControl.BaseLayer>
       </LayersControl>
 
-      {scene && <FitBounds bounds={scene.bounds} />}
+      {scene && <FitBounds bounds={scene.bounds} drift={drift} />}
       {selected && <FlyToSlick slick={selected} />}
 
       {/* SAR scene */}
@@ -84,6 +100,19 @@ export default function MapView({ scene, layers, selected, onSelect }) {
       {scene && scene.has_truth && layers.truth && (
         <ImageOverlay url={sceneUrl(scene.scene_id, 'truth')}
                       bounds={scene.bounds} opacity={0.6} zIndex={290} />
+      )}
+
+      {/* Drift: origin probability, discharge path, forecast particles */}
+      {drift && layers.originHeat && <OriginHeatmap drift={drift} />}
+      {drift && layers.originHeat && <OriginTrack drift={drift} />}
+      {drift && layers.driftAnim && (
+        <DriftParticles drift={drift} frameIdx={frameIdx} />
+      )}
+
+      {/* Attribution: AIS tracks coloured by suspicion */}
+      {attribution && layers.aisTracks && (
+        <AisTracks attribution={attribution} selected={selectedSuspect}
+                   onSelect={onSelectSuspect} />
       )}
 
       {/* Slick polygons + centroids */}

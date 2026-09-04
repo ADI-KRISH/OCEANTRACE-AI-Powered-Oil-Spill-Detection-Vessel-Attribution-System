@@ -26,4 +26,7 @@ export const getRegions = () => req('/api/regions')
 export const detect = (payload) =>
   req('/api/detect', { method: 'POST', body: JSON.stringify(payload) })
 
+export const runPipeline = (payload) =>
+  req('/api/pipeline/run', { method: 'POST', body: JSON.stringify(payload) })
+
 export const sceneUrl = (sceneId, layer) => `/api/scene/${sceneId}/${layer}.png`

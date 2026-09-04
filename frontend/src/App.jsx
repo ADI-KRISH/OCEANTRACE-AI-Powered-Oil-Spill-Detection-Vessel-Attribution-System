@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
-import { detect, getClasses, getModules, getRegions } from './api'
+import { detect, getClasses, getModules, getRegions, runPipeline } from './api'
+import SuspectPanel from './components/SuspectPanel'
 import MapView from './components/MapView'
 import ModuleStatus from './components/ModuleStatus'
 import SlickPanel from './components/SlickPanel'
@@ -29,6 +30,10 @@ export default function App() {
   const [regions, setRegions] = useState([])
   const [region, setRegion] = useState('arabian_sea')
   const [customLL, setCustomLL] = useState('')
+  const [drift, setDrift] = useState(null)
+  const [attribution, setAttribution] = useState(null)
+  const [suspect, setSuspect] = useState(null)
+  const [frameIdx, setFrameIdx] = useState(0)
   const [layers, setLayers] = useState({
     sar: true, mask: true, polygons: true, truth: false,
     originHeat: false, driftAnim: false, aisTracks: false,
@@ -50,7 +55,8 @@ export default function App() {
         if (ll) setCustomLL(ll)
         if ((s !== null || r || ll) && m?.detection?.available) {
           if (s !== null) setSeed(s)
-          runDetect(s ?? seed, r || region, ll || '')
+          // A shared link should show the whole story, not just detection.
+          runFull(s ?? seed, r || region, ll || '')
         }
       })
       .catch((e) => setError(e.message))
@@ -71,6 +77,31 @@ export default function App() {
     } catch (e) {
       setError(e.message)
       setScene(null)
+    } finally {
+      setBusy(false)
+    }
+  }
+
+  async function runFull(useSeed = seed, useRegion = region, useLL = customLL) {
+    setBusy(true); setError(null); setSelected(null); setSuspect(null)
+    try {
+      const body = { demo_seed: Number(useSeed), size: Number(size) }
+      const m = String(useLL).match(/^\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)\s*$/)
+      if (m) { body.lat = parseFloat(m[1]); body.lon = parseFloat(m[2]) }
+      else if (useRegion) { body.region = useRegion }
+
+      const res = await runPipeline(body)
+      setScene(res.detection)
+      setDrift(res.drift)
+      setAttribution(res.attribution)
+      setFrameIdx(0)
+      // Turn on the layers the run actually produced, so the result is visible
+      // without the user hunting for checkboxes.
+      setLayers((l) => ({ ...l, originHeat: !!res.drift,
+                          aisTracks: !!res.attribution }))
+      if (!res.drift) setError(res.note || 'No slick detected — drift and attribution skipped.')
+    } catch (e) {
+      setError(e.message)
     } finally {
       setBusy(false)
     }
@@ -144,13 +175,17 @@ export default function App() {
             </div>
           </div>
           <button disabled={busy || !detectionReady}
+                  onClick={() => runFull()}>
+            {busy ? 'Running…' : 'Run full pipeline'}
+          </button>
+          <button className="ghost" disabled={busy || !detectionReady}
                   onClick={() => runDetect()}>
-            {busy ? 'Detecting…' : 'Detect slicks'}
+            Detection only
           </button>
           <button className="ghost" disabled={busy || !detectionReady}
                   onClick={() => {
                     const s = Math.floor(Math.random() * 10000)
-                    setSeed(s); runDetect(s)
+                    setSeed(s); runFull(s)
                   }}>
             Random scene
           </button>
@@ -160,10 +195,14 @@ export default function App() {
           <h2>Layers</h2>
           {LAYERS.map((l) => {
             const mod = moduleFor(l.needs)
-            const unavailable = !mod?.available ||
+            const hasData = l.needs === 'drift' ? !!drift
+                          : l.needs === 'attribution' ? !!attribution
+                          : !!scene
+            const unavailable = !mod?.available || !hasData ||
                                 (l.synthOnly && !scene?.has_truth)
             const why = !mod?.available
               ? `${l.needs} not built`
+              : !hasData ? 'run pipeline'
               : (l.synthOnly && !scene?.has_truth ? 'synthetic only' : '')
             return (
               <label className={`layer ${unavailable ? 'disabled' : ''}`} key={l.key}>
@@ -177,19 +216,29 @@ export default function App() {
             )
           })}
 
-          <h2>Timeline</h2>
+          <h2>Timeline — drift forecast</h2>
           <div className="timeline">
-            <input type="range" min="0" max="100" defaultValue="100" disabled />
+            <input type="range" min="0"
+                   max={Math.max((drift?.forecast?.frames?.length || 1) - 1, 0)}
+                   value={frameIdx} disabled={!drift}
+                   onChange={(e) => setFrameIdx(Number(e.target.value))} />
+            <span className="mm" style={{ minWidth: 46, textAlign: 'right' }}>
+              {drift ? `+${drift.forecast.frames[frameIdx]?.hours_from_start ?? 0} h` : '—'}
+            </span>
           </div>
           <div className="note" style={{ color: 'var(--off)', fontSize: 11 }}>
-            Drift animation needs Module 2 (OpenDrift). Disabled until it exists.
+            {drift
+              ? 'Forward drift of the detected slick. Enable "Drift particles" to see it.'
+              : 'Run the full pipeline to enable the forecast.'}
           </div>
         </div>
 
         {/* -------------------------------------------------------- map -- */}
         <div className="mapwrap">
           <MapView scene={scene} layers={layers} selected={selected}
-                   onSelect={setSelected} />
+                   onSelect={setSelected} drift={drift}
+                   attribution={attribution} frameIdx={frameIdx}
+                   selectedSuspect={suspect} onSelectSuspect={setSuspect} />
           {classes.length > 0 && layers.mask && (
             <div className="legend">
               <div style={{ fontWeight: 600, marginBottom: 4 }}>Classes</div>
@@ -225,11 +274,30 @@ export default function App() {
             </>
           )}
 
+          {drift && (
+            <>
+              <h2>Drift origin</h2>
+              <div className="stat">
+                <span className="k">Uncertainty</span>
+                <span className="v">{drift.spread_km} km RMS</span>
+              </div>
+              <div className="stat">
+                <span className="k">Ensemble</span>
+                <span className="v">{drift.n_particles} members</span>
+              </div>
+              <div className="stat">
+                <span className="k">Forcing</span>
+                <span className="v">{drift.forcing.source}</span>
+              </div>
+              {!drift.forcing.realistic && (
+                <div className="uncertain-note">{drift.forcing.note}</div>
+              )}
+            </>
+          )}
+
           <h2>Suspect vessels</h2>
-          <div className="empty">
-            Module 3 (AIS attribution) is not built.<br />
-            It needs a drift origin estimate from Module 2 first.
-          </div>
+          <SuspectPanel attribution={attribution} selected={suspect}
+                        onSelect={setSuspect} />
         </div>
       </div>
     </div>

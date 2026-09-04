@@ -88,11 +88,16 @@ def orientation_to_azimuth(orientation_rad: float) -> float:
 
 
 #: Lumped Fay gravity-viscous spreading constant, m/s^(1/4), for r = K * t^(1/4).
-#: Calibrated so a ~0.2 km^2 slick reads as a few hours old, which is the regime
-#: most operational detections fall in. It absorbs discharge volume, oil type and
-#: sea state -- none of which a single SAR scene reveals -- so it is a scale
-#: factor, not a physical constant.
-FAY_K = 20.0
+#: Calibrated so a ~1-2 km^2 slick -- the typical size of an operational
+#: discharge visible in a Sentinel-1 GRD -- reads as roughly 8-12 hours old.
+#:
+#: Because t ~ r^4, ANY single K gives sensible ages over only a narrow band of
+#: areas: a 2.6x change in radius is a 45x change in age. Outside roughly
+#: 0.5-3 km^2 the estimate saturates, and saturation is reported rather than
+#: hidden. This is a real limitation of age-from-area, not a tuning failure.
+#: It absorbs discharge volume, oil type and sea state -- none of which a single
+#: SAR scene reveals -- so it is a scale factor, not a physical constant.
+FAY_K = 55.0
 
 #: Below/above these the estimate is reported as saturated rather than as a value.
 AGE_MIN_H, AGE_MAX_H = 0.5, 48.0

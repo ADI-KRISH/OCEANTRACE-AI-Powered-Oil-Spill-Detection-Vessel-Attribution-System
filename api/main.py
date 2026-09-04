@@ -40,7 +40,10 @@ app.add_middleware(
 #: Sea. Every response carries `georeferencing: "demo_placement"` so a placed
 #: scene is never mistaken for a real Sentinel-1 footprint.
 DEFAULT_ORIGIN = {"lat": 18.60, "lon": 71.60}
-DEMO_PIXEL_SIZE_M = 30.0
+#: Sentinel-1 GRD ground sample distance. Using the real value matters: at 30 m
+#: a demo scene produces 16 km^2 slicks, which saturate the age model and smear
+#: the backward drift over 150 km.
+DEMO_PIXEL_SIZE_M = 10.0
 
 #: Named hotspots offered by the UI. Chosen because each is a documented
 #: operational-discharge or tanker-traffic region, so a demo can be framed
@@ -59,6 +62,9 @@ REGIONS = [
     {"id": "singapore",     "name": "Singapore Strait",          "lat":  1.20, "lon": 103.80},
     {"id": "black_sea",     "name": "Black Sea",                 "lat": 43.50, "lon": 31.00},
 ]
+
+#: Longest backward integration the hindcast will attempt, hours.
+MAX_HINDCAST_H = 24.0
 
 _MODEL = None
 _SCENES: dict[str, dict] = {}
@@ -320,6 +326,13 @@ def pipeline_run(req: PipelineRequest):
     t_detect = float(time.time())
     age_h = slick.get("age_estimate_h") or 6.0
     rng_lo, rng_hi = (slick.get("age_range_h") or [age_h / 4, age_h * 4])[:2]
+    # Cap the backward sweep. Past ~2 days a slick has usually dispersed below
+    # SAR detectability, and integrating that far back produces an origin cloud
+    # so large that attribution over it is meaningless -- an honest refusal to
+    # over-reach rather than a cosmetic trim.
+    rng_hi = min(float(rng_hi), MAX_HINDCAST_H)
+    rng_lo = min(float(rng_lo), rng_hi * 0.5)
+    age_h = min(float(age_h), rng_hi)
 
     forcing = get_forcing(req.forcing, seed=abs(hash(det["scene_id"])) % 1000)
     est = hindcast_origin(
